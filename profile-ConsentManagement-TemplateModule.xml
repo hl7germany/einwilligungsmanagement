@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="http://fhir.de/StructureDefinition/ConsentManagement/TemplateModule" />
+  <url value="http://fhir.de/ConsentManagement/StructureDefinition/TemplateModule" />
   <version value="0.1" />
   <name value="ConsentManagementTemplateModule" />
   <title value="Consent Management Template Module" />
@@ -38,7 +38,7 @@
       <min value="1" />
       <type>
         <code value="Extension" />
-        <profile value="http://fhir.de/StructureDefinition/ConsentManagement/DomainReference" />
+        <profile value="http://fhir.de/ConsentManagement/StructureDefinition/DomainReference" />
       </type>
       <mustSupport value="true" />
     </element>
@@ -108,7 +108,7 @@
       <sliceName value="xacmlTemplate" />
       <type>
         <code value="Extension" />
-        <profile value="http://fhir.de/StructureDefinition/ConsentManagement/XacmlTemplate" />
+        <profile value="http://fhir.de/ConsentManagement/StructureDefinition/XacmlTemplate" />
       </type>
       <mustSupport value="true" />
     </element>

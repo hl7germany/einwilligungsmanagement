@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="http://fhir.de/StructureDefinition/ConsentManagement/VersionLevel" />
+  <url value="http://fhir.de/ConsentManagement/StructureDefinition/VersionLevel" />
   <version value="0.1" />
   <name value="ConsentManagementVersionLevel" />
   <title value="Consent Management Version Level" />

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="http://fhir.de/StructureDefinition/ConsentManagement/Domain/Organization" />
+  <url value="http://fhir.de/ConsentManagement/StructureDefinition/Domain/Organization" />
   <version value="0.1" />
   <name value="ConsentManagementDomainOrganization" />
   <title value="Consent Management Domain Organization" />
@@ -33,7 +33,7 @@
       <max value="1" />
       <type>
         <code value="Extension" />
-        <profile value="http://fhir.de/StructureDefinition/ConsentManagement/VersionLevel" />
+        <profile value="http://fhir.de/ConsentManagement/StructureDefinition/VersionLevel" />
       </type>
       <mustSupport value="true" />
     </element>
@@ -48,7 +48,7 @@
       <max value="1" />
       <type>
         <code value="Extension" />
-        <profile value="http://fhir.de/StructureDefinition/ConsentManagement/Logo" />
+        <profile value="http://fhir.de/ConsentManagement/StructureDefinition/Logo" />
       </type>
       <mustSupport value="true" />
     </element>
@@ -63,7 +63,7 @@
       <max value="1" />
       <type>
         <code value="Extension" />
-        <profile value="http://fhir.de/StructureDefinition/ConsentManagement/OrganizationDescription" />
+        <profile value="http://fhir.de/ConsentManagement/StructureDefinition/OrganizationDescription" />
       </type>
       <mustSupport value="true" />
     </element>

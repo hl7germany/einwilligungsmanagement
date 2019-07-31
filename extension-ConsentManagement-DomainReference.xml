@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="http://fhir.de/StructureDefinition/ConsentManagement/DomainReference" />
+  <url value="http://fhir.de/ConsentManagement/StructureDefinition/DomainReference" />
   <version value="0.1" />
   <name value="ConsentManagementDomainReference" />
   <title value="Consent Management Domain Reference" />
@@ -44,8 +44,8 @@
       <min value="1" />
       <type>
         <code value="Reference" />
-        <targetProfile value="http://fhir.de/StructureDefinition/ConsentManagement/Domain/Organization" />
-        <targetProfile value="http://fhir.de/StructureDefinition/ConsentManagement/Domain/ResearchStudy" />
+        <targetProfile value="http://fhir.de/ConsentManagement/StructureDefinition/Domain/Organization" />
+        <targetProfile value="http://fhir.de/ConsentManagement/StructureDefinition/Domain/ResearchStudy" />
       </type>
     </element>
   </differential>

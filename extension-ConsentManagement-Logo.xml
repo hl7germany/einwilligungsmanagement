@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="http://fhir.de/StructureDefinition/ConsentManagement/Logo" />
+  <url value="http://fhir.de/ConsentManagement/StructureDefinition/Logo" />
   <version value="0.1" />
   <name value="ConsentManagementLogo" />
   <title value="Consent Management Logo" />
