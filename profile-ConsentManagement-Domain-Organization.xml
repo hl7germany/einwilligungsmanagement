@@ -8,6 +8,7 @@
   <experimental value="true" />
   <date value="2019-07-31" />
   <publisher value="Interoperabilitätsforum, AG Einwilligungsmanagement" />
+  <description value="Gültigkeitsdomäne einer Einwiliigung (Organisation, Versorgungs-Kontext)" />
   <fhirVersion value="4.0.0" />
   <kind value="resource" />
   <abstract value="false" />

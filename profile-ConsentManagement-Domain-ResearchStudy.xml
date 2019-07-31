@@ -8,7 +8,7 @@
   <experimental value="true" />
   <date value="2019-07-31" />
   <publisher value="Interoperabilitätsforum, AG Einwilligungsmanagement" />
-  <description value="Gültigkeitsdomäne einer Einwiliigung (Studie)" />
+  <description value="Gültigkeitsdomäne einer Einwiliigung (Studie, Forschungs-Kontext)" />
   <fhirVersion value="4.0.0" />
   <kind value="resource" />
   <abstract value="false" />
@@ -46,7 +46,6 @@
       <path value="ResearchStudy.extension" />
       <sliceName value="logo" />
       <short value="Logo der Studie" />
-      <min value="0" />
       <max value="1" />
       <type>
         <code value="Extension" />
