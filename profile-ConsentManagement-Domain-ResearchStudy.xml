@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <url value="http://fhir.de/StructureDefinition/ConsentManagement/Domain/ResearchStudy" />
+  <version value="0.1" />
+  <name value="ConsentManagementDomainResearchStudy" />
+  <title value="Consent Management Domain Research Study" />
+  <status value="draft" />
+  <experimental value="true" />
+  <date value="2019-07-31" />
+  <publisher value="Interoperabilitätsforum, AG Einwilligungsmanagement" />
+  <description value="Gültigkeitsdomäne einer Einwiliigung (Studie)" />
+  <fhirVersion value="4.0.0" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="ResearchStudy" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/ResearchStudy" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="ResearchStudy.extension">
+      <path value="ResearchStudy.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="ResearchStudy.extension:versionLevel">
+      <path value="ResearchStudy.extension" />
+      <sliceName value="versionLevel" />
+      <short value="Versionierungslevel der Policies, Modules und Templates für diese Consent Domain" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://fhir.de/StructureDefinition/ConsentManagement/VersionLevel" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="ResearchStudy.extension:versionLevel.value[x]">
+      <path value="ResearchStudy.extension.value[x]" />
+      <mustSupport value="true" />
+    </element>
+    <element id="ResearchStudy.extension:logo">
+      <path value="ResearchStudy.extension" />
+      <sliceName value="logo" />
+      <short value="Logo der Studie" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://fhir.de/StructureDefinition/ConsentManagement/Logo" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="ResearchStudy.extension:logo.value[x]">
+      <path value="ResearchStudy.extension.value[x]" />
+      <mustSupport value="true" />
+    </element>
+    <element id="ResearchStudy.identifier">
+      <path value="ResearchStudy.identifier" />
+      <short value="Eindeutiger Identifikator des Projekts, der Studie oder des Anwendungsbereichs der Einwilligungen" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="ResearchStudy.identifier.system">
+      <path value="ResearchStudy.identifier.system" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="ResearchStudy.identifier.value">
+      <path value="ResearchStudy.identifier.value" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="ResearchStudy.title">
+      <path value="ResearchStudy.title" />
+      <short value="Name der Consent Domain" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="ResearchStudy.description">
+      <path value="ResearchStudy.description" />
+      <short value="Zweckbeschreibung der Consent Domain" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+  </differential>
+</StructureDefinition>

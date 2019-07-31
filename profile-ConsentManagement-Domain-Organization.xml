@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <url value="http://fhir.de/StructureDefinition/ConsentManagement/Domain/Organization" />
+  <version value="0.1" />
+  <name value="ConsentManagementDomainOrganization" />
+  <title value="Consent Management Domain Organization" />
+  <status value="draft" />
+  <experimental value="true" />
+  <date value="2019-07-31" />
+  <publisher value="Interoperabilitätsforum, AG Einwilligungsmanagement" />
+  <fhirVersion value="4.0.0" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Organization" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Organization" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Organization.extension">
+      <path value="Organization.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Organization.extension:versionLevel">
+      <path value="Organization.extension" />
+      <sliceName value="versionLevel" />
+      <short value="Versionierungslevel der Policies, Modules und Templates für diese Consent Domain" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://fhir.de/StructureDefinition/ConsentManagement/VersionLevel" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="Organization.extension:versionLevel.value[x]">
+      <path value="Organization.extension.value[x]" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Organization.extension:logo">
+      <path value="Organization.extension" />
+      <sliceName value="logo" />
+      <short value="Logo der Organisation" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://fhir.de/StructureDefinition/ConsentManagement/Logo" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="Organization.extension:logo.value[x]">
+      <path value="Organization.extension.value[x]" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Organization.extension:description">
+      <path value="Organization.extension" />
+      <sliceName value="description" />
+      <short value="Beschreibung der Organisation im Sinn einer Zweckbeschreibung der Consent Domain" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://fhir.de/StructureDefinition/ConsentManagement/OrganizationDescription" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="Organization.extension:description.value[x]">
+      <path value="Organization.extension.value[x]" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Organization.identifier">
+      <path value="Organization.identifier" />
+      <short value="Eindeutiger Identifikator des Projekts, der Studie oder des Anwendungsbereichs der Einwilligungen" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Organization.identifier.system">
+      <path value="Organization.identifier.system" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Organization.identifier.value">
+      <path value="Organization.identifier.value" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Organization.name">
+      <path value="Organization.name" />
+      <short value="Name der Consent Domain" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+  </differential>
+</StructureDefinition>

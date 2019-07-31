@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <url value="http://fhir.de/StructureDefinition/ConsentManagement/DomainReference" />
+  <version value="0.1" />
+  <name value="ConsentManagementDomainReference" />
+  <title value="Consent Management Domain Reference" />
+  <status value="draft" />
+  <experimental value="true" />
+  <date value="2019-07-31" />
+  <publisher value="Interoperabilitätsforum, AG Einwilligungsmanagement" />
+  <description value="Referenz zu einer Domain, in der ein Modul oder Template verwendet wird" />
+  <fhirVersion value="4.0.0" />
+  <kind value="complex-type" />
+  <abstract value="false" />
+  <context>
+    <type value="element" />
+    <expression value="Questionnaire" />
+  </context>
+  <type value="Extension" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Extension">
+      <path value="Extension" />
+      <short value="Optional Extensions Element" />
+      <definition value="Optional Extension Element - found in all resources." />
+      <base>
+        <path value="Extension" />
+      </base>
+      <constraint>
+        <key value="ext-1" />
+        <severity value="error" />
+        <human value="Must have either extensions or value[x], not both" />
+        <expression value="extension.exists() != value.exists()" />
+        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" />
+      </constraint>
+      <mapping>
+        <identity value="rim" />
+        <map value="N/A" />
+      </mapping>
+    </element>
+    <element id="Extension.value[x]">
+      <path value="Extension.value[x]" />
+      <min value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://fhir.de/StructureDefinition/ConsentManagement/Domain/Organization" />
+        <targetProfile value="http://fhir.de/StructureDefinition/ConsentManagement/Domain/ResearchStudy" />
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>

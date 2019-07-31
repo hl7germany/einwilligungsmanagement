@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <url value="http://fhir.de/StructureDefinition/ConsentManagement/XacmlTemplate" />
+  <version value="0.1" />
+  <name value="ConsentManagementXacmlTemplate" />
+  <title value="Consent Management Xacml Template" />
+  <status value="draft" />
+  <experimental value="true" />
+  <date value="2019-07-31" />
+  <publisher value="Interoperabilitätsforum, AG Einwilligungsmanagement" />
+  <description value="Enthält Templates für die XACML-Policy Rules / RuleSets" />
+  <fhirVersion value="4.0.0" />
+  <kind value="complex-type" />
+  <abstract value="false" />
+  <context>
+    <type value="element" />
+    <expression value="Questionnaire.item" />
+  </context>
+  <context>
+    <type value="element" />
+    <expression value="Questionnaire.item.item" />
+  </context>
+  <type value="Extension" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Extension.value[x]">
+      <path value="Extension.value[x]" />
+      <min value="1" />
+      <type>
+        <code value="base64Binary" />
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>
