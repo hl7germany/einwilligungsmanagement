@@ -79,6 +79,10 @@
       <min value="1" />
       <mustSupport value="true" />
     </element>
+    <element id="ResearchStudy.status">
+      <path value="ResearchStudy.status" />
+      <mustSupport value="true" />
+    </element>
     <element id="ResearchStudy.description">
       <path value="ResearchStudy.description" />
       <short value="Zweckbeschreibung der Consent Domain" />
