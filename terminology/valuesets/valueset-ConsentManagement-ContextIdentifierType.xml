@@ -1,0 +1,50 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+	<url value="http://fhir.de/ConsentManagement/ValueSet/ContextIdentifierType"/>
+	<version value="0.1"/>
+	<name value="ConsentManagementContextIdentifierType"/>
+	<status value="draft"/>
+	<experimental value="true"/>
+	<date value="2019-08-30"/>
+	<compose>
+		<include>
+			<system value="http://hl7.org/fhir/v2/0203"/>
+			<code value="MR"/>
+		</include>
+		<include>
+			<system value="http://fhir.de/CodeSystem/identifier-type-de-basis"/>
+			<code value="GKV"/>
+		</include>
+		<include>
+			<system value="http://fhir.de/CodeSystem/identifier-type-de-basis"/>
+			<code value="PKV"/>
+		</include>
+		<include>
+			<system value="http://hl7.org/fhir/v2/0203"/>
+			<code value="ANON"/>
+		</include>
+	</compose>
+	<expansion>
+		<timestamp value="2019-08-30"/>
+		<total value="4"/>
+		<contains>
+			<system value="http://hl7.org/fhir/v2/0203"/>
+			<code value="MR"/>
+            <display value="Medical record number"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/identifier-type-de-basis"/>
+			<code value="GKV"/>
+            <display value="Gesetzliche Krankenversicherung"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/identifier-type-de-basis"/>
+			<code value="PKV"/>
+            <display value="Private Krankenversicherung"/>
+		</contains>
+		<contains>
+			<system value="http://hl7.org/fhir/v2/0203"/>
+			<code value="ANON"/>
+            <display value="Anonymous identifier"/>
+		</contains>
+	</expansion>
+</ValueSet>

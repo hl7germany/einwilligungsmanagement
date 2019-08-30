@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <url value="http://fhir.de/ConsentManagement/StructureDefinition/ContextIdentifier" />
+  <version value="0.1" />
+  <name value="ConsentManagementContextIdentifier" />
+  <title value="Consent Management Kontext-Identifikatoren einer Domain" />
+  <status value="draft" />
+  <experimental value="true" />
+  <date value="2019-08-30" />
+  <publisher value="Interoperabilitätsforum, AG Einwilligungsmanagement" />
+  <description value="Definiert im Kontext einer Domain, welche Identifikatoren an welcher Ressourcen benötigt werden, um in der Policy Verwendung zu finden.&#xD;&#xA;&#xD;&#xA;Existieren mehrere Extensions im Kontext einer Domain, so werden diese UND-verknüpft.&#xD;&#xA;Die Elemente resourceType, type und system sind ebenfalls UND-verknüpft.&#xD;&#xA;&#xD;&#xA;Der FHIR-Ressourcentyp als Kontext muss immer angegeben werden.&#xD;&#xA;Identifier-Typen (type) und -Namensräume (system) sind optional. Sind mehrere type- oder system-Elemente angegeben, so sind diese untereinander ODER-verknüpft.&#xD;&#xA;Sind diese angegeben, so müssen die dem resourceType entsprechenden Ressourcen einen Identifier mit dem entsprechenden type und/oder system besitzen.&#xD;&#xA;Bei logischen Referenzen (Reference by Identifier) gilt dies entsprechend." />
+  <fhirVersion value="4.0.0" />
+  <kind value="complex-type" />
+  <abstract value="false" />
+  <context>
+    <type value="element" />
+    <expression value="ResearchStudy" />
+  </context>
+  <context>
+    <type value="element" />
+    <expression value="Organization" />
+  </context>
+  <type value="Extension" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Extension.extension">
+      <path value="Extension.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Extension.extension:resourceType">
+      <path value="Extension.extension" />
+      <sliceName value="resourceType" />
+      <short value="Ressource, in der ein Identifier Verwendung findet." />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:resourceType.value[x]">
+      <path value="Extension.extension.value[x]" />
+      <min value="1" />
+      <type>
+        <code value="Coding" />
+      </type>
+      <binding>
+        <strength value="required" />
+        <valueSet value="http://hl7.org/fhir/ValueSet/resource-types" />
+      </binding>
+    </element>
+    <element id="Extension.extension:type">
+      <path value="Extension.extension" />
+      <sliceName value="type" />
+    </element>
+    <element id="Extension.extension:type.value[x]">
+      <path value="Extension.extension.value[x]" />
+      <min value="1" />
+      <type>
+        <code value="CodeableConcept" />
+      </type>
+      <binding>
+        <strength value="extensible" />
+        <valueSet value="http://fhir.de/ConsentManagement/ValueSet/ContextIdentifierType" />
+      </binding>
+    </element>
+    <element id="Extension.extension:system">
+      <path value="Extension.extension" />
+      <sliceName value="system" />
+    </element>
+    <element id="Extension.extension:system.value[x]">
+      <path value="Extension.extension.value[x]" />
+      <min value="1" />
+      <type>
+        <code value="uri" />
+      </type>
+    </element>
+    <element id="Extension.value[x]">
+      <path value="Extension.value[x]" />
+      <max value="0" />
+    </element>
+  </differential>
+</StructureDefinition>

@@ -6,7 +6,7 @@
   <title value="Consent Management Domain Organization" />
   <status value="draft" />
   <experimental value="true" />
-  <date value="2019-07-31" />
+  <date value="2019-08-30" />
   <publisher value="Interoperabilitätsforum, AG Einwilligungsmanagement" />
   <description value="Gültigkeitsdomäne einer Einwiliigung (Organisation, Versorgungs-Kontext)" />
   <fhirVersion value="4.0.0" />
@@ -70,6 +70,43 @@
     </element>
     <element id="Organization.extension:description.value[x]">
       <path value="Organization.extension.value[x]" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Organization.extension:contextIdentifier">
+      <path value="Organization.extension" />
+      <sliceName value="contextIdentifier" />
+      <min value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://fhir.de/ConsentManagement/StructureDefinition/ContextIdentifier" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="Organization.extension:contextIdentifier.extension:resourceType">
+      <path value="Organization.extension.extension" />
+      <sliceName value="resourceType" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Organization.extension:contextIdentifier.extension:resourceType.value[x]">
+      <path value="Organization.extension.extension.value[x]" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Organization.extension:contextIdentifier.extension:type">
+      <path value="Organization.extension.extension" />
+      <sliceName value="type" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Organization.extension:contextIdentifier.extension:type.value[x]">
+      <path value="Organization.extension.extension.value[x]" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Organization.extension:contextIdentifier.extension:system">
+      <path value="Organization.extension.extension" />
+      <sliceName value="system" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Organization.extension:contextIdentifier.extension:system.value[x]">
+      <path value="Organization.extension.extension.value[x]" />
       <mustSupport value="true" />
     </element>
     <element id="Organization.identifier">

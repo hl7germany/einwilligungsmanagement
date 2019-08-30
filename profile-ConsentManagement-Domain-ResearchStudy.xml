@@ -6,7 +6,7 @@
   <title value="Consent Management Domain Research Study" />
   <status value="draft" />
   <experimental value="true" />
-  <date value="2019-07-31" />
+  <date value="2019-08-30" />
   <publisher value="Interoperabilitätsforum, AG Einwilligungsmanagement" />
   <description value="Gültigkeitsdomäne einer Einwiliigung (Studie, Forschungs-Kontext)" />
   <fhirVersion value="4.0.0" />
@@ -55,6 +55,43 @@
     </element>
     <element id="ResearchStudy.extension:logo.value[x]">
       <path value="ResearchStudy.extension.value[x]" />
+      <mustSupport value="true" />
+    </element>
+    <element id="ResearchStudy.extension:contextIdentifier">
+      <path value="ResearchStudy.extension" />
+      <sliceName value="contextIdentifier" />
+      <min value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://fhir.de/ConsentManagement/StructureDefinition/ContextIdentifier" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="ResearchStudy.extension:contextIdentifier.extension:resourceType">
+      <path value="ResearchStudy.extension.extension" />
+      <sliceName value="resourceType" />
+      <mustSupport value="true" />
+    </element>
+    <element id="ResearchStudy.extension:contextIdentifier.extension:resourceType.value[x]">
+      <path value="ResearchStudy.extension.extension.value[x]" />
+      <mustSupport value="true" />
+    </element>
+    <element id="ResearchStudy.extension:contextIdentifier.extension:type">
+      <path value="ResearchStudy.extension.extension" />
+      <sliceName value="type" />
+      <mustSupport value="true" />
+    </element>
+    <element id="ResearchStudy.extension:contextIdentifier.extension:type.value[x]">
+      <path value="ResearchStudy.extension.extension.value[x]" />
+      <mustSupport value="true" />
+    </element>
+    <element id="ResearchStudy.extension:contextIdentifier.extension:system">
+      <path value="ResearchStudy.extension.extension" />
+      <sliceName value="system" />
+      <mustSupport value="true" />
+    </element>
+    <element id="ResearchStudy.extension:contextIdentifier.extension:system.value[x]">
+      <path value="ResearchStudy.extension.extension.value[x]" />
       <mustSupport value="true" />
     </element>
     <element id="ResearchStudy.identifier">
