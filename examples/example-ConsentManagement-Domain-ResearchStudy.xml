@@ -45,7 +45,7 @@
 		<extension url="type">
 			<valueCodeableConcept>
 				<coding>
-					<system value="	http://hl7.org/fhir/v2/0203"/>
+					<system value="http://hl7.org/fhir/v2/0203"/>
 					<code value="MR"/>
 				</coding>
 			</valueCodeableConcept>
@@ -63,7 +63,7 @@
 	</extension>
 	<extension url="http://musterklinik.de/fhir/externalProperties/beispiel3">
 		<valueCoding>
-			<system value="	http://musterklinik.de/fhir/CodeSystem/beispiel3CodeSystem"/>
+			<system value="http://musterklinik.de/fhir/CodeSystem/beispiel3CodeSystem"/>
 			<code value="ABC12"/>
 		</valueCoding>
 	</extension>
