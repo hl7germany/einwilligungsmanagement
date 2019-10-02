@@ -21,12 +21,12 @@
 			</valueCoding>
 		</extension>
 		<extension url="type">
-			<valueCodableConcept>
+			<valueCodeableConcept>
 				<coding>
 					<system value="http://fhir.de/CodeSystem/identifier-type-de-basis"/>
 					<code value="GKV"/>
 				</coding>
-			</valueCodableConcept>
+			</valueCodeableConcept>
 		</extension>
 		<extension url="system">
 			<valueUri value="http://fhir.de/NamingSystem/gkv/kvid-10"/>
@@ -40,12 +40,12 @@
 			</valueCoding>
 		</extension>
 		<extension url="type">
-			<valueCodableConcept>
+			<valueCodeableConcept>
 				<coding>
 					<system value="	http://hl7.org/fhir/v2/0203"/>
 					<code value="MR"/>
 				</coding>
-			</valueCodableConcept>
+			</valueCodeableConcept>
 		</extension>
 		<extension url="system">
 			<valueUri value="http://musterklinik.de/fhir/identifiers/studienPSNs"/>
