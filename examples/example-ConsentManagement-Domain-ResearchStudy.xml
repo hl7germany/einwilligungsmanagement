@@ -18,9 +18,19 @@
 		<value value="gics.domain"/>
 	</identifier>
 	<title value="MII_Greifswald"/>
+	<extension url="http://fhir.de/ConsentManagement/StructureDefinition/ContextIdentifier">
+		<resourceType value=""/>
+		<type value="GKV"/>
+		<system value="http://fhir.de/CodeSystem/identifier-type-de-basis"/>
+	</extension>
+	<extension url="http://fhir.de/ConsentManagement/StructureDefinition/ContextIdentifier">
+		<resourceType value=""/>
+		<type value="MR"/>
+		<system value="http://hl7.org/fhir/v2/0203"/>
+	</extension>
 	<status value="active"/>
 	<description value="Demo Domain der MII für den Standort Greifswald"/>
 	<note>
-		 <text value="label, sigenridtypes, properties und external properties fehlen noch"/>
+		 <text value="label, properties und external properties fehlen noch"/>
 	</note>
 </ResearchStudy>
