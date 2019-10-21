@@ -22,16 +22,16 @@
 		</extension>
 	</extension>
 	<!-- ab hier examplarisch domänenspezifische/projektspezifische (external) Properties -->
-	<extension url="http://ths-greifswal.de/fhir/gics/domain/properties/REVOKE_IS_PERMANENT">
+	<extension url="http://ths-greifswald.de/fhir/gics/domain/properties/REVOKE_IS_PERMANENT">
 		<valueString value="FALSE"/>
 	</extension>
-	<extension url="http://ths-greifswal.de/fhir/gics/domain/properties/TAKE_HIGHEST_VERSION_INSTEAD_OF_NEWEST">
+	<extension url="http://ths-greifswald.de/fhir/gics/domain/properties/TAKE_HIGHEST_VERSION_INSTEAD_OF_NEWEST">
 		<valueString value="FALSE"/>
 	</extension>
-	<extension url="http://ths-greifswal.de/fhir/gics/domain/properties/SCANS_ARE_NOT_MANDATORY_FOR_ACCEPTED_CONSENTS">
+	<extension url="http://ths-greifswald.de/fhir/gics/domain/properties/SCANS_ARE_NOT_MANDATORY_FOR_ACCEPTED_CONSENTS">
 		<valueString value="TRUE"/>
 	</extension>
-	<extension url="http://ths-greifswal.de/fhir/gics/domain/properties/SCANS_SIZE_LIMIT">
+	<extension url="http://ths-greifswald.de/fhir/gics/domain/properties/SCANS_SIZE_LIMIT">
 		<valueString value="10485760"/>
 	</extension>	
 	<!-- Name, computer friendly -->
