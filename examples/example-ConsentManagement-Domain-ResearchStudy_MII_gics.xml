@@ -2,7 +2,7 @@
 	<id value="d7a65ce8-2810-401a-b0db-70782a7b19a6"/>
 	<meta>
 		<lastUpdated value="2019-08-02T10:35:43.5320994+00:00"/>
-		<profile value="http://fhir.de/ConsentManagement/StructureDefinition/Domain/ResearchStudy"/>
+		<profile value="http://fhir.de/ConsentManagement/StructureDefinition/Domain/ResearchStudy-MII-gICS"/>
 	</meta>
 	<!-- Versionierungslevel der Policies, Modules und Templates für diese Consent Domain -->
 	<extension url="http://fhir.de/ConsentManagement/StructureDefinition/VersionLevel">
