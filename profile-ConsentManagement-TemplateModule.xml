@@ -153,9 +153,25 @@
       </type>
       <condition value="cm-1" />
     </element>
-    <element id="Questionnaire.item.text.extension:renderingMarkdown.value[x]:valueMarkdown">
+    <element id="Questionnaire.item.text.extension:renderingMarkdown.valueMarkdown:valueMarkdown">
       <path value="Questionnaire.item.text.extension.valueMarkdown" />
       <sliceName value="valueMarkdown" />
+      <min value="1" />
+    </element>
+    <element id="Questionnaire.item.text.extension:renderingXhtml">
+      <path value="Questionnaire.item.text.extension" />
+      <sliceName value="renderingXhtml" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/rendering-xhtml" />
+      </type>
+    </element>
+    <element id="Questionnaire.item.text.extension:renderingXhtml.valueString:valueString">
+      <path value="Questionnaire.item.text.extension.valueString" />
+      <sliceName value="valueString" />
+      <min value="1" />
     </element>
     <element id="Questionnaire.item.type">
       <path value="Questionnaire.item.type" />
