@@ -1,0 +1,38 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+	<url value="http://fhir.de/ConsentManagement/ValueSet/TemplateType"/>
+	<version value="0.1"/>
+	<name value="ConsentManagementTemplateType"/>
+	<status value="draft"/>
+	<experimental value="true"/>
+	<date value="2019-12-05"/>
+	<compose>
+		<include>
+			<system value="http://loinc.org"/>
+			<concept>
+				<code value="59284-0"/>
+			</concept>
+		</include>
+		<include>
+			<system value="http://fhir.de/ConsentManagement/CodeSystem/TemplateType"/>
+		</include>
+	</compose>
+	<expansion>
+		<timestamp value="2019-12-05"/>
+		<total value="3"/>
+		<contains>
+			<system value="http://loinc.org"/>
+			<code value="59284-0"/>
+			<display value="Patient Consent"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/ConsentManagement/CodeSystem/TemplateType"/>
+			<code value="WITHDRAWAL" />
+		    <display value="Widerrufsvorlage" />
+		</contains>
+		<contains>
+			<system value="http://fhir.de/ConsentManagement/CodeSystem/TemplateType"/>
+			<code value="REFUSAL" />
+		    <display value="Ablehnungsvorlage" />
+		</contains>
+	</expansion>
+</ValueSet>

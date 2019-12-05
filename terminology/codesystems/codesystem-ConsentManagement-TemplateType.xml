@@ -1,0 +1,18 @@
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <url value="http://fhir.de/ConsentManagement/CodeSystem/TemplateType" />
+  <version value="0.1" />
+  <name value="TemplateType" />
+  <status value="draft" />
+  <date value="2019-12-05" />
+  <description value="Typen des Einwilligungsdokuments" />
+  <caseSensitive value="true" />
+  <content value="complete" />
+  <concept>
+    <code value="WITHDRAWAL" />
+    <display value="Widerrufsvorlage" />
+  </concept>
+  <concept>
+    <code value="REFUSAL" />
+    <display value="Ablehnungsvorlage" />
+  </concept>
+</CodeSystem>
