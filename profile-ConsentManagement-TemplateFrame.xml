@@ -115,10 +115,22 @@
     </element>
     <element id="Questionnaire.item">
       <path value="Questionnaire.item" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="type" />
+        </discriminator>
+        <rules value="closed" />
+      </slicing>
       <min value="1" />
       <mustSupport value="true" />
     </element>
-    <element id="Questionnaire.item.extension">
+    <element id="Questionnaire.item:referencedModule">
+      <path value="Questionnaire.item" />
+      <sliceName value="referencedModule" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Questionnaire.item:referencedModule.extension">
       <path value="Questionnaire.item.extension" />
       <slicing>
         <discriminator>
@@ -128,38 +140,131 @@
         <rules value="open" />
       </slicing>
     </element>
-    <element id="Questionnaire.item.extension:xacmlTemplate">
+    <element id="Questionnaire.item:referencedModule.extension:designNote">
       <path value="Questionnaire.item.extension" />
-      <sliceName value="xacmlTemplate" />
+      <sliceName value="designNote" />
+      <min value="0" />
+      <max value="1" />
       <type>
         <code value="Extension" />
-        <profile value="http://fhir.de/ConsentManagement/StructureDefinition/XacmlTemplate" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/designNote" />
       </type>
       <mustSupport value="true" />
     </element>
-    <element id="Questionnaire.item.extension:xacmlTemplate.value[x]">
+    <element id="Questionnaire.item:referencedModule.extension:subQuestionnaire">
+      <path value="Questionnaire.item.extension" />
+      <sliceName value="subQuestionnaire" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://fhir.de/ConsentManagement/StructureDefinition/SubQuestionnaire" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="Questionnaire.item:referencedModule.extension:subQuestionnaire.value[x]">
       <path value="Questionnaire.item.extension.value[x]" />
       <mustSupport value="true" />
     </element>
-    <element id="Questionnaire.item.linkId">
+    <element id="Questionnaire.item:referencedModule.extension:subQuestionnaire.value[x].reference">
+      <path value="Questionnaire.item.extension.value[x].reference" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Questionnaire.item:referencedModule.linkId">
       <path value="Questionnaire.item.linkId" />
       <mustSupport value="true" />
     </element>
-    <element id="Questionnaire.item.text">
+    <element id="Questionnaire.item:referencedModule.definition">
+      <path value="Questionnaire.item.definition" />
+      <max value="0" />
+    </element>
+    <element id="Questionnaire.item:referencedModule.code">
+      <path value="Questionnaire.item.code" />
+      <max value="0" />
+    </element>
+    <element id="Questionnaire.item:referencedModule.prefix">
+      <path value="Questionnaire.item.prefix" />
+      <max value="0" />
+    </element>
+    <element id="Questionnaire.item:referencedModule.text">
       <path value="Questionnaire.item.text" />
-      <short value="Vollständiger Text des Moduls aus dem Einwilligungsdokument" />
-      <comment value="Hier wird der unformatierte Text abgelegt.&#xD;&#xA;Zur formatierten Ablage kann die spezifizierte rendering-markdown-Extension verwendet werden.&#xD;&#xA;In diesem Fall muss der reine Textinhalt identisch sein." />
-      <condition value="cm-1" />
-      <constraint>
-        <key value="cm-1" />
-        <severity value="error" />
-        <human value="Wenn der Text im Markdown-Format angegeben ist, muss er auch als Klartext angegeben sein." />
-        <expression value="extension('http://hl7.org/fhir/StructureDefinition/rendering-markdown').empty() or hasValue()" />
-        <source value="Questionnaire" />
-      </constraint>
+      <max value="0" />
+    </element>
+    <element id="Questionnaire.item:referencedModule.type">
+      <path value="Questionnaire.item.type" />
+      <fixedCode value="group" />
       <mustSupport value="true" />
     </element>
-    <element id="Questionnaire.item.text.extension">
+    <element id="Questionnaire.item:referencedModule.required">
+      <path value="Questionnaire.item.required" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Questionnaire.item:referencedModule.answerValueSet">
+      <path value="Questionnaire.item.answerValueSet" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Questionnaire.item:referencedModule.answerOption">
+      <path value="Questionnaire.item.answerOption" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Questionnaire.item:referencedModule.initial">
+      <path value="Questionnaire.item.initial" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Questionnaire.item:referencedModule.item">
+      <path value="Questionnaire.item.item" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Questionnaire.item:additionalItem">
+      <path value="Questionnaire.item" />
+      <sliceName value="additionalItem" />
+    </element>
+    <element id="Questionnaire.item:additionalItem.extension">
+      <path value="Questionnaire.item.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Questionnaire.item:additionalItem.extension:designNote">
+      <path value="Questionnaire.item.extension" />
+      <sliceName value="designNote" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/designNote" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="Questionnaire.item:additionalItem.linkId">
+      <path value="Questionnaire.item.linkId" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Questionnaire.item:additionalItem.code">
+      <path value="Questionnaire.item.code" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Questionnaire.item:additionalItem.code.system">
+      <path value="Questionnaire.item.code.system" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Questionnaire.item:additionalItem.code.code">
+      <path value="Questionnaire.item.code.code" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Questionnaire.item:additionalItem.text">
+      <path value="Questionnaire.item.text" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Questionnaire.item:additionalItem.text.extension">
       <path value="Questionnaire.item.text.extension" />
       <slicing>
         <discriminator>
@@ -169,39 +274,161 @@
         <rules value="open" />
       </slicing>
     </element>
-    <element id="Questionnaire.item.text.extension:renderingMarkdown">
+    <element id="Questionnaire.item:additionalItem.text.extension:renderingMarkdown">
       <path value="Questionnaire.item.text.extension" />
       <sliceName value="renderingMarkdown" />
-      <short value="Text als Markdown" />
+      <min value="0" />
+      <max value="1" />
       <type>
         <code value="Extension" />
         <profile value="http://hl7.org/fhir/StructureDefinition/rendering-markdown" />
       </type>
-      <condition value="cm-1" />
     </element>
-    <element id="Questionnaire.item.text.extension:renderingMarkdown.value[x]:valueMarkdown">
+    <element id="Questionnaire.item:additionalItem.text.extension:renderingMarkdown.value[x]">
       <path value="Questionnaire.item.text.extension.value[x]" />
+      <slicing>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Questionnaire.item:additionalItem.text.extension:renderingMarkdown.value[x]:valueMarkdown">
+      <path value="Questionnaire.item.text.extension.valueMarkdown" />
       <sliceName value="valueMarkdown" />
       <min value="1" />
     </element>
-    <element id="Questionnaire.item.text.extension:renderingXhtml">
+    <element id="Questionnaire.item:additionalItem.text.extension:renderingXhtml">
       <path value="Questionnaire.item.text.extension" />
       <sliceName value="renderingXhtml" />
+      <min value="0" />
+      <max value="1" />
       <type>
         <code value="Extension" />
         <profile value="http://hl7.org/fhir/StructureDefinition/rendering-xhtml" />
       </type>
     </element>
-    <element id="Questionnaire.item.text.extension:renderingXhtml.value[x]:valueString">
+    <element id="Questionnaire.item:additionalItem.text.extension:renderingXhtml.value[x]">
       <path value="Questionnaire.item.text.extension.value[x]" />
+      <slicing>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Questionnaire.item:additionalItem.text.extension:renderingXhtml.value[x]:valueString">
+      <path value="Questionnaire.item.text.extension.valueString" />
       <sliceName value="valueString" />
       <min value="1" />
     </element>
-    <element id="Questionnaire.item.type">
+    <element id="Questionnaire.item:additionalItem.type">
       <path value="Questionnaire.item.type" />
       <mustSupport value="true" />
     </element>
-    <element id="Questionnaire.item.item">
+    <element id="Questionnaire.item:additionalItem.required">
+      <path value="Questionnaire.item.required" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Questionnaire.item:additionalItem.item">
+      <path value="Questionnaire.item.item" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Questionnaire.item:displayItem">
+      <path value="Questionnaire.item" />
+      <sliceName value="displayItem" />
+      <short value="anzuzeigendes Item mit statischem Text" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Questionnaire.item:displayItem.linkId">
+      <path value="Questionnaire.item.linkId" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Questionnaire.item:displayItem.text">
+      <path value="Questionnaire.item.text" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Questionnaire.item:displayItem.text.extension">
+      <path value="Questionnaire.item.text.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Questionnaire.item:displayItem.text.extension:renderingMarkdown">
+      <path value="Questionnaire.item.text.extension" />
+      <sliceName value="renderingMarkdown" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/rendering-markdown" />
+      </type>
+    </element>
+    <element id="Questionnaire.item:displayItem.text.extension:renderingMarkdown.value[x]">
+      <path value="Questionnaire.item.text.extension.value[x]" />
+      <slicing>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Questionnaire.item:displayItem.text.extension:renderingMarkdown.value[x]:valueMarkdown">
+      <path value="Questionnaire.item.text.extension.valueMarkdown" />
+      <sliceName value="valueMarkdown" />
+      <min value="1" />
+    </element>
+    <element id="Questionnaire.item:displayItem.text.extension:renderingXhtml">
+      <path value="Questionnaire.item.text.extension" />
+      <sliceName value="renderingXhtml" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/rendering-xhtml" />
+      </type>
+    </element>
+    <element id="Questionnaire.item:displayItem.text.extension:renderingXhtml.value[x]">
+      <path value="Questionnaire.item.text.extension.value[x]" />
+      <slicing>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Questionnaire.item:displayItem.text.extension:renderingXhtml.value[x]:valueString">
+      <path value="Questionnaire.item.text.extension.valueString" />
+      <sliceName value="valueString" />
+      <min value="1" />
+    </element>
+    <element id="Questionnaire.item:displayItem.type">
+      <path value="Questionnaire.item.type" />
+      <fixedCode value="display" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Questionnaire.item:displayItem.required">
+      <path value="Questionnaire.item.required" />
+      <max value="0" />
+    </element>
+    <element id="Questionnaire.item:displayItem.repeats">
+      <path value="Questionnaire.item.repeats" />
+      <max value="0" />
+    </element>
+    <element id="Questionnaire.item:displayItem.readOnly">
+      <path value="Questionnaire.item.readOnly" />
+      <max value="0" />
+    </element>
+    <element id="Questionnaire.item:displayItem.maxLength">
+      <path value="Questionnaire.item.maxLength" />
+      <max value="0" />
+    </element>
+    <element id="Questionnaire.item:displayItem.answerValueSet">
+      <path value="Questionnaire.item.answerValueSet" />
+      <max value="0" />
+    </element>
+    <element id="Questionnaire.item:displayItem.answerOption">
+      <path value="Questionnaire.item.answerOption" />
+      <max value="0" />
+    </element>
+    <element id="Questionnaire.item:displayItem.initial">
+      <path value="Questionnaire.item.initial" />
+      <max value="0" />
+    </element>
+    <element id="Questionnaire.item:displayItem.item">
       <path value="Questionnaire.item.item" />
       <mustSupport value="true" />
     </element>

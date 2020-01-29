@@ -121,6 +121,17 @@
       <path value="Questionnaire.item.extension.value[x]" />
       <mustSupport value="true" />
     </element>
+    <element id="Questionnaire.item.extension:designNote">
+      <path value="Questionnaire.item.extension" />
+      <sliceName value="designNote" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/designNote" />
+      </type>
+      <mustSupport value="true" />
+    </element>
     <element id="Questionnaire.item.linkId">
       <path value="Questionnaire.item.linkId" />
       <mustSupport value="true" />
@@ -159,6 +170,12 @@
       </type>
       <condition value="cm-1" />
     </element>
+    <element id="Questionnaire.item.text.extension:renderingMarkdown.value[x]">
+      <path value="Questionnaire.item.text.extension.value[x]" />
+      <slicing>
+        <rules value="open" />
+      </slicing>
+    </element>
     <element id="Questionnaire.item.text.extension:renderingMarkdown.value[x]:valueMarkdown">
       <path value="Questionnaire.item.text.extension.value[x]" />
       <sliceName value="valueMarkdown" />
@@ -171,6 +188,12 @@
         <code value="Extension" />
         <profile value="http://hl7.org/fhir/StructureDefinition/rendering-xhtml" />
       </type>
+    </element>
+    <element id="Questionnaire.item.text.extension:renderingXhtml.value[x]">
+      <path value="Questionnaire.item.text.extension.value[x]" />
+      <slicing>
+        <rules value="open" />
+      </slicing>
     </element>
     <element id="Questionnaire.item.text.extension:renderingXhtml.value[x]:valueString">
       <path value="Questionnaire.item.text.extension.value[x]" />
