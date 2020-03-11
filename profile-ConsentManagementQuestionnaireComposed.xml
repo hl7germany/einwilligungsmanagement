@@ -106,6 +106,19 @@
       <definition value="Titel des Consent Moduls zur Darstellung auf dem späteren Consent Template" />
       <mustSupport value="true" />
     </element>
+    <element id="Questionnaire.derivedFrom">
+      <path value="Questionnaire.derivedFrom" />
+      <short value="Verweis auf den kanonischen, global eindeutigen Namen(&quot;Canonical identifier&quot;) des Templates Frames. " />
+      <definition value="Verweis auf den kanonischen, global eindeutigen Namen(&quot;Canonical identifier&quot;) des Templates Frames.&#xD;&#xA;Bei Bedarf mit Angabe der Version in Pipe-Notation (vgl. http://www.hl7.org/fhir/datatypes.html#canonical )" />
+      <comment value="Beispiel: http://meine-klinik.de/fhir/NamingSystem/ProjektX/FragebogenTemplate12|1.5.6" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="canonical" />
+        <targetProfile value="http://fhir.de/ConsentManagement/StructureDefinition/TemplateFrame" />
+      </type>
+      <mustSupport value="true" />
+    </element>
     <element id="Questionnaire.status">
       <path value="Questionnaire.status" />
       <mustSupport value="true" />
@@ -159,7 +172,6 @@
     <element id="Questionnaire.item.extension:subQuestionnaire">
       <path value="Questionnaire.item.extension" />
       <sliceName value="subQuestionnaire" />
-      <min value="0" />
       <max value="1" />
       <type>
         <code value="Extension" />
@@ -210,42 +222,26 @@
     <element id="Questionnaire.item.text.extension:renderingMarkdown">
       <path value="Questionnaire.item.text.extension" />
       <sliceName value="renderingMarkdown" />
-      <min value="0" />
-      <max value="1" />
       <type>
         <code value="Extension" />
         <profile value="http://hl7.org/fhir/StructureDefinition/rendering-markdown" />
       </type>
     </element>
-    <element id="Questionnaire.item.text.extension:renderingMarkdown.value[x]">
-      <path value="Questionnaire.item.text.extension.value[x]" />
-      <slicing>
-        <rules value="open" />
-      </slicing>
-    </element>
     <element id="Questionnaire.item.text.extension:renderingMarkdown.value[x]:valueMarkdown">
-      <path value="Questionnaire.item.text.extension.valueMarkdown" />
+      <path value="Questionnaire.item.text.extension.value[x]" />
       <sliceName value="valueMarkdown" />
       <min value="1" />
     </element>
     <element id="Questionnaire.item.text.extension:renderingXhtml">
       <path value="Questionnaire.item.text.extension" />
       <sliceName value="renderingXhtml" />
-      <min value="0" />
-      <max value="1" />
       <type>
         <code value="Extension" />
         <profile value="http://hl7.org/fhir/StructureDefinition/rendering-xhtml" />
       </type>
     </element>
-    <element id="Questionnaire.item.text.extension:renderingXhtml.value[x]">
-      <path value="Questionnaire.item.text.extension.value[x]" />
-      <slicing>
-        <rules value="open" />
-      </slicing>
-    </element>
     <element id="Questionnaire.item.text.extension:renderingXhtml.value[x]:valueString">
-      <path value="Questionnaire.item.text.extension.valueString" />
+      <path value="Questionnaire.item.text.extension.value[x]" />
       <sliceName value="valueString" />
       <min value="1" />
     </element>

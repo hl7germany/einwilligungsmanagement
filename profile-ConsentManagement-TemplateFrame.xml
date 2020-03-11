@@ -72,6 +72,14 @@
       <path value="Questionnaire.extension.value[x].code" />
       <mustSupport value="true" />
     </element>
+    <element id="Questionnaire.url">
+      <path value="Questionnaire.url" />
+      <short value="Kanonischer, global eindeutiger Name (&quot;Canonical identifier&quot;) des Templates Frames" />
+      <definition value="Kanonischer, global eindeutiger Name (&quot;Canonical identifier&quot;) des Templates Frames. Wird benötigt zur Rückreferenzierung aus dem QuestionnaireComposed." />
+      <comment value="Beispiel: http://meine-klinik.de/fhir/NamingSystem/ProjektX/FragebogenTemplate12" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
     <element id="Questionnaire.identifier">
       <path value="Questionnaire.identifier" />
       <short value="Identifikator eines Template-Frames" />
