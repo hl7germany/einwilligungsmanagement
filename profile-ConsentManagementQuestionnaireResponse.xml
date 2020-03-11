@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <url value="http://fhir.de/ConsentManagement/StructureDefinition/QuestionnaireResponse" />
+  <version value="0.1" />
+  <name value="ConsentManagementQuestionnaireResponse" />
+  <title value="Consent Management QuestionnaireResponse" />
+  <status value="draft" />
+  <experimental value="true" />
+  <date value="2020-03-11" />
+  <publisher value="Interoperabilitätsforum, AG Einwilligungsmanagement" />
+  <description value="Der ausgefüllte Fragebogen zur Einwilligung." />
+  <fhirVersion value="4.0.0" />
+  <mapping>
+    <identity value="workflow" />
+    <uri value="http://hl7.org/fhir/workflow" />
+    <name value="Workflow Pattern" />
+  </mapping>
+  <mapping>
+    <identity value="rim" />
+    <uri value="http://hl7.org/v3" />
+    <name value="RIM Mapping" />
+  </mapping>
+  <mapping>
+    <identity value="w5" />
+    <uri value="http://hl7.org/fhir/fivews" />
+    <name value="FiveWs Pattern Mapping" />
+  </mapping>
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="QuestionnaireResponse" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="QuestionnaireResponse.language">
+      <path value="QuestionnaireResponse.language" />
+      <mustSupport value="true" />
+    </element>
+    <element id="QuestionnaireResponse.questionnaire">
+      <path value="QuestionnaireResponse.questionnaire" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="QuestionnaireResponse.status">
+      <path value="QuestionnaireResponse.status" />
+      <mustSupport value="true" />
+    </element>
+    <element id="QuestionnaireResponse.subject">
+      <path value="QuestionnaireResponse.subject" />
+      <short value="Der Patient, für den die Einwilligung gilt" />
+      <min value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="QuestionnaireResponse.subject.reference">
+      <path value="QuestionnaireResponse.subject.reference" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="QuestionnaireResponse.authored">
+      <path value="QuestionnaireResponse.authored" />
+      <mustSupport value="true" />
+    </element>
+    <element id="QuestionnaireResponse.author">
+      <path value="QuestionnaireResponse.author" />
+      <short value="Die Person, welche die Einwilligungsangaben erfasst/dokumentiert" />
+      <comment value="Füllt der betroffene Patient selbst den Fragebogen aus, so ist dieser hier erneut zu referenzieren (author = subject)." />
+      <min value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Practitioner" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/PractitionerRole" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/RelatedPerson" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="QuestionnaireResponse.source">
+      <path value="QuestionnaireResponse.source" />
+      <short value="Die Person, von der die Einwilligungsangaben stammen" />
+      <comment value="Stammen die Antworten auf die Fragen vom betroffenen Patienten selbst, so ist dieser hier erneut zu referenzieren (source = subject)." />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="QuestionnaireResponse.item">
+      <path value="QuestionnaireResponse.item" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="QuestionnaireResponse.item.linkId">
+      <path value="QuestionnaireResponse.item.linkId" />
+      <mustSupport value="true" />
+    </element>
+    <element id="QuestionnaireResponse.item.answer">
+      <path value="QuestionnaireResponse.item.answer" />
+      <mustSupport value="true" />
+    </element>
+    <element id="QuestionnaireResponse.item.answer.value[x]">
+      <path value="QuestionnaireResponse.item.answer.value[x]" />
+      <mustSupport value="true" />
+    </element>
+    <element id="QuestionnaireResponse.item.answer.item">
+      <path value="QuestionnaireResponse.item.answer.item" />
+      <mustSupport value="true" />
+    </element>
+    <element id="QuestionnaireResponse.item.item">
+      <path value="QuestionnaireResponse.item.item" />
+      <mustSupport value="true" />
+    </element>
+  </differential>
+</StructureDefinition>
