@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <url value="http://fhir.de/ConsentManagement/StructureDefinition/QuestionnaireComposed" />
+  <version value="0.1" />
+  <name value="ConsentManagementQuestionnaireComposed" />
+  <title value="Consent Management Questionnaire Composed" />
+  <status value="draft" />
+  <experimental value="true" />
+  <date value="2020-03-11" />
+  <publisher value="Interoperabilitätsforum, AG Einwilligungsmanagement" />
+  <description value="Aus TemplateFrame und den dort referenzierten TemplateModules generiertes, vollständig renderbares Questionnaire zur Darstellung (Rendering) der Einwilligung." />
+  <fhirVersion value="4.0.0" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Questionnaire" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Questionnaire" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Questionnaire.language">
+      <path value="Questionnaire.language" />
+      <short value="Sprache des Moduls" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Questionnaire.extension">
+      <path value="Questionnaire.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Questionnaire.extension:domainReference">
+      <path value="Questionnaire.extension" />
+      <sliceName value="domainReference" />
+      <short value="Referenz zu einer Domain, in der dieses Modul verwendet wird" />
+      <min value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://fhir.de/ConsentManagement/StructureDefinition/DomainReference" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="Questionnaire.extension:domainReference.extension:domain">
+      <path value="Questionnaire.extension.extension" />
+      <sliceName value="domain" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Questionnaire.extension:domainReference.value[x]">
+      <path value="Questionnaire.extension.value[x]" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Questionnaire.extension:signatureType">
+      <path value="Questionnaire.extension" />
+      <sliceName value="signatureType" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://fhir.de/ConsentManagement/StructureDefinition/SignatureType" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="Questionnaire.extension:signatureType.value[x]">
+      <path value="Questionnaire.extension.value[x]" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Questionnaire.extension:signatureType.value[x].system">
+      <path value="Questionnaire.extension.value[x].system" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Questionnaire.extension:signatureType.value[x].code">
+      <path value="Questionnaire.extension.value[x].code" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Questionnaire.identifier">
+      <path value="Questionnaire.identifier" />
+      <short value="Identifikator eines renderfähigen Fragebogens" />
+      <definition value="Identifikator eines Moduls. Dient dem Zweck des systemübergreifen Identifizierens, z.B. beim verteilten Consent Management" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Questionnaire.identifier.system">
+      <path value="Questionnaire.identifier.system" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Questionnaire.identifier.value">
+      <path value="Questionnaire.identifier.value" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Questionnaire.version">
+      <path value="Questionnaire.version" />
+      <short value="Versionsangabe des renderfähigen Fragebogens" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Questionnaire.name">
+      <path value="Questionnaire.name" />
+      <short value="Name des renderfähigen Fragebogens" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Questionnaire.title">
+      <path value="Questionnaire.title" />
+      <short value="Anzuzeigender Kurztitel der Einwilligung" />
+      <definition value="Titel des Consent Moduls zur Darstellung auf dem späteren Consent Template" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Questionnaire.status">
+      <path value="Questionnaire.status" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Questionnaire.contact">
+      <path value="Questionnaire.contact" />
+      <short value="Ansprechpartner" />
+      <definition value="Inhaltlicher Ansprechpartner der auf der Einwilligungsvorlage angezeigt werden soll" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Questionnaire.description">
+      <path value="Questionnaire.description" />
+      <short value="Zweckbeschreibung des Consent Modules" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Questionnaire.code">
+      <path value="Questionnaire.code" />
+      <min value="1" />
+      <max value="1" />
+      <mustSupport value="true" />
+      <binding>
+        <strength value="extensible" />
+        <valueSet value="http://fhir.de/ConsentManagement/ValueSet/TemplateType" />
+      </binding>
+    </element>
+    <element id="Questionnaire.code.system">
+      <path value="Questionnaire.code.system" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Questionnaire.code.code">
+      <path value="Questionnaire.code.code" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Questionnaire.item">
+      <path value="Questionnaire.item" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Questionnaire.item.extension">
+      <path value="Questionnaire.item.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Questionnaire.item.extension:subQuestionnaire">
+      <path value="Questionnaire.item.extension" />
+      <sliceName value="subQuestionnaire" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://fhir.de/ConsentManagement/StructureDefinition/SubQuestionnaire" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="Questionnaire.item.extension:subQuestionnaire.value[x]">
+      <path value="Questionnaire.item.extension.value[x]" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Questionnaire.item.extension:subQuestionnaire.value[x].reference">
+      <path value="Questionnaire.item.extension.value[x].reference" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Questionnaire.item.linkId">
+      <path value="Questionnaire.item.linkId" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Questionnaire.item.code">
+      <path value="Questionnaire.item.code" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Questionnaire.item.code.system">
+      <path value="Questionnaire.item.code.system" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Questionnaire.item.code.code">
+      <path value="Questionnaire.item.code.code" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Questionnaire.item.text">
+      <path value="Questionnaire.item.text" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Questionnaire.item.text.extension">
+      <path value="Questionnaire.item.text.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Questionnaire.item.text.extension:renderingMarkdown">
+      <path value="Questionnaire.item.text.extension" />
+      <sliceName value="renderingMarkdown" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/rendering-markdown" />
+      </type>
+    </element>
+    <element id="Questionnaire.item.text.extension:renderingMarkdown.value[x]">
+      <path value="Questionnaire.item.text.extension.value[x]" />
+      <slicing>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Questionnaire.item.text.extension:renderingMarkdown.value[x]:valueMarkdown">
+      <path value="Questionnaire.item.text.extension.valueMarkdown" />
+      <sliceName value="valueMarkdown" />
+      <min value="1" />
+    </element>
+    <element id="Questionnaire.item.text.extension:renderingXhtml">
+      <path value="Questionnaire.item.text.extension" />
+      <sliceName value="renderingXhtml" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/rendering-xhtml" />
+      </type>
+    </element>
+    <element id="Questionnaire.item.text.extension:renderingXhtml.value[x]">
+      <path value="Questionnaire.item.text.extension.value[x]" />
+      <slicing>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Questionnaire.item.text.extension:renderingXhtml.value[x]:valueString">
+      <path value="Questionnaire.item.text.extension.valueString" />
+      <sliceName value="valueString" />
+      <min value="1" />
+    </element>
+    <element id="Questionnaire.item.type">
+      <path value="Questionnaire.item.type" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Questionnaire.item.required">
+      <path value="Questionnaire.item.required" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Questionnaire.item.item">
+      <path value="Questionnaire.item.item" />
+      <mustSupport value="true" />
+    </element>
+  </differential>
+</StructureDefinition>

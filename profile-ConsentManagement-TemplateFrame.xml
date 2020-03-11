@@ -3,7 +3,7 @@
   <url value="http://fhir.de/ConsentManagement/StructureDefinition/TemplateFrame" />
   <version value="0.1" />
   <name value="ConsentManagementTemplateFrame" />
-  <title value="Consent Management Template Module" />
+  <title value="Consent Management Template Frame" />
   <status value="draft" />
   <experimental value="true" />
   <date value="2019-07-31" />
@@ -51,9 +51,30 @@
       <path value="Questionnaire.extension.value[x]" />
       <mustSupport value="true" />
     </element>
+    <element id="Questionnaire.extension:signatureType">
+      <path value="Questionnaire.extension" />
+      <sliceName value="signatureType" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://fhir.de/ConsentManagement/StructureDefinition/SignatureType" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="Questionnaire.extension:signatureType.value[x]">
+      <path value="Questionnaire.extension.value[x]" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Questionnaire.extension:signatureType.value[x].system">
+      <path value="Questionnaire.extension.value[x].system" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Questionnaire.extension:signatureType.value[x].code">
+      <path value="Questionnaire.extension.value[x].code" />
+      <mustSupport value="true" />
+    </element>
     <element id="Questionnaire.identifier">
       <path value="Questionnaire.identifier" />
-      <short value="Identifikator eines Moduls" />
+      <short value="Identifikator eines Template-Frames" />
       <definition value="Identifikator eines Moduls. Dient dem Zweck des systemübergreifen Identifizierens, z.B. beim verteilten Consent Management" />
       <mustSupport value="true" />
     </element>
@@ -69,23 +90,30 @@
     </element>
     <element id="Questionnaire.version">
       <path value="Questionnaire.version" />
-      <short value="Versionsangabe des Moduls" />
+      <short value="Versionsangabe des Template Frames" />
       <min value="1" />
       <mustSupport value="true" />
     </element>
     <element id="Questionnaire.name">
       <path value="Questionnaire.name" />
-      <short value="Name des Consent Moduls" />
+      <short value="Name des Template Frames" />
       <min value="1" />
       <mustSupport value="true" />
     </element>
     <element id="Questionnaire.title">
       <path value="Questionnaire.title" />
-      <short value="Titel des Consent Moduls zur Darstellung auf dem späteren Consent Template" />
+      <short value="Anzuzeigender Kurztitel der Einwilligung" />
+      <definition value="Titel des Consent Moduls zur Darstellung auf dem späteren Consent Template" />
       <mustSupport value="true" />
     </element>
     <element id="Questionnaire.status">
       <path value="Questionnaire.status" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Questionnaire.contact">
+      <path value="Questionnaire.contact" />
+      <short value="Ansprechpartner" />
+      <definition value="Inhaltlicher Ansprechpartner der auf der Einwilligungsvorlage angezeigt werden soll" />
       <mustSupport value="true" />
     </element>
     <element id="Questionnaire.description">
@@ -143,8 +171,6 @@
     <element id="Questionnaire.item:referencedModule.extension:designNote">
       <path value="Questionnaire.item.extension" />
       <sliceName value="designNote" />
-      <min value="0" />
-      <max value="1" />
       <type>
         <code value="Extension" />
         <profile value="http://hl7.org/fhir/StructureDefinition/designNote" />
@@ -232,8 +258,6 @@
     <element id="Questionnaire.item:additionalItem.extension:designNote">
       <path value="Questionnaire.item.extension" />
       <sliceName value="designNote" />
-      <min value="0" />
-      <max value="1" />
       <type>
         <code value="Extension" />
         <profile value="http://hl7.org/fhir/StructureDefinition/designNote" />
@@ -246,7 +270,6 @@
     </element>
     <element id="Questionnaire.item:additionalItem.code">
       <path value="Questionnaire.item.code" />
-      <min value="1" />
       <mustSupport value="true" />
     </element>
     <element id="Questionnaire.item:additionalItem.code.system">
@@ -277,8 +300,6 @@
     <element id="Questionnaire.item:additionalItem.text.extension:renderingMarkdown">
       <path value="Questionnaire.item.text.extension" />
       <sliceName value="renderingMarkdown" />
-      <min value="0" />
-      <max value="1" />
       <type>
         <code value="Extension" />
         <profile value="http://hl7.org/fhir/StructureDefinition/rendering-markdown" />
@@ -291,15 +312,13 @@
       </slicing>
     </element>
     <element id="Questionnaire.item:additionalItem.text.extension:renderingMarkdown.value[x]:valueMarkdown">
-      <path value="Questionnaire.item.text.extension.valueMarkdown" />
+      <path value="Questionnaire.item.text.extension.value[x]" />
       <sliceName value="valueMarkdown" />
       <min value="1" />
     </element>
     <element id="Questionnaire.item:additionalItem.text.extension:renderingXhtml">
       <path value="Questionnaire.item.text.extension" />
       <sliceName value="renderingXhtml" />
-      <min value="0" />
-      <max value="1" />
       <type>
         <code value="Extension" />
         <profile value="http://hl7.org/fhir/StructureDefinition/rendering-xhtml" />
@@ -312,7 +331,7 @@
       </slicing>
     </element>
     <element id="Questionnaire.item:additionalItem.text.extension:renderingXhtml.value[x]:valueString">
-      <path value="Questionnaire.item.text.extension.valueString" />
+      <path value="Questionnaire.item.text.extension.value[x]" />
       <sliceName value="valueString" />
       <min value="1" />
     </element>
@@ -356,8 +375,6 @@
     <element id="Questionnaire.item:displayItem.text.extension:renderingMarkdown">
       <path value="Questionnaire.item.text.extension" />
       <sliceName value="renderingMarkdown" />
-      <min value="0" />
-      <max value="1" />
       <type>
         <code value="Extension" />
         <profile value="http://hl7.org/fhir/StructureDefinition/rendering-markdown" />
@@ -370,15 +387,13 @@
       </slicing>
     </element>
     <element id="Questionnaire.item:displayItem.text.extension:renderingMarkdown.value[x]:valueMarkdown">
-      <path value="Questionnaire.item.text.extension.valueMarkdown" />
+      <path value="Questionnaire.item.text.extension.value[x]" />
       <sliceName value="valueMarkdown" />
       <min value="1" />
     </element>
     <element id="Questionnaire.item:displayItem.text.extension:renderingXhtml">
       <path value="Questionnaire.item.text.extension" />
       <sliceName value="renderingXhtml" />
-      <min value="0" />
-      <max value="1" />
       <type>
         <code value="Extension" />
         <profile value="http://hl7.org/fhir/StructureDefinition/rendering-xhtml" />
@@ -391,7 +406,7 @@
       </slicing>
     </element>
     <element id="Questionnaire.item:displayItem.text.extension:renderingXhtml.value[x]:valueString">
-      <path value="Questionnaire.item.text.extension.valueString" />
+      <path value="Questionnaire.item.text.extension.value[x]" />
       <sliceName value="valueString" />
       <min value="1" />
     </element>
