@@ -6,7 +6,7 @@
   <title value="Consent Management Template Module" />
   <status value="draft" />
   <experimental value="true" />
-  <date value="2019-07-31" />
+  <date value="2020-04-01" />
   <publisher value="Interoperabilitätsforum, AG Einwilligungsmanagement" />
   <description value="Wiederverwendbares Modul innerhalb eines Gesamt-Questionnaires.&#xD;&#xA;Wird i.d.R. im Kontext des Gesamtsystems erstellt/definiert und in einem oder mehreren Questionnaires verwendet/eingebunden (TemplateFrames)." />
   <fhirVersion value="4.0.0" />
@@ -17,6 +17,12 @@
   <derivation value="constraint" />
   <differential>
     <element id="Questionnaire.language">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Questionnaire.language" />
       <short value="Sprache des Moduls" />
       <mustSupport value="true" />
@@ -32,6 +38,12 @@
       </slicing>
     </element>
     <element id="Questionnaire.extension:domainReference">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Questionnaire.extension" />
       <sliceName value="domainReference" />
       <short value="Referenz zu einer Domain, in der dieses Modul verwendet wird" />
@@ -43,57 +55,123 @@
       <mustSupport value="true" />
     </element>
     <element id="Questionnaire.extension:domainReference.extension:domain">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Questionnaire.extension.extension" />
       <sliceName value="domain" />
       <mustSupport value="true" />
     </element>
     <element id="Questionnaire.extension:domainReference.value[x]">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Questionnaire.extension.value[x]" />
       <mustSupport value="true" />
     </element>
     <element id="Questionnaire.identifier">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Questionnaire.identifier" />
       <short value="Identifikator eines Moduls" />
       <definition value="Identifikator eines Moduls. Dient dem Zweck des systemübergreifen Identifizierens, z.B. beim verteilten Consent Management" />
       <mustSupport value="true" />
     </element>
     <element id="Questionnaire.identifier.system">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Questionnaire.identifier.system" />
       <min value="1" />
       <mustSupport value="true" />
     </element>
     <element id="Questionnaire.identifier.value">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Questionnaire.identifier.value" />
       <min value="1" />
       <mustSupport value="true" />
     </element>
     <element id="Questionnaire.version">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Questionnaire.version" />
       <short value="Versionsangabe des Moduls" />
       <min value="1" />
       <mustSupport value="true" />
     </element>
     <element id="Questionnaire.name">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Questionnaire.name" />
       <short value="Name des Consent Moduls" />
       <min value="1" />
       <mustSupport value="true" />
     </element>
     <element id="Questionnaire.title">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Questionnaire.title" />
       <short value="Titel des Consent Moduls zur Darstellung auf dem späteren Consent Template" />
       <mustSupport value="true" />
     </element>
     <element id="Questionnaire.status">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Questionnaire.status" />
       <mustSupport value="true" />
     </element>
     <element id="Questionnaire.description">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Questionnaire.description" />
       <short value="Zweckbeschreibung des Consent Modules" />
       <mustSupport value="true" />
     </element>
     <element id="Questionnaire.item">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Questionnaire.item" />
       <min value="1" />
       <mustSupport value="true" />
@@ -109,6 +187,12 @@
       </slicing>
     </element>
     <element id="Questionnaire.item.extension:xacmlTemplate">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Questionnaire.item.extension" />
       <sliceName value="xacmlTemplate" />
       <type>
@@ -118,14 +202,24 @@
       <mustSupport value="true" />
     </element>
     <element id="Questionnaire.item.extension:xacmlTemplate.value[x]">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Questionnaire.item.extension.value[x]" />
       <mustSupport value="true" />
     </element>
     <element id="Questionnaire.item.extension:designNote">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Questionnaire.item.extension" />
       <sliceName value="designNote" />
-      <min value="0" />
-      <max value="1" />
       <type>
         <code value="Extension" />
         <profile value="http://hl7.org/fhir/StructureDefinition/designNote" />
@@ -133,10 +227,22 @@
       <mustSupport value="true" />
     </element>
     <element id="Questionnaire.item.linkId">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Questionnaire.item.linkId" />
       <mustSupport value="true" />
     </element>
     <element id="Questionnaire.item.text">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Questionnaire.item.text" />
       <short value="Vollständiger Text des Moduls aus dem Einwilligungsdokument" />
       <comment value="Hier wird der unformatierte Text abgelegt.&#xD;&#xA;Zur formatierten Ablage kann die spezifizierte rendering-markdown-Extension verwendet werden.&#xD;&#xA;In diesem Fall muss der reine Textinhalt identisch sein." />
@@ -161,6 +267,12 @@
       </slicing>
     </element>
     <element id="Questionnaire.item.text.extension:renderingMarkdown">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Questionnaire.item.text.extension" />
       <sliceName value="renderingMarkdown" />
       <short value="Text als Markdown" />
@@ -170,18 +282,24 @@
       </type>
       <condition value="cm-1" />
     </element>
-    <element id="Questionnaire.item.text.extension:renderingMarkdown.value[x]">
-      <path value="Questionnaire.item.text.extension.value[x]" />
-      <slicing>
-        <rules value="open" />
-      </slicing>
-    </element>
     <element id="Questionnaire.item.text.extension:renderingMarkdown.value[x]:valueMarkdown">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Questionnaire.item.text.extension.value[x]" />
       <sliceName value="valueMarkdown" />
       <min value="1" />
     </element>
     <element id="Questionnaire.item.text.extension:renderingXhtml">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Questionnaire.item.text.extension" />
       <sliceName value="renderingXhtml" />
       <type>
@@ -189,18 +307,24 @@
         <profile value="http://hl7.org/fhir/StructureDefinition/rendering-xhtml" />
       </type>
     </element>
-    <element id="Questionnaire.item.text.extension:renderingXhtml.value[x]">
-      <path value="Questionnaire.item.text.extension.value[x]" />
-      <slicing>
-        <rules value="open" />
-      </slicing>
-    </element>
     <element id="Questionnaire.item.text.extension:renderingXhtml.value[x]:valueString">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Questionnaire.item.text.extension.value[x]" />
       <sliceName value="valueString" />
       <min value="1" />
     </element>
     <element id="Questionnaire.item.type">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Questionnaire.item.type" />
       <mustSupport value="true" />
     </element>
