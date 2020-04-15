@@ -24,9 +24,9 @@
 	<item>
 		<text>
 			<extension url="http://hl7.org/fhir/StructureDefinition/rendering-xhtml">
-				<valueString value="<div style=\"text-align: justify;\">Ich willige ein in die Erhebung, Verarbeitung, Speicherung und wissenschaftliche Nutzung meiner Patientendaten wie in Punkt <strong>1.1 </strong>bis <strong>1.3 </strong>der Einwilligungserklärung und Punkt 1. der Patienteninformation beschrieben.</div>"/>
+				<valueString value="Ich willige ein in die Erhebung, Verarbeitung, Speicherung und wissenschaftliche Nutzung meiner Patientendaten wie in Punkt 1.1 bis 1.3 der Einwilligungserklärung und Punkt 1. der Patienteninformation beschrieben."/>
 			</extension>
 		</text>
-		<type value="group">
+		<type value="group"/>
 	</item>
 </Questionnaire>
