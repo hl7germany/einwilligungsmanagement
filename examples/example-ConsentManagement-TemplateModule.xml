@@ -1,7 +1,7 @@
 <Questionnaire xmlns="http://hl7.org/fhir">
 	<id value="d7a65ce8-2810-401a-b0db-70782a7b19a6"/>
 	<meta>
-		<lastUpdated value="2019-08-02T10:35:43.5320994+00:00"/>
+		<lastUpdated value="2020-04-15T10:35:43.5320994+00:00"/>
 		<profile value="http://fhir.de/ConsentManagement/StructureDefinition/TemplateModule"/>
 	</meta>
 	<language value="DE"/>
@@ -19,14 +19,18 @@
 	<!-- FHIR will es -->
 	<status value="active"/>
 	<!-- Zweckbeschreibung des Consent Modules -->
-	<description value="Demo Modul der MII für den Standort Greifswald"/>
+	<description value="Markdown Beschreibung des Moduls"/>
 	<!-- Modulinhalt: Text, Frage, ... -->
 	<item>
+		<extension url="http://hl7.org/fhir/StructureDefinition/designNote">
+				<valueMarkdown value="Design Comment des Erstellers"/>
+		</extension>
+		<linkId value="1"/>
 		<text>
 			<extension url="http://hl7.org/fhir/StructureDefinition/rendering-xhtml">
-				<valueString value="Ich willige ein in die Erhebung, Verarbeitung, Speicherung und wissenschaftliche Nutzung meiner Patientendaten wie in Punkt 1.1 bis 1.3 der Einwilligungserklärung und Punkt 1. der Patienteninformation beschrieben."/>
+				<valueString value="Ich willige ein in die &lt;strong&gt;Erhebung, Verarbeitung, Speicherung&lt;/strong&gt; und wissenschaftliche Nutzung meiner Patientendaten wie in Punkt 1.1 bis 1.3 der Einwilligungserklärung und Punkt 1. der Patienteninformation beschrieben."/>
 			</extension>
 		</text>
-		<type value="group"/>
+		<type value="display"/>
 	</item>
 </Questionnaire>
