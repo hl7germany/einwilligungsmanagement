@@ -11,7 +11,7 @@
 			<reference value="ResearchStudy/d7a65ce8-2810-401a-b0db-70782a7b19a6"/>
 		</valueReference>
 	</extension>
-	<version value="1.1.2"/>
+	<version value="1.6.a"/>
 	<!-- kontextweit eindeutiger, computer-friendly Name des Consent Moduls -->
 	<name value="m_patdat_erheben_speichern_nutzen"/>
 	<!-- human-friendly Name des Consent Moduls -->

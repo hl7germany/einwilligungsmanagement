@@ -4,8 +4,8 @@
         <lastUpdated value="2019-08-02T10:35:43.5320994+00:00" />
         <profile value="http://fhir.de/ConsentManagement/StructureDefinition/Domain/ResearchStudy-MII-gICS" />
     </meta>
-    <extension url="http://fhir.de/ConsentManagement/StructureDefinition/VersionLevel">
-        <valueString value="3" />
+    <extension url="http://fhir.de/ConsentManagement/StructureDefinition/VersionFormat">
+        <valueString value="MajorMinorChar" />
     </extension>
     <extension url="http://fhir.de/ConsentManagement/StructureDefinition/Logo">
         <valueAttachment>

@@ -26,23 +26,26 @@
         <rules value="open" />
       </slicing>
     </element>
-    <element id="ResearchStudy.extension:versionLevel">
+    <element id="ResearchStudy.extension:versionFormat">
       <path value="ResearchStudy.extension" />
-      <sliceName value="versionLevel" />
-      <short value="Versionierungslevel der Policies, Modules und Templates für diese Consent Domain" />
+      <sliceName value="versionFormat" />
+      <short value="Versionierungsformat der Policies, Modules und Templates für diese Consent Domain" />
+      <definition value="Optional Extension Element - found in all resources." />
+      <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
       <min value="1" />
       <max value="1" />
       <type>
         <code value="Extension" />
-        <profile value="http://fhir.de/ConsentManagement/StructureDefinition/VersionLevel" />
+        <profile value="http://fhir.de/ConsentManagement/StructureDefinition/VersionFormat" />
       </type>
-      <mustSupport value="true" />
-    </element>
-    <element id="ResearchStudy.extension:versionLevel.value[x]">
-      <path value="ResearchStudy.extension.value[x]" />
-      <mustSupport value="true" />
     </element>
     <element id="ResearchStudy.extension:logo">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="ResearchStudy.extension" />
       <sliceName value="logo" />
       <short value="Logo der Studie" />
@@ -54,10 +57,22 @@
       <mustSupport value="true" />
     </element>
     <element id="ResearchStudy.extension:logo.value[x]">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="ResearchStudy.extension.value[x]" />
       <mustSupport value="true" />
     </element>
     <element id="ResearchStudy.extension:contextIdentifier">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="ResearchStudy.extension" />
       <sliceName value="contextIdentifier" />
       <min value="1" />
@@ -68,59 +83,131 @@
       <mustSupport value="true" />
     </element>
     <element id="ResearchStudy.extension:contextIdentifier.extension:resourceType">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="ResearchStudy.extension.extension" />
       <sliceName value="resourceType" />
       <mustSupport value="true" />
     </element>
     <element id="ResearchStudy.extension:contextIdentifier.extension:resourceType.value[x]">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="ResearchStudy.extension.extension.value[x]" />
       <mustSupport value="true" />
     </element>
     <element id="ResearchStudy.extension:contextIdentifier.extension:type">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="ResearchStudy.extension.extension" />
       <sliceName value="type" />
       <mustSupport value="true" />
     </element>
     <element id="ResearchStudy.extension:contextIdentifier.extension:type.value[x]">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="ResearchStudy.extension.extension.value[x]" />
       <mustSupport value="true" />
     </element>
     <element id="ResearchStudy.extension:contextIdentifier.extension:system">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="ResearchStudy.extension.extension" />
       <sliceName value="system" />
       <mustSupport value="true" />
     </element>
     <element id="ResearchStudy.extension:contextIdentifier.extension:system.value[x]">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="ResearchStudy.extension.extension.value[x]" />
       <mustSupport value="true" />
     </element>
     <element id="ResearchStudy.identifier">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="ResearchStudy.identifier" />
       <short value="Eindeutiger Identifikator des Projekts, der Studie oder des Anwendungsbereichs der Einwilligungen" />
       <min value="1" />
       <mustSupport value="true" />
     </element>
     <element id="ResearchStudy.identifier.system">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="ResearchStudy.identifier.system" />
       <min value="1" />
       <mustSupport value="true" />
     </element>
     <element id="ResearchStudy.identifier.value">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="ResearchStudy.identifier.value" />
       <min value="1" />
       <mustSupport value="true" />
     </element>
     <element id="ResearchStudy.title">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="ResearchStudy.title" />
       <short value="Name der Consent Domain" />
       <min value="1" />
       <mustSupport value="true" />
     </element>
     <element id="ResearchStudy.status">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="ResearchStudy.status" />
       <mustSupport value="true" />
     </element>
     <element id="ResearchStudy.description">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="ResearchStudy.description" />
       <short value="Zweckbeschreibung der Consent Domain" />
       <min value="1" />
