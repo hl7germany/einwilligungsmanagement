@@ -9,7 +9,7 @@
   <date value="2020-04-16" />
   <publisher value="Interoperabilitätsforum, AG Einwilligungsmanagement" />
   <description value="Versionierungsformat der Policies, Modules und Templates eiiner Consent Domain" />
-  <fhirVersion value="4.0.0" />
+  <fhirVersion value="4.0.1" />
   <kind value="complex-type" />
   <abstract value="false" />
   <context>
@@ -24,6 +24,86 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
   <derivation value="constraint" />
   <differential>
+    <element id="Extension">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Extension" />
+      <short value="Format von Versionsangaben" />
+      <definition value="Format von Versionsangaben" />
+      <comment value="Werden sowohl formatString als auch formatExpression angegeben, müssen diese synonym sein." />
+    </element>
+    <element id="Extension.extension">
+      <path value="Extension.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Extension.extension:formatString">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Extension.extension" />
+      <sliceName value="formatString" />
+      <short value="Beschreibung des Formats einer Versionsangabe in textueller Form (menschenlesbar)" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:formatString.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="formatString" />
+    </element>
+    <element id="Extension.extension:formatString.value[x]">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Extension.extension.value[x]" />
+      <min value="1" />
+      <type>
+        <code value="string" />
+      </type>
+    </element>
+    <element id="Extension.extension:formatExpression">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Extension.extension" />
+      <sliceName value="formatExpression" />
+      <short value="Regular Expression, die das erlaubte Format von Versionen bestimmt." />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:formatExpression.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="formatExpression" />
+    </element>
+    <element id="Extension.extension:formatExpression.value[x]">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Extension.extension.value[x]" />
+      <min value="1" />
+      <type>
+        <code value="string" />
+      </type>
+    </element>
     <element id="Extension.url">
       <path value="Extension.url" />
       <fixedUri value="http://fhir.de/ConsentManagement/StructureDefinition/VersionFormat" />
@@ -36,9 +116,153 @@
         <valueCode value="4.0.0" />
       </extension>
       <path value="Extension.value[x]" />
-      <min value="1" />
+      <max value="0" />
+      <type>
+        <code value="base64Binary" />
+      </type>
+      <type>
+        <code value="boolean" />
+      </type>
+      <type>
+        <code value="canonical" />
+      </type>
+      <type>
+        <code value="code" />
+      </type>
+      <type>
+        <code value="date" />
+      </type>
+      <type>
+        <code value="dateTime" />
+      </type>
+      <type>
+        <code value="decimal" />
+      </type>
+      <type>
+        <code value="id" />
+      </type>
+      <type>
+        <code value="instant" />
+      </type>
+      <type>
+        <code value="integer" />
+      </type>
+      <type>
+        <code value="markdown" />
+      </type>
+      <type>
+        <code value="oid" />
+      </type>
+      <type>
+        <code value="positiveInt" />
+      </type>
       <type>
         <code value="string" />
+      </type>
+      <type>
+        <code value="time" />
+      </type>
+      <type>
+        <code value="unsignedInt" />
+      </type>
+      <type>
+        <code value="uri" />
+      </type>
+      <type>
+        <code value="url" />
+      </type>
+      <type>
+        <code value="uuid" />
+      </type>
+      <type>
+        <code value="Address" />
+      </type>
+      <type>
+        <code value="Age" />
+      </type>
+      <type>
+        <code value="Annotation" />
+      </type>
+      <type>
+        <code value="Attachment" />
+      </type>
+      <type>
+        <code value="CodeableConcept" />
+      </type>
+      <type>
+        <code value="Coding" />
+      </type>
+      <type>
+        <code value="ContactPoint" />
+      </type>
+      <type>
+        <code value="Count" />
+      </type>
+      <type>
+        <code value="Distance" />
+      </type>
+      <type>
+        <code value="Duration" />
+      </type>
+      <type>
+        <code value="HumanName" />
+      </type>
+      <type>
+        <code value="Identifier" />
+      </type>
+      <type>
+        <code value="Money" />
+      </type>
+      <type>
+        <code value="Period" />
+      </type>
+      <type>
+        <code value="Quantity" />
+      </type>
+      <type>
+        <code value="Range" />
+      </type>
+      <type>
+        <code value="Ratio" />
+      </type>
+      <type>
+        <code value="Reference" />
+      </type>
+      <type>
+        <code value="SampledData" />
+      </type>
+      <type>
+        <code value="Signature" />
+      </type>
+      <type>
+        <code value="Timing" />
+      </type>
+      <type>
+        <code value="ContactDetail" />
+      </type>
+      <type>
+        <code value="Contributor" />
+      </type>
+      <type>
+        <code value="DataRequirement" />
+      </type>
+      <type>
+        <code value="Expression" />
+      </type>
+      <type>
+        <code value="ParameterDefinition" />
+      </type>
+      <type>
+        <code value="RelatedArtifact" />
+      </type>
+      <type>
+        <code value="TriggerDefinition" />
+      </type>
+      <type>
+        <code value="UsageContext" />
+      </type>
+      <type>
+        <code value="Dosage" />
       </type>
     </element>
   </differential>

@@ -9,7 +9,7 @@
   <date value="2019-07-31" />
   <publisher value="Interoperabilitätsforum, AG Einwilligungsmanagement" />
   <description value="Logo der Domain (Studie, Organisation)" />
-  <fhirVersion value="4.0.0" />
+  <fhirVersion value="4.0.1" />
   <kind value="complex-type" />
   <abstract value="false" />
   <context>
@@ -24,7 +24,17 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
   <derivation value="constraint" />
   <differential>
+    <element id="Extension.url">
+      <path value="Extension.url" />
+      <fixedUri value="http://fhir.de/ConsentManagement/StructureDefinition/Logo" />
+    </element>
     <element id="Extension.value[x]">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Extension.value[x]" />
       <min value="1" />
       <type>

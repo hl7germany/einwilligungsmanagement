@@ -8,7 +8,7 @@
   <experimental value="true" />
   <date value="2020-03-11" />
   <publisher value="Interoperabilitätsforum, AG Einwilligungsmanagement" />
-  <fhirVersion value="4.0.0" />
+  <fhirVersion value="4.0.1" />
   <mapping>
     <identity value="workflow" />
     <uri value="http://hl7.org/fhir/workflow" />
@@ -36,33 +36,75 @@
   <derivation value="constraint" />
   <differential>
     <element id="Consent.status">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Consent.status" />
       <mustSupport value="true" />
     </element>
     <element id="Consent.scope">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Consent.scope" />
       <comment value="Wird im Kontext des Einwilligungsmanagment-Leitfadens nicht näher definiert.&#xD;&#xA;Bei Bedarf kann das ValueSet erweitert oder ggf. ein NullFlavor-Code eingetragen werden." />
     </element>
     <element id="Consent.category">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Consent.category" />
       <max value="1" />
       <mustSupport value="true" />
     </element>
     <element id="Consent.category.coding">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Consent.category.coding" />
       <min value="1" />
       <max value="1" />
       <mustSupport value="true" />
     </element>
     <element id="Consent.category.coding.system">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Consent.category.coding.system" />
       <fixedUri value="http://loinc.org" />
     </element>
     <element id="Consent.category.coding.code">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Consent.category.coding.code" />
       <fixedCode value="59284-0" />
     </element>
     <element id="Consent.patient">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Consent.patient" />
       <min value="1" />
       <type>
@@ -72,22 +114,46 @@
       <mustSupport value="true" />
     </element>
     <element id="Consent.patient.reference">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Consent.patient.reference" />
       <min value="1" />
       <mustSupport value="true" />
     </element>
     <element id="Consent.dateTime">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Consent.dateTime" />
       <min value="1" />
       <mustSupport value="true" />
     </element>
     <element id="Consent.organization">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Consent.organization" />
       <short value="Organisation, in der die Einwilligung erfasst wurde." />
-      <definition value="Dies ist die Organisation, die den Consent erfasst hat.&#xD;&#xA;" />
+      <definition value="Dies ist die Organisation, die den Consent erfasst hat." />
       <mustSupport value="true" />
     </element>
     <element id="Consent.source[x]">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Consent.source[x]" />
       <min value="1" />
       <type>
@@ -97,11 +163,23 @@
       <mustSupport value="true" />
     </element>
     <element id="Consent.source[x].reference">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Consent.source[x].reference" />
       <min value="1" />
       <mustSupport value="true" />
     </element>
     <element id="Consent.policyRule">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Consent.policyRule" />
       <mustSupport value="true" />
     </element>
@@ -116,9 +194,14 @@
       </slicing>
     </element>
     <element id="Consent.policyRule.extension:xacml">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Consent.policyRule.extension" />
       <sliceName value="xacml" />
-      <min value="0" />
       <max value="1" />
       <type>
         <code value="Extension" />
@@ -127,7 +210,26 @@
       <mustSupport value="true" />
     </element>
     <element id="Consent.provision">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name">
+        <valueString value="provision" />
+      </extension>
       <path value="Consent.provision" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Consent.provision.period">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Consent.provision.period" />
       <mustSupport value="true" />
     </element>
   </differential>

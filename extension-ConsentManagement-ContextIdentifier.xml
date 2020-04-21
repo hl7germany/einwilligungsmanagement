@@ -9,7 +9,7 @@
   <date value="2019-08-30" />
   <publisher value="Interoperabilitätsforum, AG Einwilligungsmanagement" />
   <description value="Definiert im Kontext einer Domain, welche Identifikatoren an welcher Ressourcen benötigt werden, um in der Policy Verwendung zu finden.&#xD;&#xA;&#xD;&#xA;Existieren mehrere Extensions im Kontext einer Domain, so werden diese UND-verknüpft.&#xD;&#xA;Die Elemente resourceType, type und system sind ebenfalls UND-verknüpft.&#xD;&#xA;&#xD;&#xA;Der FHIR-Ressourcentyp als Kontext muss immer angegeben werden.&#xD;&#xA;Identifier-Typen (type) und -Namensräume (system) sind optional. Sind mehrere type- oder system-Elemente angegeben, so sind diese untereinander ODER-verknüpft.&#xD;&#xA;Sind diese angegeben, so müssen die dem resourceType entsprechenden Ressourcen einen Identifier mit dem entsprechenden type und/oder system besitzen.&#xD;&#xA;Bei logischen Referenzen (Reference by Identifier) gilt dies entsprechend." />
-  <fhirVersion value="4.0.0" />
+  <fhirVersion value="4.0.1" />
   <kind value="complex-type" />
   <abstract value="false" />
   <context>
@@ -35,13 +35,29 @@
       </slicing>
     </element>
     <element id="Extension.extension:resourceType">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Extension.extension" />
       <sliceName value="resourceType" />
       <short value="Ressource, in der ein Identifier Verwendung findet." />
       <min value="1" />
       <max value="1" />
     </element>
+    <element id="Extension.extension:resourceType.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="resourceType" />
+    </element>
     <element id="Extension.extension:resourceType.value[x]">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Extension.extension.value[x]" />
       <min value="1" />
       <type>
@@ -53,10 +69,26 @@
       </binding>
     </element>
     <element id="Extension.extension:type">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Extension.extension" />
       <sliceName value="type" />
     </element>
+    <element id="Extension.extension:type.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="type" />
+    </element>
     <element id="Extension.extension:type.value[x]">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Extension.extension.value[x]" />
       <min value="1" />
       <type>
@@ -68,17 +100,43 @@
       </binding>
     </element>
     <element id="Extension.extension:system">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Extension.extension" />
       <sliceName value="system" />
     </element>
+    <element id="Extension.extension:system.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="system" />
+    </element>
     <element id="Extension.extension:system.value[x]">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Extension.extension.value[x]" />
       <min value="1" />
       <type>
         <code value="uri" />
       </type>
     </element>
+    <element id="Extension.url">
+      <path value="Extension.url" />
+      <fixedUri value="http://fhir.de/ConsentManagement/StructureDefinition/ContextIdentifier" />
+    </element>
     <element id="Extension.value[x]">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Extension.value[x]" />
       <max value="0" />
     </element>

@@ -9,7 +9,7 @@
   <date value="2020-04-01" />
   <publisher value="Interoperabilitätsforum, AG Einwilligungsmanagement" />
   <description value="Wiederverwendbares Modul innerhalb eines Gesamt-Questionnaires.&#xD;&#xA;Wird i.d.R. im Kontext des Gesamtsystems erstellt/definiert und in einem oder mehreren Questionnaires verwendet/eingebunden (TemplateFrames)." />
-  <fhirVersion value="4.0.0" />
+  <fhirVersion value="4.0.1" />
   <kind value="resource" />
   <abstract value="false" />
   <type value="Questionnaire" />
@@ -162,6 +162,17 @@
         <valueCode value="4.0.0" />
       </extension>
       <path value="Questionnaire.description" />
+      <short value="Kurzzusammenfassung des Inhaltes" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Questionnaire.purpose">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Questionnaire.purpose" />
       <short value="Zweckbeschreibung des Consent Modules" />
       <mustSupport value="true" />
     </element>

@@ -9,7 +9,7 @@
   <date value="2019-08-30" />
   <publisher value="Interoperabilitätsforum, AG Einwilligungsmanagement" />
   <description value="Gültigkeitsdomäne einer Einwiliigung (Studie, Forschungs-Kontext)" />
-  <fhirVersion value="4.0.0" />
+  <fhirVersion value="4.0.1" />
   <kind value="resource" />
   <abstract value="false" />
   <type value="ResearchStudy" />
@@ -27,12 +27,15 @@
       </slicing>
     </element>
     <element id="ResearchStudy.extension:versionFormat">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="ResearchStudy.extension" />
       <sliceName value="versionFormat" />
       <short value="Versionierungsformat der Policies, Modules und Templates für diese Consent Domain" />
-      <definition value="Optional Extension Element - found in all resources." />
-      <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
-      <min value="1" />
       <max value="1" />
       <type>
         <code value="Extension" />

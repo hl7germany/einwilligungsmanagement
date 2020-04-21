@@ -9,7 +9,7 @@
   <date value="2020-03-11" />
   <publisher value="Interoperabilitätsforum, AG Einwilligungsmanagement" />
   <description value="Der ausgefüllte Fragebogen zur Einwilligung." />
-  <fhirVersion value="4.0.0" />
+  <fhirVersion value="4.0.1" />
   <mapping>
     <identity value="workflow" />
     <uri value="http://hl7.org/fhir/workflow" />
@@ -32,19 +32,43 @@
   <derivation value="constraint" />
   <differential>
     <element id="QuestionnaireResponse.language">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="QuestionnaireResponse.language" />
       <mustSupport value="true" />
     </element>
     <element id="QuestionnaireResponse.questionnaire">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="QuestionnaireResponse.questionnaire" />
       <min value="1" />
       <mustSupport value="true" />
     </element>
     <element id="QuestionnaireResponse.status">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="QuestionnaireResponse.status" />
       <mustSupport value="true" />
     </element>
     <element id="QuestionnaireResponse.subject">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="QuestionnaireResponse.subject" />
       <short value="Der Patient, für den die Einwilligung gilt" />
       <min value="1" />
@@ -55,15 +79,33 @@
       <mustSupport value="true" />
     </element>
     <element id="QuestionnaireResponse.subject.reference">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="QuestionnaireResponse.subject.reference" />
       <min value="1" />
       <mustSupport value="true" />
     </element>
     <element id="QuestionnaireResponse.authored">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="QuestionnaireResponse.authored" />
       <mustSupport value="true" />
     </element>
     <element id="QuestionnaireResponse.author">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="QuestionnaireResponse.author" />
       <short value="Die Person, welche die Einwilligungsangaben erfasst/dokumentiert" />
       <comment value="Füllt der betroffene Patient selbst den Fragebogen aus, so ist dieser hier erneut zu referenzieren (author = subject)." />
@@ -78,6 +120,12 @@
       <mustSupport value="true" />
     </element>
     <element id="QuestionnaireResponse.source">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="QuestionnaireResponse.source" />
       <short value="Die Person, von der die Einwilligungsangaben stammen" />
       <comment value="Stammen die Antworten auf die Fragen vom betroffenen Patienten selbst, so ist dieser hier erneut zu referenzieren (source = subject)." />
@@ -85,19 +133,43 @@
       <mustSupport value="true" />
     </element>
     <element id="QuestionnaireResponse.item">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="QuestionnaireResponse.item" />
       <min value="1" />
       <mustSupport value="true" />
     </element>
     <element id="QuestionnaireResponse.item.linkId">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="QuestionnaireResponse.item.linkId" />
       <mustSupport value="true" />
     </element>
     <element id="QuestionnaireResponse.item.answer">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="QuestionnaireResponse.item.answer" />
       <mustSupport value="true" />
     </element>
     <element id="QuestionnaireResponse.item.answer.value[x]">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="QuestionnaireResponse.item.answer.value[x]" />
       <mustSupport value="true" />
     </element>
