@@ -20,6 +20,18 @@
     <type value="element" />
     <expression value="Questionnaire.item" />
   </context>
+  <context>
+    <type value="element" />
+    <expression value="Questionnaire.item.item" />
+  </context>
+  <context>
+    <type value="element" />
+    <expression value="Questionnaire.item.enableWhen" />
+  </context>
+  <context>
+    <type value="element" />
+    <expression value="Questionnaire.item.item.enableWhen" />
+  </context>
   <type value="Extension" />
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
   <derivation value="constraint" />
