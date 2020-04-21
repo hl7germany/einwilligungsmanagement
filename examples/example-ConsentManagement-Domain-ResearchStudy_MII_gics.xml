@@ -2,7 +2,7 @@
 	<id value="d7a65ce8-2810-401a-b0db-70782a7b19a6"/>
 	<meta>
 		<lastUpdated value="2019-08-02T10:35:43.5320994+00:00"/>
-		<profile value="http://fhir.de/ConsentManagement/StructureDefinition/Domain/ResearchStudy-MII-gICS"/>
+		<profile value="http://fhir.de/ConsentManagement/StructureDefinition/Domain/ResearchStudy"/>
 	</meta>
 	<extension url="http://fhir.de/ConsentManagement/StructureDefinition/VersionFormat">
 		<extension url="formatString">
