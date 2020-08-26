@@ -42,6 +42,10 @@
         <profile value="http://fhir.de/ConsentManagement/StructureDefinition/VersionFormat" />
       </type>
     </element>
+     <element id="ResearchStudy.extension:versionFormat.value[x]">
+      <path value="ResearchStudy.extension.value[x]" />
+      <mustSupport value="true" />
+    </element>
     <element id="ResearchStudy.extension:logo">
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
         <valueCode value="normative" />
