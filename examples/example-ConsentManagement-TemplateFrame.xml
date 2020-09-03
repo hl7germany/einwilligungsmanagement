@@ -96,7 +96,7 @@
 		<linkId value="vorbemerkungen"/>
 		<text value="Mit dieser Einverständniserklärung willigen Sie ein, die ausgewählten Punkte für die wissenschaftliche Forschung zur Verfügung zu stellen.">
 			<extension url="http://hl7.org/fhir/StructureDefinition/rendering-xhtml">
-				<valueString value="Mit dieser Einverst&auml;ndniserkl&auml;rung willigen Sie ein, die ausgew&auml;hlten Punkte für die wissenschaftliche Forschung zur Verf&uuml;gung zu stellen."/>
+				<valueString value="Mit dieser Einverständniserklärung willigen Sie ein, die ausgewählten Punkte für die wissenschaftliche Forschung zur Verfügung zu stellen."/>
 			</extension>
 		</text>
 		<type value="display"/>
