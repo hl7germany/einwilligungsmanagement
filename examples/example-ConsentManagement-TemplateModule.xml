@@ -7,9 +7,11 @@
 	<language value="DE"/>
 	<!-- Referenz auf die Consent Domain, auf die sich das Modul bezieht -->
 	<extension url="http://fhir.de/ConsentManagement/StructureDefinition/domainReference">
-		<valueReference>
-			<reference value="ResearchStudy/d7a65ce8-2810-401a-b0db-70782a7b19a6"/>
-		</valueReference>
+		<extension url="domain">
+			<valueReference>
+				<reference value="ResearchStudy/d7a65ce8-2810-401a-b0db-70782a7b19a6"/>
+			</valueReference>
+		</extension>
 	</extension>
 	<version value="1.6a"/>
 	<!-- kontextweit eindeutiger, computer-friendly Name des Consent Moduls -->
@@ -34,12 +36,11 @@
 		</extension>
 		<!-- In der MI-I werden Fragen mit OIDs identifiziert, wie hier beispielhaft gezeigt. -->
 		<linkId value="2.16.840.1.113883.3.1937.777.24.5.98765.1"/>
-		<text>
+		<text value="Ich willige ein in die Erhebung, Verarbeitung, Speicherung und wissenschaftliche Nutzung meiner Patientendaten wie in Punkt 1.1 bis 1.3 der Einwilligungserklärung und Punkt 1. der Patienteninformation beschrieben.">
 			<extension url="http://hl7.org/fhir/StructureDefinition/rendering-xhtml">
 				<valueString value="Ich willige ein in die &lt;strong&gt;Erhebung, Verarbeitung, Speicherung&lt;/strong&gt; und wissenschaftliche Nutzung meiner Patientendaten wie in Punkt 1.1 bis 1.3 der Einwilligungserklärung und Punkt 1. der Patienteninformation beschrieben."/>
 			</extension>
 		</text>
 		<type value="choice"/>
-		<answerValueSet value="https://www.medizininformatik-initiative.de/fhir/ValueSet/MIIEinwilligungFrage1aValueSet|1.6a"/>
 	</item>
 </Questionnaire>
