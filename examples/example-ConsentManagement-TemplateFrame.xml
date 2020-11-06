@@ -87,7 +87,7 @@
 
 	<!-- Modulinhalt: Text, Frage, ... -->
 
-	<!-- Item-Slice "displayItem": liefert einen statistischen Text direkt im TemplateFrame -->
+	<!-- Item-Slice "displayItem": liefert einen statischen Text direkt im TemplateFrame -->
 	<item>
 		<linkId value="vorbemerkungen"/>
 		<text value="Mit dieser Einverständniserklärung willigen Sie ein, die ausgewählten Punkte für die wissenschaftliche Forschung zur Verfügung zu stellen.">
@@ -109,7 +109,7 @@
 		</extension>
 		<!-- Die linkId kann identisch mit der linkId des oben referenzierte SubQuestionnaires sein, muss aber nicht -->
 		<linkId value="1"/>
-		<type value="group"/>
+		<type value="choice"/>
 		<required value="true"/>
 		<answerValueSet value="https://www.medizininformatik-initiative.de/fhir/ValueSet/MIIEinwilligungFrage1aValueSet|1.6a"/>
 		<!-- vor-ausgewählter Wert; hier als Beispiel dargestellt, im praktischen Einsatz bitte datenschutzrechtliche Implikationen beachten! -->
@@ -117,7 +117,7 @@
 			<valueCoding>
 				<system value="urn:oid:2.16.840.1.113883.3.1937.777.24.5.1"/>
 				<code value="2.16.840.1.113883.3.1937.777.24.5.1.15"/>
-				<display value="unbekannt: Ich willige ein in die Gewinnung, Lagerung und wissenschaftliche Nutzung meiner Biomaterialien (Gewebe und Körperflüssigkeiten), wie in wie in Punkt 3.1 bis 3.3 der Einwilligungserklärung und Punkt 3. der Patienteninformation beschrieben."/>
+				<display value="unbekannt"/>
 			</valueCoding>
 		</initial>
 	</item>
