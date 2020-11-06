@@ -31,6 +31,11 @@
 		</contains>
 		<contains>
 			<system value="http://fhir.de/ConsentManagement/CodeSystem/TemplateType"/>
+			<code value="OBJECTION" />
+		    <display value="Widerspruchsvorlage" />
+		</contains>
+		<contains>
+			<system value="http://fhir.de/ConsentManagement/CodeSystem/TemplateType"/>
 			<code value="REFUSAL" />
 		    <display value="Ablehnungsvorlage" />
 		</contains>

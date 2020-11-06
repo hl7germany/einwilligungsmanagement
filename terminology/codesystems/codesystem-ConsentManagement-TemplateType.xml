@@ -12,6 +12,10 @@
     <display value="Widerrufsvorlage" />
   </concept>
   <concept>
+    <code value="OBJECTION" />
+    <display value="Widerspruchsvorlage" />
+  </concept>
+  <concept>
     <code value="REFUSAL" />
     <display value="Ablehnungsvorlage" />
   </concept>
