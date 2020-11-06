@@ -5,14 +5,6 @@
 		<profile value="http://fhir.de/ConsentManagement/StructureDefinition/TemplateModule"/>
 	</meta>
 	<language value="DE"/>
-	<!-- Referenz auf die Consent Domain, auf die sich das Modul bezieht -->
-	<extension url="http://fhir.de/ConsentManagement/StructureDefinition/domainReference">
-		<extension url="domain">
-			<valueReference>
-				<reference value="ResearchStudy/d7a65ce8-2810-401a-b0db-70782a7b19a6"/>
-			</valueReference>
-		</extension>
-	</extension>
 	<version value="1.6a"/>
 	<!-- kontextweit eindeutiger, computer-friendly Name des Consent Moduls -->
 	<name value="PatDatErhebenSpeichernNutzen"/>
@@ -22,6 +14,16 @@
 	<status value="active"/>
 	<!-- Kurzzusammenfassung des Inhaltes -->
 	<description value="Beispiel-Fragen-Modul aus der MI-Initiative"/>
+	<!-- Referenz auf die Consent Domain, auf die sich das Modul bezieht -->
+	<useContext>
+		<code>
+			<system value="http://terminology.hl7.org/CodeSystem/usage-context-type"/>
+			<code value="program"/>
+		</code>
+		<valueReference>
+			<reference value="ResearchStudy/d7a65ce8-2810-401a-b0db-70782a7b19a6"/>
+		</valueReference>
+	</useContext>
 	<!-- Zweckbeschreibung des Consent Modules -->
 	<purpose value="Einwilligungserklärung für die wissenschaftliche Nutzung"/>
 	<!-- Modulinhalt: Text, Frage, ... -->
