@@ -255,6 +255,22 @@
       <min value="1" />
       <mustSupport value="true" />
     </element>
+    <element id="Questionnaire.useContext.code">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Questionnaire.useContext.code" />
+      <binding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valueString value="UsageContextType" />
+        </extension>
+        <strength value="required" />
+        <valueSet value="http://fhir.de/ConsentManagement/ValueSet/QuestionnaireComponents" />
+      </binding>
+    </element>
     <element id="Questionnaire.useContext.code.system">
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
         <valueCode value="normative" />
@@ -264,7 +280,6 @@
       </extension>
       <path value="Questionnaire.useContext.code.system" />
       <min value="1" />
-      <fixedUri value="http://terminology.hl7.org/CodeSystem/usage-context-type" />
     </element>
     <element id="Questionnaire.useContext.code.code">
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
@@ -275,7 +290,6 @@
       </extension>
       <path value="Questionnaire.useContext.code.code" />
       <min value="1" />
-      <fixedCode value="program" />
     </element>
     <element id="Questionnaire.useContext.value[x]">
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">

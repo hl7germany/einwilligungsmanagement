@@ -1,0 +1,22 @@
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <url value="http://fhir.de/ConsentManagement/CodeSystem/QuestionnaireComponents" />
+  <version value="0.1" />
+  <name value="QuestionnaireProfileType" />
+  <status value="draft" />
+  <date value="2020-11-26" />
+  <description value="Typen der Questionnaire-Profile zur Unterscheidung als Suchkriterium" />
+  <caseSensitive value="true" />
+  <content value="complete" />
+  <concept>
+    <code value="TemplateFrame" />
+    <display value="Template-Frame" />
+  </concept>
+  <concept>
+    <code value="TemplateModule" />
+    <display value="Template-Module" />
+  </concept>
+  <concept>
+    <code value="QuestionnaireComposed" />
+    <display value="Composed Questionnaire" />
+  </concept>
+</CodeSystem>

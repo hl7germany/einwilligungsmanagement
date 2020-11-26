@@ -58,8 +58,8 @@
 	<!-- Consent Domain: Studie -->
 	<useContext>
 		<code>
-			<system value="http://terminology.hl7.org/CodeSystem/usage-context-type"/>
-			<code value="program"/>
+			<system value="http://fhir.de/ConsentManagement/CodeSystem/QuestionnaireComponents"/>
+			<code value="TemplateFrame"/>
 		</code>
 		<valueReference>
 			<reference value="ResearchStudy/d7a65ce8-2810-401a-b0db-70782a7b19a6"/>
