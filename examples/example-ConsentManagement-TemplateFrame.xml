@@ -136,7 +136,7 @@
 		</extension>
 		<!-- Die linkId kann identisch mit der linkId des oben referenzierte SubQuestionnaires sein, muss aber nicht -->
 		<linkId value="98"/>
-		<type value="group"/>
+		<type value="choice"/>
 		<required value="true"/>
 		<answerValueSet value="https://www.medizininformatik-initiative.de/fhir/ValueSet/MIIEinwilligungFrage3aValueSet|1.6a"/>
 	</item>
