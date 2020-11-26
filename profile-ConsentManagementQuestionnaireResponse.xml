@@ -109,7 +109,6 @@
       <path value="QuestionnaireResponse.author" />
       <short value="Die Person, welche die Einwilligungsangaben erfasst/dokumentiert" />
       <comment value="Füllt der betroffene Patient selbst den Fragebogen aus, so ist dieser hier erneut zu referenzieren (author = subject)." />
-      <min value="1" />
       <type>
         <code value="Reference" />
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Practitioner" />
@@ -129,7 +128,6 @@
       <path value="QuestionnaireResponse.source" />
       <short value="Die Person, von der die Einwilligungsangaben stammen" />
       <comment value="Stammen die Antworten auf die Fragen vom betroffenen Patienten selbst, so ist dieser hier erneut zu referenzieren (source = subject)." />
-      <min value="1" />
       <mustSupport value="true" />
     </element>
     <element id="QuestionnaireResponse.item">

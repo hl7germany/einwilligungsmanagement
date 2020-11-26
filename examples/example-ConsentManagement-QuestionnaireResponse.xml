@@ -1,0 +1,55 @@
+<QuestionnaireResponse xmlns="http://hl7.org/fhir">
+	<id value="02eac854-6a2e-48f9-88d7-edd04faff81c"/>
+	<meta>
+		<lastUpdated value="2020-11-26T11:21:43.5320994+00:00"/>
+		<profile value="http://fhir.de/ConsentManagement/StructureDefinition/QuestionnaireResponse"/>
+	</meta>
+	<language value="DE"/>
+	<!-- canonical URL des zugrunde liegenden Questionnaires (Profil QuestionnaireComposed) -->
+	<questionnaire value="https://beispiel.de/fhir/QuestionnaireComposedBeispiel1"/>
+	<!-- Finalisierungsstatus -->
+	<status value="completed"/>
+	<!-- Patient, für den die Einwilligungserklärung gilt -->
+	<subject>
+		<reference value="Patient/123456789"/>
+		<display value="Studienpatient Nr. A38"/>
+	</subject>
+	<!-- Ausfülldatum -->
+	<authored value="2020-09-08"/>
+	<!-- ausfüllende Person -->
+	<author>
+		<reference value="RelatedPerson/5645464"/>
+	</author>
+	<!-- Person, von der die Einwilligungsangaben stammen -->
+	<source>
+		<reference value="Patient/123456789"/>
+	</source>
+
+	<!-- Antworten -->
+	<item>
+		<linkId value="1"/>
+		<answer>
+			<valueCoding>
+				<system value="urn:oid:2.16.840.1.113883.3.1937.777.24.5.1"/>
+				<code value="2.16.840.1.113883.3.1937.777.24.5.1.1"/>
+				<display value="gültig"/>
+			</valueCoding>
+		</answer>
+	</item>
+	<item>
+		<linkId value="98"/>
+		<answer>
+			<valueCoding>
+				<system value="urn:oid:2.16.840.1.113883.3.1937.777.24.5.1"/>
+				<code value="2.16.840.1.113883.3.1937.777.24.5.1.13"/>
+				<display value="gültig"/>
+			</valueCoding>
+		</answer>
+	</item>
+	<item>
+		<linkId value="555"/>
+		<answer>
+			<valueString value="Dem habe ich nichts hinzuzufügen."/>
+		</answer>
+	</item>
+</QuestionnaireResponse>
