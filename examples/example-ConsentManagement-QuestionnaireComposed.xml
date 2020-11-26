@@ -6,19 +6,23 @@
 	</meta>
 	<language value="DE"/>
 	<!-- Signaturtyp(en) im Questionnaire(Response) -->
-	<extension url="https://simplifier.net/Einwilligungsmanagement/ConsentManagementSignatureType">
-		<valueCoding>
-			<system value="urn:iso-astm:E1762-95:2013"/>
-			<code value="1.2.840.10065.1.12.1.11"/>
-			<display value="Consent Witness Signature"/>
-		</valueCoding>
+	<extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-signatureRequired">
+		<valueCodeableConcept>
+			<coding>
+				<system value="urn:iso-astm:E1762-95:2013"/>
+				<code value="1.2.840.10065.1.12.1.11"/>
+				<display value="Consent Witness Signature"/>
+			</coding>
+		</valueCodeableConcept>
 	</extension>
-	<extension url="https://simplifier.net/Einwilligungsmanagement/ConsentManagementSignatureType">
-		<valueCoding>
-			<system value="urn:iso-astm:E1762-95:2013"/>
-			<code value="1.2.840.10065.1.12.1.5"/>
-			<display value="Verification Signature"/>
-		</valueCoding>
+	<extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-signatureRequired">
+		<valueCodeableConcept>
+			<coding>
+				<system value="urn:iso-astm:E1762-95:2013"/>
+				<code value="1.2.840.10065.1.12.1.5"/>
+				<display value="Verification Signature"/>
+			</coding>
+		</valueCodeableConcept>
 	</extension>
 	<extension url="https://simplifier.net/Einwilligungsmanagement/ConsentManagementSourceDocument">
 		<valueAttachment>
