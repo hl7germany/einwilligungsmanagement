@@ -11,7 +11,7 @@
 	<status value="completed"/>
 	<!-- Patient, für den die Einwilligungserklärung gilt -->
 	<subject>
-		<reference value="Patient/123456789"/>
+		<reference value="Patient/9b4a702d-162c-428a-8c5d-8b98af21b693"/>
 		<display value="Studienpatient Nr. A38"/>
 	</subject>
 	<!-- Ausfülldatum -->
@@ -22,7 +22,7 @@
 	</author>
 	<!-- Person, von der die Einwilligungsangaben stammen -->
 	<source>
-		<reference value="Patient/123456789"/>
+		<reference value="Patient/9b4a702d-162c-428a-8c5d-8b98af21b693"/>
 	</source>
 
 	<!-- Antworten -->

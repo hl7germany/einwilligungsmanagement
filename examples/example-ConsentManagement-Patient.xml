@@ -1,0 +1,18 @@
+<Patient xmlns="http://hl7.org/fhir">
+	<id value="9b4a702d-162c-428a-8c5d-8b98af21b693"/>
+	<meta>
+		<lastUpdated value="2020-12-11T09:08:07.5320994+00:00"/>
+		<profile value="http://fhir.de/ConsentManagement/StructureDefinition/Patient"/>
+	</meta>
+	<!-- Dies sei ein Studien-Patient, d.h. pseudonymisiert. Lediglich die PSN ist bekannt -->
+	<identifier>
+		<type>
+			<coding>
+				<system value="http://hl7.org/fhir/v2/0203"/>
+				<code value="ANON"/>
+			</coding>
+		</type>
+		<system value="https://ths-greifswald.de/gpas"/>
+		<value value="MII/jzhwb4p"/>
+	</identifier>
+</Patient>
