@@ -1,0 +1,53 @@
+<Consent xmlns="http://hl7.org/fhir">
+	<id value="b1d3ed1a-597f-40dc-9270-9c5da9d4c631"/>
+	<meta>
+		<lastUpdated value="2020-12-11T09:39:07.5320994+00:00"/>
+		<profile value="http://fhir.de/ConsentManagement/StructureDefinition/Consent"/>
+	</meta>
+	<!-- Verweis auf die zugehörige Domain (hier: Studie) -->
+	<extension url="http://fhir.de/ConsentManagement/StructureDefinition/DomainReference">
+		<extension url="domain">
+			<valueReference value="ResearchStudy/d7a65ce8-2810-401a-b0db-70782a7b19a6"/>
+		</extension>
+		<extension url="status">
+			<coding>
+				<system value="http://hl7.org/fhir/publication-status"/>
+				<code value="active"/>
+			</coding>
+		</extension>
+	</extension>
+	<!-- Finalisierungsstatus -->
+	<status value="active"/>
+	<!-- Einwilligung zur Verwendung, hier: in der Forschung -->
+	<scope>
+		<coding>
+			<system value="http://terminology.hl7.org/CodeSystem/consentscope"/>
+			<code value="research"/>
+		</coding>
+	</scope>
+	<!-- Consent-Kategorie, hier: Einwilligung -->
+	<category>
+		<coding>
+			<system value="http://loinc.org"/>
+				<code value="57016-8"/>
+		</coding>
+	</category>
+	<!-- Patient, für den die Einwilligungserklärung gilt -->
+	<patient>
+		<reference value="Patient/9b4a702d-162c-428a-8c5d-8b98af21b693"/>
+	</patient>
+	<!-- Zeitpunkt der Einwilligung -->
+	<dateTime value="2020-09-01"/>
+	<organization>
+		<!-- hier kann bei Bedarf auch auf beliebige Organization-Ressourcen referenziert werden -->
+		<display value="Klinikum Musterstadt"/>
+	</organization>
+	<!-- Verweis auf die Questionnaire-Response, aus der sich dieser Consent ergibt -->
+	<source>
+		<reference value="QuestionnaireResponse/02eac854-6a2e-48f9-88d7-edd04faff81c"/>
+	</source>
+	<!-- durch diesen Consent geltende Policy/Policies -->
+	<policy>
+		<uri value="urn:oid:2.16.840.1.113883.3.1937.777.24.5.1.1"/>
+	</policy>
+</Consent>
