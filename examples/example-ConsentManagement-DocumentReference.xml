@@ -1,0 +1,23 @@
+<DocumentReference xmlns="http://hl7.org/fhir">
+	<id value="237c359c-cb58-432c-a4a3-807bb28edfdb"/>
+	<meta>
+		<lastUpdated value="2020-12-11T09:09:07.5320994+00:00"/>
+		<profile value="http://fhir.de/ConsentManagement/StructureDefinition/DocumentReference"/>
+	</meta>
+	<!-- Das vom Patienten ausgefüllte Original-(Papier-)Dokument; in diesem Beispiel ist kein valides base64 enthalten -->
+	<subject>
+		<!-- literale Referenz auf den Patienten -->
+		<reference value="Patient/9b4a702d-162c-428a-8c5d-8b98af21b693"/>
+		<!-- alternativ: logische Referenz auf den Patienten -->
+		<identifier>
+			<system value="https://ths-greifswald.de/gpas"/>
+			<value value="A38"/>
+		</identifier>
+	</subject>
+	<content>
+		<attachment>
+			<contentType value="application/pdf"/>
+			<data value="iVBORw0KGgoAAAANSUhEUgAAAJYAAABZCAYAAADcv92DAAAABGdBTUEAAKKkxq/Z1wAAACBjSFJNAACHEAAAjBIAAQW.....[base64-codiertes PDF des unterschriebenen Patienten-Einwilligungsbogens]"/>
+		</attachment>
+	</content>
+</DocumentReference>
