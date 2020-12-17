@@ -34,7 +34,7 @@
 	<url value="https://beispiel.de/fhir/QuestionnaireComposedBeispiel1"/>
 	<!-- Business-Identifikator -->
 	<identifier>
-		<system value="http://beispiel-klinik.de/identifiers/Dokumentvorlagen/QueastionnairesComposed"/>
+		<system value="http://beispiel-klinik.de/identifiers/Dokumentvorlagen/QuestionnairesComposed"/>
 		<value value="456464556"/>
 	</identifier>
 	<version value="1.6a"/>
@@ -42,7 +42,7 @@
 	<name value="QuestionnaireComposedBeispiel1"/>
 	<!-- human-friendly Name des Consent Moduls -->
 	<title value="Beispiel für einen mittels Questionnaire-Renderern verarbeitbaren Fragebogen zur Einwilligung"/>
-	<!-- Verweis auf den TemplateFrame, aus dem dieses Questionnaire generiert wurde -->
+	<!-- Verweis auf den TemplateFrame, aus dem dieses Questionnaire Composed generiert wurde -->
 	<derivedFrom value="https://beispiel.de/fhir/QuestionnaireTemplateFrameBeispiel1"/>
 	<!-- FHIR will es -->
 	<status value="active"/>
@@ -56,7 +56,7 @@
 	</contact>
 	<!-- Kurzzusammenfassung des Inhaltes -->
 	<description value="Beispiel-Fragen-Rahmen mit Auszügen aus dem Consent der MI-Initiative"/>
-	<!-- Referenz auf die Consent Domains, auf die sich das Modul bezieht -->
+	<!-- Referenz auf die Consent Domains, auf die sich das Questionnaire bezieht -->
 	<!-- Consent Domain: Studie -->
 	<useContext>
 		<code>
@@ -77,9 +77,9 @@
 			<reference value="Organization/fbb3744d-e468-416d-bb78-dbe5f09824f7"/>
 		</valueReference>
 	</useContext>
-	<!-- Zweckbeschreibung des Consent Modules -->
+	<!-- Zweckbeschreibung des Questionnaire Composed  -->
 	<purpose value="Beispiel-Einwilligungserklärung für die wissenschaftliche Nutzung"/>
-	<!-- Art des Consent -->
+	<!-- Art der Einwilligungsvorlage -->
 	<code>
 		<system value="http://loinc.org"/>
 		<code value="59284-0"/>
