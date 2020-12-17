@@ -40,7 +40,7 @@
 	<version value="1.6a"/>
 	<!-- kontextweit eindeutiger, computer-friendly Name des QuestionnaireComposed -->
 	<name value="QuestionnaireComposedBeispiel1"/>
-	<!-- human-friendly Name des Consent Moduls -->
+	<!-- human-friendly Name des QuestionnaireComposed -->
 	<title value="Beispiel für einen mittels Questionnaire-Renderern verarbeitbaren Fragebogen zur Einwilligung"/>
 	<!-- Verweis auf den TemplateFrame, aus dem dieses Questionnaire Composed generiert wurde -->
 	<derivedFrom value="https://beispiel.de/fhir/QuestionnaireTemplateFrameBeispiel1"/>
