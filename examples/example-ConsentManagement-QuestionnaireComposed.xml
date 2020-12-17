@@ -38,7 +38,7 @@
 		<value value="456464556"/>
 	</identifier>
 	<version value="1.6a"/>
-	<!-- kontextweit eindeutiger, computer-friendly Name des Consent Moduls -->
+	<!-- kontextweit eindeutiger, computer-friendly Name des QuestionnaireComposed -->
 	<name value="QuestionnaireComposedBeispiel1"/>
 	<!-- human-friendly Name des Consent Moduls -->
 	<title value="Beispiel für einen mittels Questionnaire-Renderern verarbeitbaren Fragebogen zur Einwilligung"/>
