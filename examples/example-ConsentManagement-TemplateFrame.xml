@@ -41,7 +41,7 @@
 		<system value="http://beispiel-klinik.de/identifiers/Dokumentvorlagen/QueastionnaireTemplateFrames"/>
 		<value value="87946546"/>
 	</identifier>
-	<version value="1.6a"/>
+	<version value="1.6d"/>
 	<!-- kontextweit eindeutiger, computer-friendly Name des Consent Moduls -->
 	<name value="QuestionnaireTemplateFrameBeispiel1"/>
 	<!-- human-friendly Name des Consent Moduls -->
@@ -115,12 +115,12 @@
 		<linkId value="1"/>
 		<type value="choice"/>
 		<required value="true"/>
-		<answerValueSet value="https://www.medizininformatik-initiative.de/fhir/ValueSet/MIIEinwilligungFrage1aValueSet|1.6a"/>
+		<answerValueSet value="https://www.medizininformatik-initiative.de/fhir/ValueSet/MIIEinwilligungFrage1aValueSet|1.6d"/>
 		<!-- vor-ausgewählter Wert; hier als Beispiel dargestellt, im praktischen Einsatz bitte datenschutzrechtliche Implikationen beachten! -->
 		<initial>
 			<valueCoding>
-				<system value="urn:oid:2.16.840.1.113883.3.1937.777.24.5.1"/>
-				<code value="2.16.840.1.113883.3.1937.777.24.5.1.15"/>
+				<system value="urn:oid:2.16.840.1.113883.3.1937.777.24.11.7"/>
+				<code value="2.16.840.1.113883.3.1937.777.24.5.1.3"/>
 				<display value="unbekannt"/>
 			</valueCoding>
 		</initial>
@@ -138,7 +138,7 @@
 		<linkId value="98"/>
 		<type value="choice"/>
 		<required value="true"/>
-		<answerValueSet value="https://www.medizininformatik-initiative.de/fhir/ValueSet/MIIEinwilligungFrage3aValueSet|1.6a"/>
+		<answerValueSet value="https://www.medizininformatik-initiative.de/fhir/ValueSet/MIIEinwilligungFrage3aValueSet|1.6d"/>
 	</item>
 	<!-- Item-Slice "additionalItem": zusätzliche Frage, für die kein Modul existiert bzw. benötigt wird -->
 	<item>
