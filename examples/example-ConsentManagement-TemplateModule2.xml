@@ -5,9 +5,9 @@
 		<profile value="http://fhir.de/ConsentManagement/StructureDefinition/TemplateModule"/>
 	</meta>
 	<language value="DE"/>
-	<version value="1.6a"/>
+	<version value="1.6d"/>
 	<!-- kontextweit eindeutiger, computer-friendly Name des Consent Moduls -->
-	<name value="BiomaterialErhebenSpeichernNutzen"/>
+	<name value="BIOMAT_erheben_lagern_nutzen"/>
 	<!-- human-friendly Name des Consent Moduls -->
 	<title value="Gewinnung, Lagerung und Nutzung von Biomaterial für die medizinische Forschung"/>
 	<!-- FHIR will es -->
@@ -37,7 +37,7 @@
 				<valueMarkdown value="Design Comment des Erstellers"/>
 		</extension>
 		<!-- In der MI-I werden Fragen mit OIDs identifiziert, wie hier beispielhaft gezeigt. -->
-		<linkId value="2.16.840.1.113883.3.1937.777.24.5.98765.3"/>
+		<linkId value="2.16.840.1.113883.3.1937.777.24.11.11"/>
 		<text value="Ich willige ein in die Gewinnung, Lagerung und wissenschaftliche Nutzung meiner Biomaterialien (Gewebe und Körperflüssigkeiten), wie in Punkt 3.1 bis 3.3 der Einwilligungserklärung und Punkt 3 der Patienteninformation beschrieben.">
 			<extension url="http://hl7.org/fhir/StructureDefinition/rendering-xhtml">
 				<valueString value="Ich willige ein in die Gewinnung, Lagerung und wissenschaftliche Nutzung meiner Biomaterialien (Gewebe und Körperflüssigkeiten), wie in Punkt 3.1 bis 3.3 der Einwilligungserklärung und Punkt 3 der Patienteninformation beschrieben."/>
