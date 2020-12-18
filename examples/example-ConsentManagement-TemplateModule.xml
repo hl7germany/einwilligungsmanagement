@@ -7,7 +7,7 @@
 	<language value="DE"/>
 	<version value="1.6d"/>
 	<!-- kontextweit eindeutiger, computer-friendly Name des Consent Moduls -->
-	<name value="PatDatErhebenSpeichernNutzen"/>
+	<name value="PATDAT_erheben_speichern_nutzen"/>
 	<!-- human-friendly Name des Consent Moduls -->
 	<title value="Verarbeitung und Nutzung von Patientendaten für die medizinische Forschung"/>
 	<!-- FHIR will es -->
@@ -37,7 +37,7 @@
 				<valueMarkdown value="Design Comment des Erstellers"/>
 		</extension>
 		<!-- In der MI-I werden Fragen mit OIDs identifiziert, wie hier beispielhaft gezeigt. -->
-		<linkId value="dummy"/>	<!-- Diese linkId wird beim Einbinden in den TemplateFrame verworfen und durch die dortige ersetzt -->
+		<linkId value="2.16.840.1.113883.3.1937.777.24.11.7"/>	<!-- Diese linkId wird beim Einbinden in den TemplateFrame verworfen und durch die dortige ersetzt -->
 		<text value="Ich willige ein in die Erhebung, Verarbeitung, Speicherung und wissenschaftliche Nutzung meiner Patientendaten wie in Punkt 1.1 bis 1.3 der Einwilligungserklärung und Punkt 1. der Patienteninformation beschrieben.">
 			<extension url="http://hl7.org/fhir/StructureDefinition/rendering-xhtml">
 				<valueString value="Ich willige ein in die &lt;strong&gt;Erhebung, Verarbeitung, Speicherung&lt;/strong&gt; und wissenschaftliche Nutzung meiner Patientendaten wie in Punkt 1.1 bis 1.3 der Einwilligungserklärung und Punkt 1. der Patienteninformation beschrieben."/>
