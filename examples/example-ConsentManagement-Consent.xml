@@ -46,8 +46,11 @@
 	<source>
 		<reference value="QuestionnaireResponse/02eac854-6a2e-48f9-88d7-edd04faff81c"/>
 	</source>
-	<!-- durch diesen Consent geltende Policy/Policies -->
+	<!-- durch diesen Consent geltende Policy/Policies bzw Module-->
 	<policy>
+		<!-- PATDAT_erheben_speichern_nutzen=gültig -->
 		<uri value="urn:oid:2.16.840.1.113883.3.1937.777.24.5.1.1"/>
+		<!-- BIOMAT_erheben_lagern_nutzen=gültig -->
+		<uri value="urn:oid:2.16.840.1.113883.3.1937.777.24.5.1.13"/>
 	</policy>
 </Consent>
