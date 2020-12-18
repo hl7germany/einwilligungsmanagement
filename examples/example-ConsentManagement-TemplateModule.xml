@@ -5,7 +5,7 @@
 		<profile value="http://fhir.de/ConsentManagement/StructureDefinition/TemplateModule"/>
 	</meta>
 	<language value="DE"/>
-	<version value="1.6a"/>
+	<version value="1.6d"/>
 	<!-- kontextweit eindeutiger, computer-friendly Name des Consent Moduls -->
 	<name value="PatDatErhebenSpeichernNutzen"/>
 	<!-- human-friendly Name des Consent Moduls -->
