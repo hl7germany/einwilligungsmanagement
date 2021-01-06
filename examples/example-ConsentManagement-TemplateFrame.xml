@@ -106,7 +106,7 @@
 		<extension url="http://hl7.org/fhir/StructureDefinition/designNote">
 			<valueMarkdown value="Diese Frage wurde sinnvollerweise als erste eingefügt."/>
 		</extension>
-		<extension url="https://simplifier.net/Einwilligungsmanagement/SubQuestionnaire">
+		<extension url="http://fhir.de/ConsentManagement/StructureDefinition/SubQuestionnaire">
 			<valueReference>
 				<reference value="Questionnaire/d7a65ce8-2810-401a-b0db-70782a7b19a6"/>
 			</valueReference>
@@ -129,7 +129,7 @@
 		<extension url="http://hl7.org/fhir/StructureDefinition/designNote">
 			<valueMarkdown value="Diese Frage wurde sinnvollerweise als zweite eingefügt."/>
 		</extension>
-		<extension url="https://simplifier.net/Einwilligungsmanagement/SubQuestionnaire">
+		<extension url="http://fhir.de/ConsentManagement/StructureDefinition/SubQuestionnaire">
 			<valueReference>
 				<reference value="Questionnaire/2c1b2f2e-8ea2-4fdb-a9e4-e946d3c19dae"/>
 			</valueReference>
