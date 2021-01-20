@@ -7,13 +7,15 @@
 	<!-- Verweis auf die zugehörige Domain (hier: Studie) -->
 	<extension url="http://fhir.de/ConsentManagement/StructureDefinition/DomainReference">
 		<extension url="domain">
-			<valueReference value="ResearchStudy/d7a65ce8-2810-401a-b0db-70782a7b19a6"/>
+			<valueReference>
+				<reference value="ResearchStudy/d7a65ce8-2810-401a-b0db-70782a7b19a6"/>
+			</valueReference>
 		</extension>
 		<extension url="status">
-			<coding>
+			<valueCoding>
 				<system value="http://hl7.org/fhir/publication-status"/>
 				<code value="active"/>
-			</coding>
+			</valueCoding>
 		</extension>
 	</extension>
 	<!-- Finalisierungsstatus -->
@@ -29,7 +31,7 @@
 	<category>
 		<coding>
 			<system value="http://loinc.org"/>
-				<code value="57016-8"/>
+			<code value="57016-8"/>
 		</coding>
 	</category>
 	<!-- Patient, für den die Einwilligungserklärung gilt -->
@@ -43,18 +45,15 @@
 		<display value="Klinikum Musterstadt"/>
 	</organization>
 	<!-- Verweis auf die Questionnaire-Response, aus der sich dieser Consent ergibt -->
-	<source>
+	<sourceReference>
 		<reference value="QuestionnaireResponse/02eac854-6a2e-48f9-88d7-edd04faff81c"/>
-	</source>
+	</sourceReference>
 	<!-- durch diesen Consent geltende Policy/Policies bzw Module-->
 	<policy>
 		<!-- MII Broad Consent -->
 		<uri value="https://www.medizininformatik-initiative.de/sites/default/files/2020-04/MII_AG-Consent_Einheitlicher-Mustertext_v1.6d.pdf"/>
 	</policy>
-	<!-- In diesem Beispiel repräsentiert jede Provision eine Frage/Antwort bzw.
-	 	 Teilaussage einer Frage/Antwort in der Einwilligungserklärung eines
-		 Patienten.
-	-->
+	<!-- In diesem Beispiel repräsentiert jede Provision eine Frage/Antwort bzw. Teilaussage einer Frage/Antwort in der Einwilligungserklärung eines Patienten. -->
 	<provision>
 		<!-- per default ist alles verweigert. was nicht in den Unterelementen erlaubt ist -->
 		<type value="deny"/>
@@ -64,10 +63,7 @@
 			<end value="2050-08-31"/>
 		</period>
 		<provision>
-			<!-- ergibt sich aus der Antwort
-			     "PATDAT_erheben_speichern_nutzen=gültig"
-				 (Teil 1)
-			 -->
+			<!-- ergibt sich aus der Antwort "PATDAT_erheben_speichern_nutzen=gültig" (Teil 1) -->
 			<type value="permit"/>
 			<!-- Medizinische Daten erheben: 5 Jahre gültig -->
 			<period>
@@ -83,10 +79,7 @@
 			</code>
 		</provision>
 		<provision>
-			<!-- ergibt sich aus der Antwort
-			     "PATDAT_erheben_speichern_nutzen=gültig"
-				 (Teil 2)
-			 -->
+			<!-- ergibt sich aus der Antwort "PATDAT_erheben_speichern_nutzen=gültig" (Teil 2) -->
 			<type value="permit"/>
 			<!-- Medizinische Daten speichern: 30 Jahre gültig -->
 			<period>
@@ -102,10 +95,7 @@
 			</code>
 		</provision>
 		<provision>
-			<!-- ergibt sich aus der Antwort
-			     "PATDAT_erheben_speichern_nutzen=gültig"
-				 (Teil 3)
-			 -->
+			<!-- ergibt sich aus der Antwort "PATDAT_erheben_speichern_nutzen=gültig" (Teil 3) -->
 			<type value="permit"/>
 			<!-- Medizinische Daten nutzen: 30 Jahre gültig -->
 			<period>
@@ -120,63 +110,53 @@
 				</coding>
 			</code>
 		</provision>
+		<provision>
+			<!-- ergibt sich aus der Antwort "BIOMAT_gewinnen_lagern_nutzen=gültig" (Teil 1) -->
+			<type value="permit"/>
+			<!-- Biomaterial gewinnen: 5 Jahre gültig -->
+			<period>
+				<start value="2020-09-01"/>
+				<end value="2025-08-31"/>
+			</period>
+			<code>
+				<coding>
+					<system value="urn:oid:2.16.840.1.113883.3.1937.777.24.5.1"/>
+					<code value="2.16.840.1.113883.3.1937.777.24.5.1.TODO"/>
+					<display value="BIOMAT_gewinnen"/>
+				</coding>
+			</code>
+		</provision>
+		<provision>
+			<!-- ergibt sich aus der Antwort "BIOMAT_gewinnen_lagern_nutzen=gültig" (Teil 2) -->
+			<type value="permit"/>
+			<!-- Biomaterial lagern: 30 Jahre gültig -->
+			<period>
+				<start value="2020-09-01"/>
+				<end value="2050-08-31"/>
+			</period>
+			<code>
+				<coding>
+					<system value="urn:oid:2.16.840.1.113883.3.1937.777.24.5.1"/>
+					<code value="2.16.840.1.113883.3.1937.777.24.5.1.TODO"/>
+					<display value="BIOMAT_lagern"/>
+				</coding>
+			</code>
+		</provision>
+		<provision>
+			<!-- ergibt sich aus der Antwort "BIOMAT_gewinnen_lagern_nutzen=gültig" (Teil 3) -->
+			<type value="permit"/>
+			<!-- Biomaterial nutzen: 30 Jahre gültig -->
+			<period>
+				<start value="2020-09-01"/>
+				<end value="2050-08-31"/>
+			</period>
+			<code>
+				<coding>
+					<system value="urn:oid:2.16.840.1.113883.3.1937.777.24.5.1"/>
+					<code value="2.16.840.1.113883.3.1937.777.24.5.1.TODO"/>
+					<display value="BIOMAT_nutzen"/>
+				</coding>
+			</code>
+		</provision>
 	</provision>
-	<provision>
-		<!-- ergibt sich aus der Antwort
-			 "BIOMAT_gewinnen_lagern_nutzen=gültig"
-			 (Teil 1)
-		 -->
-		<type value="permit"/>
-		<!-- Biomaterial gewinnen: 5 Jahre gültig -->
-		<period>
-			<start value="2020-09-01"/>
-			<end value="2025-08-31"/>
-		</period>
-		<code>
-			<coding>
-				<system value="urn:oid:2.16.840.1.113883.3.1937.777.24.5.1"/>
-				<code value="2.16.840.1.113883.3.1937.777.24.5.1.TODO"/>
-				<display value="BIOMAT_gewinnen"/>
-			</coding>
-		</code>
-	</provision>
-	<provision>
-		<!-- ergibt sich aus der Antwort
-			 "BIOMAT_gewinnen_lagern_nutzen=gültig"
-			 (Teil 2)
-		 -->
-		<type value="permit"/>
-		<!-- Biomaterial lagern: 30 Jahre gültig -->
-		<period>
-			<start value="2020-09-01"/>
-			<end value="2050-08-31"/>
-		</period>
-		<code>
-			<coding>
-				<system value="urn:oid:2.16.840.1.113883.3.1937.777.24.5.1"/>
-				<code value="2.16.840.1.113883.3.1937.777.24.5.1.TODO"/>
-				<display value="BIOMAT_lagern"/>
-			</coding>
-		</code>
-	</provision>
-	<provision>
-		<!-- ergibt sich aus der Antwort
-			 "BIOMAT_gewinnen_lagern_nutzen=gültig"
-			 (Teil 3)
-		 -->
-		<type value="permit"/>
-		<!-- Biomaterial nutzen: 30 Jahre gültig -->
-		<period>
-			<start value="2020-09-01"/>
-			<end value="2050-08-31"/>
-		</period>
-		<code>
-			<coding>
-				<system value="urn:oid:2.16.840.1.113883.3.1937.777.24.5.1"/>
-				<code value="2.16.840.1.113883.3.1937.777.24.5.1.TODO"/>
-				<display value="BIOMAT_nutzen"/>
-			</coding>
-		</code>
-	</provision>
-</provision>
 </Consent>

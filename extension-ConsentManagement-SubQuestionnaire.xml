@@ -48,6 +48,7 @@
         <valueCode value="4.0.0" />
       </extension>
       <path value="Extension.value[x]" />
+      <comment value="-" />
       <min value="1" />
       <type>
         <code value="Reference" />

@@ -143,7 +143,7 @@
 		<required value="true"/>
 		<answerValueSet value="https://www.medizininformatik-initiative.de/fhir/ValueSet/MIIEinwilligungFrage3aValueSet|1.6d"/>
 	</item>
-	<!-- Item-Slice "additionalItem": zusätzliche Frage, für die kein Modul existiert bzw. benötigt wird, 1:1 aus dem TemplateFrame übernommen  -->
+	<!-- Item-Slice "@default": zusätzliche Frage, für die kein Modul existiert bzw. benötigt wird, 1:1 aus dem TemplateFrame übernommen  -->
 	<item>
 		<linkId value="555"/>
 		<code>
