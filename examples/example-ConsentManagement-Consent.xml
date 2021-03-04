@@ -31,7 +31,7 @@
 	<category>
 		<coding>
 			<system value="http://loinc.org"/>
-			<code value="57016-8"/>
+			<code value="59284-0"/>
 		</coding>
 	</category>
 	<!-- Patient, für den die Einwilligungserklärung gilt -->
