@@ -4,29 +4,13 @@
 	<name value="ConsentManagementQuestionnaireComponents"/>
 	<status value="draft"/>
 	<experimental value="true"/>
-	<date value="2020-11-26"/>
+	<date value="2021-03-03"/>
 	<compose>
+		<include>
+			<valueSet value="http://hl7.org/fhir/ValueSet/usage-context-type"/>
+		</include>
 		<include>
 			<system value="http://fhir.de/ConsentManagement/CodeSystem/QuestionnaireComponents"/>
 		</include>
 	</compose>
-	<expansion>
-		<timestamp value="2020-11-26"/>
-		<total value="3"/>
-		<contains>
-			<system value="http://fhir.de/ConsentManagement/CodeSystem/QuestionnaireComponents"/>
-			<code value="TemplateFrame" />
-			<display value="Template-Frame" />
-		</contains>
-		<contains>
-			<system value="http://fhir.de/ConsentManagement/CodeSystem/QuestionnaireComponents"/>
-			<code value="TemplateModule" />
-			<display value="Template-Module" />
-		</contains>
-		<contains>
-			<system value="http://fhir.de/ConsentManagement/CodeSystem/QuestionnaireComponents"/>
-			<code value="QuestionnaireComposed" />
-			<display value="Composed Questionnaire" />
-		</contains>
-	</expansion>
 </ValueSet>

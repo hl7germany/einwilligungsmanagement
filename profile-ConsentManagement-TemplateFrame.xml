@@ -407,9 +407,14 @@
       <mustSupport value="true" />
     </element>
     <element id="Questionnaire.item.extension:subQuestionnaire">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Questionnaire.item.extension" />
       <sliceName value="subQuestionnaire" />
-      <min value="0" />
       <max value="1" />
       <type>
         <code value="Extension" />
@@ -487,7 +492,6 @@
         <valueCode value="4.0.0" />
       </extension>
       <path value="Questionnaire.item.text" />
-      <min value="1" />
       <mustSupport value="true" />
     </element>
     <element id="Questionnaire.item.text.extension">
@@ -581,9 +585,14 @@
       </slicing>
     </element>
     <element id="Questionnaire.item.enableWhen.extension:sourceSubQuestionnaire">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Questionnaire.item.enableWhen.extension" />
       <sliceName value="sourceSubQuestionnaire" />
-      <min value="0" />
       <max value="1" />
       <type>
         <code value="Extension" />
