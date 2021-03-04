@@ -27,10 +27,6 @@
 			<valueUri value="http://ths-greifswald.de/fhir/gics/identifiers/Studien-ID"/>
 		</extension>
 	</extension>
-	<!-- Beispiel für systemspezifische/domänenspezifische Properties -->
-	<extension url="http://ths-greifswald.de/fhir/gics/domain/properties/SCANS_SIZE_LIMIT">
-		<valueString value="10485760"/>
-	</extension>
 	<identifier>
 		<system value="https://ths-greifswald.de/gics"/>
 		<value value="MII_Greifswald"/>
