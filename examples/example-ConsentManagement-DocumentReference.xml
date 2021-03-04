@@ -4,6 +4,8 @@
 		<lastUpdated value="2020-12-11T09:09:07.5320994+00:00"/>
 		<profile value="http://fhir.de/ConsentManagement/StructureDefinition/DocumentReference"/>
 	</meta>
+	<!-- FHIR will es -->
+	<status value="current"/>
 	<!-- Das vom Patienten ausgefüllte Original-(Papier-)Dokument; in diesem Beispiel ist kein valides base64 enthalten -->
 	<subject>
 		<!-- literale Referenz auf den Patienten -->
@@ -17,7 +19,7 @@
 	<content>
 		<attachment>
 			<contentType value="application/pdf"/>
-			<data value="iVBORw0KGgoAAAANSUhEUgAAAJYAAABZCAYAAADcv92DAAAABGdBTUEAAKKkxq/Z1wAAACBjSFJNAACHEAAAjBIAAQW.....[base64-codiertes PDF des unterschriebenen Patienten-Einwilligungsbogens]"/>
+			<data value="base64CodiertesPDFDesUnterschriebenenPatientenEinwilligungsbogens"/>
 		</attachment>
 	</content>
 </DocumentReference>
