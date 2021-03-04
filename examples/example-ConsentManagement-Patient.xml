@@ -1,7 +1,7 @@
 <Patient xmlns="http://hl7.org/fhir">
 	<id value="9b4a702d-162c-428a-8c5d-8b98af21b693"/>
 	<meta>
-		<lastUpdated value="2020-12-11T09:08:07.5320994+00:00"/>
+		<lastUpdated value="2020-12-11T09:08:07.5321994+00:00"/>
 		<profile value="http://fhir.de/ConsentManagement/StructureDefinition/Patient"/>
 	</meta>
 	<!-- Dies sei ein Studien-Patient, d.h. pseudonymisiert. Lediglich die PSN ist bekannt -->
