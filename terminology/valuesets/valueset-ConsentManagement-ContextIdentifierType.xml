@@ -5,7 +5,7 @@
 	<name value="ConsentManagementContextIdentifierType"/>
 	<status value="draft"/>
 	<experimental value="true"/>
-	<date value="2019-08-30"/>
+	<date value="2021-03-03"/>
 	<compose>
 		<include>
 			<system value="http://hl7.org/fhir/v2/0203"/>
@@ -29,6 +29,24 @@
 			<system value="http://hl7.org/fhir/v2/0203"/>
 			<concept>
 				<code value="ANON"/>
+			</concept>
+		</include>
+		<include>
+			<system value="http://hl7.org/fhir/v2/0203"/>
+			<concept>
+				<code value="PI"/>
+			</concept>
+		</include>
+		<include>
+			<system value="http://hl7.org/fhir/v2/0203"/>
+			<concept>
+				<code value="PT"/>
+			</concept>
+		</include>
+		<include>
+			<system value="http://hl7.org/fhir/v2/0203"/>
+			<concept>
+				<code value="VN"/>
 			</concept>
 		</include>
 	</compose>
