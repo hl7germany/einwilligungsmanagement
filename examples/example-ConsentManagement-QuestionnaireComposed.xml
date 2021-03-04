@@ -1,4 +1,8 @@
 <Questionnaire xmlns="http://hl7.org/fhir">
+	<!--
+		Dieses Questionnaire wäre im Produktiveinsatz durch das gemäß Leitfaden
+		arbeitende Tooling aus dem TemplateFrame-Beispiel generiert
+	-->
 	<id value="fe4f5dc0-d0cb-4c7e-969e-82db76ad5cd9"/>
 	<meta>
 		<lastUpdated value="2020-04-15T10:35:43.5320994+00:00"/>
@@ -89,8 +93,6 @@
 
 	<!-- Modulinhalt: Text, Frage, ... -->
 	<!-- ist expandiert aus den Vorgaben des TemplateFrame -->
-
-	<!-- Item-Slice "displayItem": statischer Text, 1:1 aus dem TemplateFrame übernommen -->
 	<item>
 		<linkId value="vorbemerkungen"/>
 		<text value="Mit dieser Einverständniserklärung willigen Sie ein, die ausgewählten Punkte für die wissenschaftliche Forschung zur Verfügung zu stellen.">
@@ -100,50 +102,56 @@
 		</text>
 		<type value="display"/>
 	</item>
-	<!-- Item-Slices "referencedModule": verknüpft die existierenden (separat definierten) TemplateModules -->
 	<item>
-		<extension url="http://fhir.de/ConsentManagement/StructureDefinition/SubQuestionnaire">
-			<valueReference>
-				<reference value="Questionnaire/d7a65ce8-2810-401a-b0db-70782a7b19a6"/>
-			</valueReference>
+		<extension url="http://hl7.org/fhir/StructureDefinition/designNote">
+			<valueMarkdown value="In dieser Gruppe werden alle in diesem Beispiel verwendeten Fragen aus dem MII-Kontext zusammengefasse."/>
 		</extension>
-		<!-- Die linkId kann identisch mit der linkId des oben referenzierte SubQuestionnaires sein, muss aber nicht -->
-		<linkId value="1"/>
-		<text value="Ich willige ein in die Erhebung, Verarbeitung, Speicherung und wissenschaftliche Nutzung meiner Patientendaten wie in Punkt 1.1 bis 1.3 der Einwilligungserklärung und Punkt 1. der Patienteninformation beschrieben.">
-			<extension url="http://hl7.org/fhir/StructureDefinition/rendering-xhtml">
-				<valueString value="Ich willige ein in die &lt;strong&gt;Erhebung, Verarbeitung, Speicherung&lt;/strong&gt; und wissenschaftliche Nutzung meiner Patientendaten wie in Punkt 1.1 bis 1.3 der Einwilligungserklärung und Punkt 1. der Patienteninformation beschrieben."/>
+		<linkId value="mii-fragen-gruppe"/>
+		<text value="Hier zunächst einige Standard-Fragen"/>
+		<type value="group"/>
+		<item>
+			<extension url="http://fhir.de/ConsentManagement/StructureDefinition/SubQuestionnaire">
+				<valueReference>
+					<reference value="Questionnaire/d7a65ce8-2810-401a-b0db-70782a7b19a6"/>
+				</valueReference>
 			</extension>
-		</text>
-		<type value="choice"/>
-		<required value="true"/>
-		<answerValueSet value="https://www.medizininformatik-initiative.de/fhir/ValueSet/MIIEinwilligungFrage1aValueSet|1.6d"/>
-		<!-- vor-ausgewählter Wert; hier als Beispiel dargestellt, im praktischen Einsatz bitte datenschutzrechtliche Implikationen beachten! -->
-		<initial>
-			<valueCoding>
-				<system value="urn:oid:2.16.840.1.113883.3.1937.777.24.11.7"/>
-				<code value="2.16.840.1.113883.3.1937.777.24.5.1.3"/>
-				<display value="unbekannt"/>
-			</valueCoding>
-		</initial>
-	</item>
-	<item>
-		<extension url="http://fhir.de/ConsentManagement/StructureDefinition/SubQuestionnaire">
-			<valueReference>
-				<reference value="Questionnaire/2c1b2f2e-8ea2-4fdb-a9e4-e946d3c19dae"/>
-			</valueReference>
-		</extension>
-		<!-- Die linkId kann identisch mit der linkId des oben referenzierte SubQuestionnaires sein, muss aber nicht -->
-		<linkId value="98"/>
-		<text value="Ich willige ein in die Gewinnung, Lagerung und wissenschaftliche Nutzung meiner Biomaterialien (Gewebe und Körperflüssigkeiten), wie in Punkt 3.1 bis 3.3 der Einwilligungserklärung und Punkt 3 der Patienteninformation beschrieben.">
-			<extension url="http://hl7.org/fhir/StructureDefinition/rendering-xhtml">
-				<valueString value="Ich willige ein in die Gewinnung, Lagerung und wissenschaftliche Nutzung meiner Biomaterialien (Gewebe und Körperflüssigkeiten), wie in Punkt 3.1 bis 3.3 der Einwilligungserklärung und Punkt 3 der Patienteninformation beschrieben."/>
+			<!-- Die linkId kann identisch mit der linkId des oben referenzierte SubQuestionnaires sein, muss aber nicht -->
+			<linkId value="1"/>
+			<text value="Ich willige ein in die Erhebung, Verarbeitung, Speicherung und wissenschaftliche Nutzung meiner Patientendaten wie in Punkt 1.1 bis 1.3 der Einwilligungserklärung und Punkt 1. der Patienteninformation beschrieben.">
+				<extension url="http://hl7.org/fhir/StructureDefinition/rendering-xhtml">
+					<valueString value="Ich willige ein in die &lt;strong&gt;Erhebung, Verarbeitung, Speicherung&lt;/strong&gt; und wissenschaftliche Nutzung meiner Patientendaten wie in Punkt 1.1 bis 1.3 der Einwilligungserklärung und Punkt 1. der Patienteninformation beschrieben."/>
+				</extension>
+			</text>
+			<type value="choice"/>
+			<required value="true"/>
+			<answerValueSet value="https://www.medizininformatik-initiative.de/fhir/ValueSet/MIIEinwilligungFrage1aValueSet|1.6d"/>
+			<!-- vor-ausgewählter Wert; hier als Beispiel dargestellt, im praktischen Einsatz bitte datenschutzrechtliche Implikationen beachten! -->
+			<initial>
+				<valueCoding>
+					<system value="urn:oid:2.16.840.1.113883.3.1937.777.24.11.7"/>
+					<code value="2.16.840.1.113883.3.1937.777.24.5.1.3"/>
+					<display value="unbekannt"/>
+				</valueCoding>
+			</initial>
+		</item>
+		<item>
+			<extension url="http://fhir.de/ConsentManagement/StructureDefinition/SubQuestionnaire">
+				<valueReference>
+					<reference value="Questionnaire/2c1b2f2e-8ea2-4fdb-a9e4-e946d3c19dae"/>
+				</valueReference>
 			</extension>
-		</text>
-		<type value="choice"/>
-		<required value="true"/>
-		<answerValueSet value="https://www.medizininformatik-initiative.de/fhir/ValueSet/MIIEinwilligungFrage3aValueSet|1.6d"/>
+			<!-- Die linkId kann identisch mit der linkId des oben referenzierte SubQuestionnaires sein, muss aber nicht -->
+			<linkId value="98"/>
+			<text value="Ich willige ein in die Gewinnung, Lagerung und wissenschaftliche Nutzung meiner Biomaterialien (Gewebe und Körperflüssigkeiten), wie in Punkt 3.1 bis 3.3 der Einwilligungserklärung und Punkt 3 der Patienteninformation beschrieben.">
+				<extension url="http://hl7.org/fhir/StructureDefinition/rendering-xhtml">
+					<valueString value="Ich willige ein in die Gewinnung, Lagerung und wissenschaftliche Nutzung meiner Biomaterialien (Gewebe und Körperflüssigkeiten), wie in Punkt 3.1 bis 3.3 der Einwilligungserklärung und Punkt 3 der Patienteninformation beschrieben."/>
+				</extension>
+			</text>
+			<type value="choice"/>
+			<required value="true"/>
+			<answerValueSet value="https://www.medizininformatik-initiative.de/fhir/ValueSet/MIIEinwilligungFrage3aValueSet|1.6d"/>
+		</item>
 	</item>
-	<!-- Item-Slice "@default": zusätzliche Frage, für die kein Modul existiert bzw. benötigt wird, 1:1 aus dem TemplateFrame übernommen  -->
 	<item>
 		<linkId value="555"/>
 		<code>

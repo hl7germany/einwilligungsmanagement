@@ -1,8 +1,4 @@
 <Questionnaire xmlns="http://hl7.org/fhir">
-	<!--
-		Dieses Questionnaire wäre im Produktiveinsatz durch das gemäß Leitfaden
-		arbeitende Tooling aus dem TemplateFrame-Beispiel generiert
-	-->
 	<id value="b191dd03-bbb9-45da-ab5f-c811bc27e9a3"/>
 	<meta>
 		<lastUpdated value="2020-11-06T13:35:43.5320994+00:00"/>
@@ -90,8 +86,6 @@
 
 
 	<!-- Modulinhalt: Text, Frage, ... -->
-
-	<!-- Item-Slice "displayItem": liefert einen statischen Text direkt im TemplateFrame -->
 	<item>
 		<linkId value="vorbemerkungen"/>
 		<text value="Mit dieser Einverständniserklärung willigen Sie ein, die ausgewählten Punkte für die wissenschaftliche Forschung zur Verfügung zu stellen.">
@@ -101,46 +95,52 @@
 		</text>
 		<type value="display"/>
 	</item>
-	<!-- Item-Slices "referencedModule": verknüpft die existierenden (separat definierten) TemplateModules -->
 	<item>
 		<extension url="http://hl7.org/fhir/StructureDefinition/designNote">
-			<valueMarkdown value="Diese Frage wurde sinnvollerweise als erste eingefügt."/>
+			<valueMarkdown value="In dieser Gruppe werden alle in diesem Beispiel verwendeten Fragen aus dem MII-Kontext zusammengefasse."/>
 		</extension>
-		<extension url="http://fhir.de/ConsentManagement/StructureDefinition/SubQuestionnaire">
-			<valueReference>
-				<reference value="Questionnaire/d7a65ce8-2810-401a-b0db-70782a7b19a6"/>
-			</valueReference>
-		</extension>
-		<!-- Die linkId kann identisch mit der linkId des oben referenzierte SubQuestionnaires sein, muss aber nicht -->
-		<linkId value="1"/>
-		<type value="choice"/>
-		<required value="true"/>
-		<answerValueSet value="https://www.medizininformatik-initiative.de/fhir/ValueSet/MIIEinwilligungFrage1aValueSet|1.6d"/>
-		<!-- vor-ausgewählter Wert; hier als Beispiel dargestellt, im praktischen Einsatz bitte datenschutzrechtliche Implikationen beachten! -->
-		<initial>
-			<valueCoding>
-				<system value="urn:oid:2.16.840.1.113883.3.1937.777.24.11.7"/>
-				<code value="2.16.840.1.113883.3.1937.777.24.5.1.3"/>
-				<display value="unbekannt"/>
-			</valueCoding>
-		</initial>
+		<linkId value="mii-fragen-gruppe"/>
+		<text value="Hier zunächst einige Standard-Fragen"/>
+		<type value="group"/>
+		<item>
+			<extension url="http://hl7.org/fhir/StructureDefinition/designNote">
+				<valueMarkdown value="Diese Frage wurde sinnvollerweise als erste eingefügt."/>
+			</extension>
+			<extension url="http://fhir.de/ConsentManagement/StructureDefinition/SubQuestionnaire">
+				<valueReference>
+					<reference value="Questionnaire/d7a65ce8-2810-401a-b0db-70782a7b19a6"/>
+				</valueReference>
+			</extension>
+			<!-- Die linkId kann identisch mit der linkId des oben referenzierte SubQuestionnaires sein, muss aber nicht -->
+			<linkId value="1"/>
+			<type value="choice"/>
+			<required value="true"/>
+			<answerValueSet value="https://www.medizininformatik-initiative.de/fhir/ValueSet/MIIEinwilligungFrage1aValueSet|1.6d"/>
+			<!-- vor-ausgewählter Wert; hier als Beispiel dargestellt, im praktischen Einsatz bitte datenschutzrechtliche Implikationen beachten! -->
+			<initial>
+				<valueCoding>
+					<system value="urn:oid:2.16.840.1.113883.3.1937.777.24.11.7"/>
+					<code value="2.16.840.1.113883.3.1937.777.24.5.1.3"/>
+					<display value="unbekannt"/>
+				</valueCoding>
+			</initial>
+		</item>
+		<item>
+			<extension url="http://hl7.org/fhir/StructureDefinition/designNote">
+				<valueMarkdown value="Diese Frage wurde sinnvollerweise als zweite eingefügt."/>
+			</extension>
+			<extension url="http://fhir.de/ConsentManagement/StructureDefinition/SubQuestionnaire">
+				<valueReference>
+					<reference value="Questionnaire/2c1b2f2e-8ea2-4fdb-a9e4-e946d3c19dae"/>
+				</valueReference>
+			</extension>
+			<!-- Die linkId kann identisch mit der linkId des oben referenzierte SubQuestionnaires sein, muss aber nicht -->
+			<linkId value="98"/>
+			<type value="choice"/>
+			<required value="true"/>
+			<answerValueSet value="https://www.medizininformatik-initiative.de/fhir/ValueSet/MIIEinwilligungFrage3aValueSet|1.6d"/>
+		</item>
 	</item>
-	<item>
-		<extension url="http://hl7.org/fhir/StructureDefinition/designNote">
-			<valueMarkdown value="Diese Frage wurde sinnvollerweise als zweite eingefügt."/>
-		</extension>
-		<extension url="http://fhir.de/ConsentManagement/StructureDefinition/SubQuestionnaire">
-			<valueReference>
-				<reference value="Questionnaire/2c1b2f2e-8ea2-4fdb-a9e4-e946d3c19dae"/>
-			</valueReference>
-		</extension>
-		<!-- Die linkId kann identisch mit der linkId des oben referenzierte SubQuestionnaires sein, muss aber nicht -->
-		<linkId value="98"/>
-		<type value="choice"/>
-		<required value="true"/>
-		<answerValueSet value="https://www.medizininformatik-initiative.de/fhir/ValueSet/MIIEinwilligungFrage3aValueSet|1.6d"/>
-	</item>
-	<!-- Item-Slice "@default": zusätzliche Frage, für die kein Modul existiert bzw. benötigt wird -->
 	<item>
 		<extension url="http://hl7.org/fhir/StructureDefinition/designNote">
 			<valueMarkdown value="Zum Schluss kommt noch ein Freitext."/>
