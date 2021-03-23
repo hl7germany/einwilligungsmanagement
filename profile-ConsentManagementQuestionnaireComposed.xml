@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="profile-consent-management-questionnaire-composed"/>
+  <id value="profile-consent-management-questionnaire-composed" />
   <url value="http://fhir.de/ConsentManagement/StructureDefinition/QuestionnaireComposed" />
   <version value="0.1" />
   <name value="ConsentManagementQuestionnaireComposed" />
@@ -84,10 +84,14 @@
       <mustSupport value="true" />
     </element>
     <element id="Questionnaire.extension:signatureRequired">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Questionnaire.extension" />
       <sliceName value="signatureRequired" />
-      <min value="0" />
-      <max value="*" />
       <type>
         <code value="Extension" />
         <profile value="http://hl7.org/fhir/StructureDefinition/questionnaire-signatureRequired" />
@@ -230,7 +234,6 @@
       <short value="Verweis auf den kanonischen, global eindeutigen Namen(&quot;Canonical identifier&quot;) des Templates Frames." />
       <definition value="Verweis auf den kanonischen, global eindeutigen Namen(&quot;Canonical identifier&quot;) des Templates Frames.&#xD;&#xA;Bei Bedarf mit Angabe der Version in Pipe-Notation (vgl. http://www.hl7.org/fhir/datatypes.html#canonical )" />
       <comment value="Beispiel: http://meine-klinik.de/fhir/NamingSystem/ProjektX/FragebogenTemplate12|1.5.6" />
-      <min value="1" />
       <max value="1" />
       <type>
         <code value="canonical" />

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="profile-consent-management-consent"/>
+  <id value="profile-consent-management-consent" />
   <url value="http://fhir.de/ConsentManagement/StructureDefinition/Consent" />
   <version value="0.1" />
   <name value="ConsentManagementConsent" />
@@ -47,10 +47,14 @@
       </slicing>
     </element>
     <element id="Consent.extension:domainReference">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Consent.extension" />
       <sliceName value="domainReference" />
-      <min value="0" />
-      <max value="*" />
       <type>
         <code value="Extension" />
         <profile value="http://fhir.de/ConsentManagement/StructureDefinition/DomainReference" />
@@ -171,7 +175,6 @@
         <valueCode value="4.0.0" />
       </extension>
       <path value="Consent.source[x]" />
-      <min value="1" />
       <type>
         <code value="Reference" />
         <targetProfile value="http://fhir.de/ConsentManagement/StructureDefinition/QuestionnaireResponse" />
