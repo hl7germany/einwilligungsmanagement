@@ -2,13 +2,19 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="profile-consent-management-template-frame"/>
   <url value="http://fhir.de/ConsentManagement/StructureDefinition/TemplateFrame" />
-  <version value="0.1" />
+  <version value="1.0.0-RC1"/>
   <name value="ConsentManagementTemplateFrame" />
   <title value="Consent Management Template Frame" />
-  <status value="draft" />
-  <experimental value="true" />
-  <date value="2019-07-31" />
-  <publisher value="Interoperabilitätsforum, AG Einwilligungsmanagement" />
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2021-03-23"/>
+  <publisher value="AG Einwilligungsmanagement des Interoperabilitätsforums"/>
+  <contact>
+	  <telecom>
+		  <system value="url"/>
+		  <value value="https://wiki.hl7.de/index.php?title=Einwilligungsmanagement_(Projekt)"/>
+	  </telecom>
+  </contact>
   <description value="Gesamtdefinition eines Questionnaires mit Verweis auf einzubindende Unter-Questionnaires sowie Freitext-Erfassung.&#xD;&#xA;Wird i.d.R. im Kontext der Domäne definiert/erstellt." />
   <fhirVersion value="4.0.1" />
   <kind value="resource" />

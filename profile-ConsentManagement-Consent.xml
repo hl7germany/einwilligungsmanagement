@@ -2,13 +2,19 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="profile-consent-management-consent" />
   <url value="http://fhir.de/ConsentManagement/StructureDefinition/Consent" />
-  <version value="0.1" />
+  <version value="1.0.0-RC1"/>
   <name value="ConsentManagementConsent" />
   <title value="Consent Management: Consent" />
-  <status value="draft" />
-  <experimental value="true" />
-  <date value="2020-03-11" />
-  <publisher value="Interoperabilitätsforum, AG Einwilligungsmanagement" />
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2021-03-23"/>
+  <publisher value="AG Einwilligungsmanagement des Interoperabilitätsforums"/>
+  <contact>
+	  <telecom>
+		  <system value="url"/>
+		  <value value="https://wiki.hl7.de/index.php?title=Einwilligungsmanagement_(Projekt)"/>
+	  </telecom>
+  </contact>
   <fhirVersion value="4.0.1" />
   <mapping>
     <identity value="workflow" />

@@ -2,13 +2,19 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="extension-consent-management-context-identifier"/>
   <url value="http://fhir.de/ConsentManagement/StructureDefinition/ContextIdentifier" />
-  <version value="0.1" />
+  <version value="1.0.0-RC1"/>
   <name value="ConsentManagementContextIdentifier" />
   <title value="Consent Management Kontext-Identifikatoren einer Domain" />
-  <status value="draft" />
-  <experimental value="true" />
-  <date value="2019-08-30" />
-  <publisher value="Interoperabilitätsforum, AG Einwilligungsmanagement" />
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2021-03-23"/>
+  <publisher value="AG Einwilligungsmanagement des Interoperabilitätsforums"/>
+  <contact>
+	  <telecom>
+		  <system value="url"/>
+		  <value value="https://wiki.hl7.de/index.php?title=Einwilligungsmanagement_(Projekt)"/>
+	  </telecom>
+  </contact>
   <description value="Definiert im Kontext einer Domain, welche Identifikatoren an welcher Ressourcen benötigt werden, um in der Policy Verwendung zu finden.&#xD;&#xA;&#xD;&#xA;Existieren mehrere Extensions im Kontext einer Domain, so werden diese UND-verknüpft.&#xD;&#xA;Die Elemente resourceType, type und system sind ebenfalls UND-verknüpft.&#xD;&#xA;&#xD;&#xA;Der FHIR-Ressourcentyp als Kontext muss immer angegeben werden.&#xD;&#xA;Identifier-Typen (type) und -Namensräume (system) sind optional. Sind mehrere type- oder system-Elemente angegeben, so sind diese untereinander ODER-verknüpft.&#xD;&#xA;Sind diese angegeben, so müssen die dem resourceType entsprechenden Ressourcen einen Identifier mit dem entsprechenden type und/oder system besitzen.&#xD;&#xA;Bei logischen Referenzen (Reference by Identifier) gilt dies entsprechend." />
   <fhirVersion value="4.0.1" />
   <kind value="complex-type" />

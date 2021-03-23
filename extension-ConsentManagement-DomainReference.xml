@@ -2,13 +2,19 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="extension-consent-management-domain-reference"/>
   <url value="http://fhir.de/ConsentManagement/StructureDefinition/DomainReference" />
-  <version value="0.1" />
+  <version value="1.0.0-RC1"/>
   <name value="ConsentManagementDomainReference" />
   <title value="Consent Management Domain Reference" />
-  <status value="draft" />
-  <experimental value="true" />
-  <date value="2019-07-31" />
-  <publisher value="Interoperabilitätsforum, AG Einwilligungsmanagement" />
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2021-03-23"/>
+  <publisher value="AG Einwilligungsmanagement des Interoperabilitätsforums"/>
+  <contact>
+	  <telecom>
+		  <system value="url"/>
+		  <value value="https://wiki.hl7.de/index.php?title=Einwilligungsmanagement_(Projekt)"/>
+	  </telecom>
+  </contact>
   <description value="Referenz zu einer Domain, in der ein Modul oder Template verwendet wird" />
   <fhirVersion value="4.0.1" />
   <kind value="complex-type" />
