@@ -4,7 +4,7 @@
 		<lastUpdated value="2020-12-11T09:39:07+00:00"/>
 		<profile value="http://fhir.de/ConsentManagement/StructureDefinition/QuestionnaireResponse"/>
 	</meta>
-	<language value="DE"/>
+	<language value="de"/>
 	<!-- canonical URL des zugrunde liegenden Questionnaires (Profil QuestionnaireComposed) -->
 	<questionnaire value="https://beispiel.de/fhir/QuestionnaireComposedBeispiel1"/>
 	<!-- Finalisierungsstatus -->

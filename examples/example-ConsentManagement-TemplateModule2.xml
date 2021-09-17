@@ -4,7 +4,7 @@
 		<lastUpdated value="2020-04-15T10:35:43.5320994+00:00"/>
 		<profile value="http://fhir.de/ConsentManagement/StructureDefinition/TemplateModule"/>
 	</meta>
-	<language value="DE"/>
+	<language value="de"/>
 	<version value="1.6d"/>
 	<!-- kontextweit eindeutiger, computer-friendly Name des Consent Moduls -->
 	<name value="BIOMAT_erheben_lagern_nutzen"/>
