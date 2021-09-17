@@ -8,8 +8,11 @@
 	<status value="current"/>
 	<!-- Das vom Patienten ausgefüllte Original-(Papier-)Dokument; in diesem Beispiel ist kein valides base64 enthalten -->
 	<subject>
-		<!-- literale Referenz auf den Patienten -->
-		<reference value="Patient/9b4a702d-162c-428a-8c5d-8b98af21b693"/>
+		<!-- logische Referenz auf den Patienten -->
+		<identifier>
+			<system value="https://ths-greifswald.de/gpas"/>
+			<value value="A38"/>
+		</identifier>
 	</subject>
 	<content>
 		<attachment>
