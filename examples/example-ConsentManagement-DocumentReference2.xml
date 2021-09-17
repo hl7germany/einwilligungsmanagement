@@ -1,5 +1,5 @@
 <DocumentReference xmlns="http://hl7.org/fhir">
-	<id value="237c359c-cb58-432c-a4a3-807bb28edfdb"/>
+	<id value="49242792-32c3-4e38-9467-57e7d4dce226"/>
 	<meta>
 		<lastUpdated value="2020-12-11T09:09:07.5320994+00:00"/>
 		<profile value="http://fhir.de/ConsentManagement/StructureDefinition/DocumentReference"/>
