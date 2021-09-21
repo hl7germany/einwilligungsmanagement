@@ -2,12 +2,12 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="extension-consent-management-source-document"/>
   <url value="http://fhir.de/ConsentManagement/StructureDefinition/SourceDocument" />
-  <version value="1.0.0-RC1"/>
+  <version value="1.0.0-RC2"/>
   <name value="ConsentManagementSourceDocument" />
   <title value="Quelldokument des Questionnaires" />
   <status value="draft"/>
-  <experimental value="true"/>
-  <date value="2021-03-23"/>
+  <experimental value="false"/>
+  <date value="2021-09-21"/>
   <publisher value="AG Einwilligungsmanagement des Interoperabilitätsforums"/>
   <contact>
 	  <telecom>
