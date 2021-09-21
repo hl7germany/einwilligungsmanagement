@@ -37,7 +37,11 @@
 				<valueMarkdown value="Design Comment des Erstellers"/>
 		</extension>
 		<!-- In der MI-I werden Fragen mit OIDs identifiziert, wie hier beispielhaft gezeigt. -->
-		<linkId value="2.16.840.1.113883.3.1937.777.24.11.7"/>	<!-- Diese linkId wird beim Einbinden in den TemplateFrame verworfen und durch die dortige ersetzt -->
+		<linkId value="dummy"/>	<!-- Diese linkId wird beim Einbinden in den TemplateFrame verworfen und durch die dortige ersetzt -->
+		<code>
+			<system value="urn:oid:2.16.840.1.113883.3.1937.777.24.1.1"/>
+			<code value="2.16.840.1.113883.3.1937.777.24.2.1567"/>
+		</code>
 		<text value="Ich willige ein in die Erhebung, Verarbeitung, Speicherung und wissenschaftliche Nutzung meiner Patientendaten wie in Punkt 1.1 bis 1.3 der Einwilligungserklärung und Punkt 1. der Patienteninformation beschrieben.">
 			<extension url="http://hl7.org/fhir/StructureDefinition/rendering-xhtml">
 				<valueString value="Ich willige ein in die &lt;strong&gt;Erhebung, Verarbeitung, Speicherung&lt;/strong&gt; und wissenschaftliche Nutzung meiner Patientendaten wie in Punkt 1.1 bis 1.3 der Einwilligungserklärung und Punkt 1. der Patienteninformation beschrieben."/>

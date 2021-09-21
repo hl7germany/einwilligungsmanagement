@@ -79,8 +79,8 @@
 			</period>
 			<code>
 				<coding>
-					<system value="urn:oid:2.16.840.1.113883.3.1937.777.24.5.1"/>
-					<code value="2.16.840.1.113883.3.1937.777.24.5.1.35"/>
+					<system value="urn:oid:2.16.840.1.113883.3.1937.777.24.5.3"/>
+					<code value="2.16.840.1.113883.3.1937.777.24.5.3.6"/>
 					<display value="MDAT_erheben"/>
 				</coding>
 			</code>
@@ -95,9 +95,9 @@
 			</period>
 			<code>
 				<coding>
-					<system value="urn:oid:2.16.840.1.113883.3.1937.777.24.5.1"/>
-					<code value="2.16.840.1.113883.3.1937.777.24.5.1.36"/>
-					<display value="MDAT_speichern"/>
+					<system value="urn:oid:2.16.840.1.113883.3.1937.777.24.5.3"/>
+					<code value="2.16.840.1.113883.3.1937.777.24.5.3.7"/>
+					<display value="MDAT_speichern_verarbeiten"/>
 				</coding>
 			</code>
 		</provision>
@@ -111,9 +111,9 @@
 			</period>
 			<code>
 				<coding>
-					<system value="urn:oid:2.16.840.1.113883.3.1937.777.24.5.1"/>
-					<code value="2.16.840.1.113883.3.1937.777.24.5.1.37"/>
-					<display value="MDAT_nutzen"/>
+					<system value="urn:oid:2.16.840.1.113883.3.1937.777.24.5.3"/>
+					<code value="2.16.840.1.113883.3.1937.777.24.5.3.8"/>
+					<display value="MDAT_wissenschaftlich_nutzen_EU_DSGVO_NIVEAU"/>
 				</coding>
 			</code>
 		</provision>
@@ -127,9 +127,9 @@
 			</period>
 			<code>
 				<coding>
-					<system value="urn:oid:2.16.840.1.113883.3.1937.777.24.5.1"/>
-					<code value="2.16.840.1.113883.3.1937.777.24.5.1.TODO"/>
-					<display value="BIOMAT_gewinnen"/>
+					<system value="urn:oid:2.16.840.1.113883.3.1937.777.24.5.3"/>
+					<code value="2.16.840.1.113883.3.1937.777.24.5.3.19"/>
+					<display value="BIOMAT_erheben"/>
 				</coding>
 			</code>
 		</provision>
@@ -143,9 +143,9 @@
 			</period>
 			<code>
 				<coding>
-					<system value="urn:oid:2.16.840.1.113883.3.1937.777.24.5.1"/>
-					<code value="2.16.840.1.113883.3.1937.777.24.5.1.TODO"/>
-					<display value="BIOMAT_lagern"/>
+					<system value="urn:oid:2.16.840.1.113883.3.1937.777.24.5.3"/>
+					<code value="2.16.840.1.113883.3.1937.777.24.5.3.20"/>
+					<display value="BIOMAT_lagern_verarbeiten"/>
 				</coding>
 			</code>
 		</provision>
@@ -159,9 +159,9 @@
 			</period>
 			<code>
 				<coding>
-					<system value="urn:oid:2.16.840.1.113883.3.1937.777.24.5.1"/>
-					<code value="2.16.840.1.113883.3.1937.777.24.5.1.TODO"/>
-					<display value="BIOMAT_nutzen"/>
+					<system value="urn:oid:2.16.840.1.113883.3.1937.777.24.5.3"/>
+					<code value="2.16.840.1.113883.3.1937.777.24.5.3.22"/>
+					<display value="BIOMAT_wissenschaftlich_nutzen_EU_DSGVO_NIVEAU"/>
 				</coding>
 			</code>
 		</provision>

@@ -37,7 +37,11 @@
 				<valueMarkdown value="Design Comment des Erstellers"/>
 		</extension>
 		<!-- In der MI-I werden Fragen mit OIDs identifiziert, wie hier beispielhaft gezeigt. -->
-		<linkId value="2.16.840.1.113883.3.1937.777.24.11.11"/>
+		<linkId value="dummy"/>
+		<code>
+			<system value="urn:oid:2.16.840.1.113883.3.1937.777.24.1.1"/>
+			<code value="2.16.840.1.113883.3.1937.777.24.2.1595"/>
+		</code>
 		<text value="Ich willige ein in die Gewinnung, Lagerung und wissenschaftliche Nutzung meiner Biomaterialien (Gewebe und Körperflüssigkeiten), wie in Punkt 3.1 bis 3.3 der Einwilligungserklärung und Punkt 3 der Patienteninformation beschrieben.">
 			<extension url="http://hl7.org/fhir/StructureDefinition/rendering-xhtml">
 				<valueString value="Ich willige ein in die Gewinnung, Lagerung und wissenschaftliche Nutzung meiner Biomaterialien (Gewebe und Körperflüssigkeiten), wie in Punkt 3.1 bis 3.3 der Einwilligungserklärung und Punkt 3 der Patienteninformation beschrieben."/>

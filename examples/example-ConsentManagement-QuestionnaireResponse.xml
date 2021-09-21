@@ -30,8 +30,8 @@
 		<linkId value="1"/>
 		<answer>
 			<valueCoding>
-				<system value="urn:oid:2.16.840.1.113883.3.1937.777.24.11.7"/>
-				<code value="2.16.840.1.113883.3.1937.777.24.5.1.1"/>
+				<system value="urn:oid:2.16.840.1.113883.3.1937.777.24.5.2"/>
+				<code value="2.16.840.1.113883.3.1937.777.24.5.2.1"/>
 				<display value="gültig"/>
 			</valueCoding>
 		</answer>
@@ -40,8 +40,8 @@
 		<linkId value="98"/>
 		<answer>
 			<valueCoding>
-				<system value="urn:oid:2.16.840.1.113883.3.1937.777.24.11.11"/>
-				<code value="2.16.840.1.113883.3.1937.777.24.5.1.13"/>
+				<system value="urn:oid:2.16.840.1.113883.3.1937.777.24.5.2"/>
+				<code value="2.16.840.1.113883.3.1937.777.24.5.2.1"/>
 				<display value="gültig"/>
 			</valueCoding>
 		</answer>
