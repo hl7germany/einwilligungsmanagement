@@ -2,12 +2,12 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="profile-consent-management-patient"/>
   <url value="http://fhir.de/ConsentManagement/StructureDefinition/Patient" />
-  <version value="1.0.0-RC2"/>
+  <version value="1.0.0"/>
   <name value="ConsentManagementPatient" />
   <title value="Consent Management: Patient" />
-  <status value="draft"/>
+  <status value="active"/>
   <experimental value="false"/>
-  <date value="2021-09-21"/>
+  <date value="2021-09-23"/>
   <publisher value="AG Einwilligungsmanagement des Interoperabilitätsforums"/>
   <contact>
 	  <telecom>
