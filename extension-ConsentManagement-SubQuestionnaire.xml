@@ -2,12 +2,12 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="extension-consent-management-sub-questionnaire"/>
   <url value="http://fhir.de/ConsentManagement/StructureDefinition/SubQuestionnaire" />
-  <version value="1.0.0"/>
+  <version value="1.0.1"/>
   <name value="SubQuestionnaire" />
   <title value="Consent Management Sub-Questionnaire" />
   <status value="active"/>
   <experimental value="false"/>
-  <date value="2021-09-23"/>
+  <date value="2022-07-20"/>
   <publisher value="AG Einwilligungsmanagement des Interoperabilitätsforums"/>
   <contact>
 	  <telecom>

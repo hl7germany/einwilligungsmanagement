@@ -1,7 +1,7 @@
 <Consent xmlns="http://hl7.org/fhir">
 	<id value="df4e3ba1-f5d0-4655-986f-7b5fbec95224"/>
 	<meta>
-		<lastUpdated value="2021-09-23T09:00:00+02:00"/>
+		<lastUpdated value="2022-07-20T09:00:00+02:00"/>
 		<profile value="http://fhir.de/ConsentManagement/StructureDefinition/Consent"/>
 	</meta>
 	<!-- Verweis auf die zugehörige Domain (hier: Studie) -->

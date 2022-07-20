@@ -1,11 +1,11 @@
 <ValueSet xmlns="http://hl7.org/fhir">
 	<id value="valueset-consent-management-template-type"/>
 	<url value="http://fhir.de/ConsentManagement/ValueSet/TemplateType"/>
-	<version value="1.0.0"/>
+	<version value="1.0.1"/>
 	<name value="ConsentManagementTemplateType"/>
 	<status value="active"/>
     <experimental value="false"/>
-    <date value="2021-09-23"/>
+    <date value="2022-07-20"/>
     <publisher value="AG Einwilligungsmanagement des Interoperabilitätsforums"/>
     <contact>
   	  <telecom>
