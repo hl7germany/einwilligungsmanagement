@@ -2,12 +2,12 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="profile-consent-management-consent" />
   <url value="http://fhir.de/ConsentManagement/StructureDefinition/Consent" />
-  <version value="1.0.1" />
+  <version value="1.0.0" />
   <name value="ConsentManagementConsent" />
   <title value="Consent Management: Consent" />
   <status value="active" />
   <experimental value="false" />
-  <date value="2022-07-20" />
+  <date value="2021-09-23" />
   <publisher value="AG Einwilligungsmanagement des Interoperabilitätsforums" />
   <contact>
     <telecom>
@@ -1982,7 +1982,7 @@
       <definition value="A classification of the type of consents found in the statement. This element supports indexing and retrieval of consent statements." />
       <comment value="Not all terminology uses fit this general pattern. In some cases, models should not use CodeableConcept and use Coding directly and provide their own structure for managing text, codings, translations and the relationship between elements and pre- and post-coordination." />
       <min value="1" />
-      <max value="1" />
+      <max value="*" />
       <base>
         <path value="Consent.category" />
         <min value="1" />
@@ -2136,7 +2136,7 @@
       <comment value="Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true." />
       <requirements value="Allows for alternative encodings within a code system, and translations to other code systems." />
       <min value="1" />
-      <max value="1" />
+      <max value="*" />
       <base>
         <path value="CodeableConcept.coding" />
         <min value="0" />
@@ -5050,13 +5050,11 @@
     </element>
     <element id="Consent.category">
       <path value="Consent.category" />
-      <max value="1" />
       <mustSupport value="true" />
     </element>
     <element id="Consent.category.coding">
       <path value="Consent.category.coding" />
       <min value="1" />
-      <max value="1" />
       <mustSupport value="true" />
     </element>
     <element id="Consent.patient">
