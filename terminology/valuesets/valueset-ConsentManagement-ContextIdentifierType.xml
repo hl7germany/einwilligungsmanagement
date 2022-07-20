@@ -15,7 +15,7 @@
     </contact>
 	<compose>
 		<include>
-			<system value="http://hl7.org/fhir/v2/0203"/>
+			<system value="	http://terminology.hl7.org/CodeSystem/v2-0203"/>
 			<concept>
 				<code value="MR"/>
 			</concept>
@@ -33,25 +33,25 @@
 			</concept>
 		</include>
 		<include>
-			<system value="http://hl7.org/fhir/v2/0203"/>
+			<system value="	http://terminology.hl7.org/CodeSystem/v2-0203"/>
 			<concept>
 				<code value="ANON"/>
 			</concept>
 		</include>
 		<include>
-			<system value="http://hl7.org/fhir/v2/0203"/>
+			<system value="	http://terminology.hl7.org/CodeSystem/v2-0203"/>
 			<concept>
 				<code value="PI"/>
 			</concept>
 		</include>
 		<include>
-			<system value="http://hl7.org/fhir/v2/0203"/>
+			<system value="	http://terminology.hl7.org/CodeSystem/v2-0203"/>
 			<concept>
 				<code value="PT"/>
 			</concept>
 		</include>
 		<include>
-			<system value="http://hl7.org/fhir/v2/0203"/>
+			<system value="	http://terminology.hl7.org/CodeSystem/v2-0203"/>
 			<concept>
 				<code value="VN"/>
 			</concept>
