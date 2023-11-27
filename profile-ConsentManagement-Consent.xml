@@ -92,10 +92,57 @@
     </element>
     <element id="Consent.category">
       <path value="Consent.category" />
+      <slicing>
+        <discriminator>
+          <type value="pattern" />
+          <path value="$this" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
       <mustSupport value="true" />
     </element>
-    <element id="Consent.category.coding">
+    <element id="Consent.category:consentCategory">
+      <path value="Consent.category" />
+      <sliceName value="consentCategory" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Consent.category:consentCategory.coding">
       <path value="Consent.category.coding" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Consent.category:consentCategory.coding.system">
+      <path value="Consent.category.coding.system" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Consent.category:consentCategory.coding.code">
+      <path value="Consent.category.coding.code" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Consent.category:templateType">
+      <path value="Consent.category" />
+      <sliceName value="templateType" />
+      <mustSupport value="true" />
+      <binding>
+        <strength value="extensible" />
+        <valueSet value="http://fhir.de/ConsentManagement/ValueSet/TemplateType" />
+      </binding>
+    </element>
+    <element id="Consent.category:templateType.coding">
+      <path value="Consent.category.coding" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Consent.category:templateType.coding.system">
+      <path value="Consent.category.coding.system" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Consent.category:templateType.coding.code">
+      <path value="Consent.category.coding.code" />
       <min value="1" />
       <mustSupport value="true" />
     </element>
