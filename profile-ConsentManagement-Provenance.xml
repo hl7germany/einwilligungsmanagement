@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="profile-consent-management-provenance"/>
+  <id value="profile-consent-management-provenance" />
   <url value="http://fhir.de/ConsentManagement/StructureDefinition/Provenance" />
-  <version value="1.0.1"/>
+  <version value="1.0.3" />
   <name value="ConsentManagementProvenance" />
   <title value="Consent Management Provenance" />
-  <status value="active"/>
-  <experimental value="false"/>
-  <date value="2022-07-20"/>
-  <publisher value="AG Einwilligungsmanagement des Interoperabilitätsforums"/>
+  <status value="active" />
+  <experimental value="false" />
+  <date value="2023-11-28" />
+  <publisher value="AG Einwilligungsmanagement des Interoperabilitätsforums" />
   <contact>
-	  <telecom>
-		  <system value="url"/>
-		  <value value="https://wiki.hl7.de/index.php?title=Einwilligungsmanagement_(Projekt)"/>
-	  </telecom>
+    <telecom>
+      <system value="url" />
+      <value value="https://wiki.hl7.de/index.php?title=Einwilligungsmanagement_(Projekt)" />
+    </telecom>
   </contact>
   <fhirVersion value="4.0.1" />
   <mapping>
@@ -48,12 +48,6 @@
   <derivation value="constraint" />
   <differential>
     <element id="Provenance.target">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Provenance.target" />
       <type>
         <code value="Reference" />
@@ -84,33 +78,15 @@
       <mustSupport value="true" />
     </element>
     <element id="Provenance.agent">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Provenance.agent" />
       <definition value="An dieser Stelle soll die verwendete Software dokumentiert werden. Über die Form der Dokumentation wird hier keine Aussage getroffen, d.h. auch eine freitextliche Angabe (agent.who.display) ist möglich.&#xD;&#xA;&#xD;&#xA;Optional können die an der Erstellung der Einwilligung beteiligten Personen und/oder Organisationen hier referenziert werden, sofern im konkreten Anwendungsfall die Referenzierung mittels signature.who nicht ausreicht." />
       <mustSupport value="true" />
     </element>
     <element id="Provenance.agent.who">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Provenance.agent.who" />
       <mustSupport value="true" />
     </element>
     <element id="Provenance.entity">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Provenance.entity" />
       <mustSupport value="true" />
     </element>
@@ -126,16 +102,11 @@
       <mustSupport value="true" />
     </element>
     <element id="Provenance.entity.what">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Provenance.entity.what" />
       <type>
         <code value="Reference" />
         <targetProfile value="http://fhir.de/ConsentManagement/StructureDefinition/DocumentReference" />
+        <targetProfile value="http://fhir.de/ConsentManagement/StructureDefinition/QuestionnaireResponse" />
       </type>
       <mustSupport value="true" />
     </element>
@@ -151,9 +122,6 @@
       <mustSupport value="true" />
     </element>
     <element id="Provenance.signature">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="trial-use" />
-      </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
         <valueCode value="4.0.0" />
       </extension>
@@ -161,18 +129,9 @@
       <mustSupport value="true" />
     </element>
     <element id="Provenance.signature.type">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Provenance.signature.type" />
       <mustSupport value="true" />
       <binding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
-          <valueString value="SignatureType" />
-        </extension>
         <strength value="extensible" />
       </binding>
     </element>
@@ -209,22 +168,10 @@
       <mustSupport value="true" />
     </element>
     <element id="Provenance.signature.who">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Provenance.signature.who" />
       <mustSupport value="true" />
     </element>
     <element id="Provenance.signature.onBehalfOf">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Provenance.signature.onBehalfOf" />
       <mustSupport value="true" />
     </element>
