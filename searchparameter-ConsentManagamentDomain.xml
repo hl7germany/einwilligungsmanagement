@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SearchParameter xmlns="http://hl7.org/fhir">
+  <id value="domain" />
+  <url value="http://fhir.de/ConsentManagement/SearchParameter/domain" />
+  <version value="1.0.3" />
+  <name value="ConsentManagementSpDomain" />
+  <status value="active" />
+  <experimental value="false" />
+  <date value="2023-11-28" />
+  <publisher value="AG Einwilligungsmanagement des Interoperabilitätsforums" />
+  <contact>
+    <name value="AG Einwilligungsmanagement des Interoperabilitätsforums" />
+    <telecom>
+      <system value="url" />
+      <value value="https://wiki.hl7.de/index.php?title=Einwilligungsmanagement_(Projekt)" />
+      <use value="work" />
+    </telecom>
+  </contact>
+  <description value="Eindeutiger Name (Identifikator) der referenzierten Consent Domain" />
+  <code value="domain" />
+  <base value="Consent" />
+  <type value="reference" />
+  <expression value="extension('http://fhir.de/ConsentManagement/StructureDefinition/DomainReference').extension('domain').valueReference" />
+  <multipleOr value="false" />
+  <multipleAnd value="false" />
+</SearchParameter>
