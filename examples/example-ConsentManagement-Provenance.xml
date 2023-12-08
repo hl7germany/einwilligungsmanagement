@@ -42,7 +42,7 @@
 		<who>
 			<reference value="Patient/9b4a702d-162c-428a-8c5d-8b98af21b693"/>
 		</who>
-		<data value="iVBORw0KGgoAAAANSUhEUgAAAJYAAABZCAYCCCDcv92DAAAABGdBTUEAAKKkxq/Z1wAAACBjSFJNAACHEAAAjBIAAQW.....[base64-codiert, z.B. Scan der Unterschrift]"/>
+		<data value="RGllcyBpc3QgZWluIEJhc2U2NC1jb2RpZXJ0ZXIgU3RyaW5n"/>
 	</signature>
 	<!-- Unterschrift des aufklärenden Arztes -->
 	<signature>
