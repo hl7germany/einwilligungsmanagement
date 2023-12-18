@@ -27,11 +27,25 @@
 			<code value="research"/>
 		</coding>
 	</scope>
-	<!-- Consent-Kategorie, hier: Einwilligung -->
+  <!-- allgemeine Consent-Kategorie, hier: Einwilligung -->
 	<category>
 		<coding>
 			<system value="http://loinc.org"/>
 			<code value="59284-0"/>
+		</coding>
+	</category>
+  <!-- Consent-Kategorie resultType, hier: Dokument -->
+	<category>
+		<coding>
+			<system value="http://fhir.de/ConsentManagement/CodeSystem/ResultType"/>
+			<code value="document"/>
+		</coding>
+	</category>
+  <!-- Consent-Kategorie bezogen auf das ValueSet 'ConsentManagementTemplateType', hier: Einwilligung -->
+	<category>
+		<coding>
+			<system value="http://fhir.de/ConsentManagement/CodeSystem/TemplateType"/>
+			   <code value="CONSENT-OPT-IN"/>
 		</coding>
 	</category>
 	<!-- Patient, für den die Einwilligungserklärung gilt -->
@@ -143,13 +157,9 @@
 			</code>
 		</provision>
 		<provision>
-			<!-- ergibt sich aus der Antwort "BIOMAT_gewinnen_lagern_nutzen=gültig" (Teil 1) -->
-			<type value="permit"/>
-			<!-- Biomaterial gewinnen: 5 Jahre gültig -->
-			<period>
-				<start value="2020-09-01"/>
-				<end value="2025-08-31"/>
-			</period>
+			<!-- ergibt sich aus der Antwort "BIOMAT_gewinnen_lagern_nutzen=ungültig" (Teil 1) -->
+			<type value="deny"/>
+			<!-- Biomaterial gewinnen: unbegrenzt ungültig, die Gültigkeitszeit ergibt sich aus Provision Level 1  -->
 			<action>
 				<coding>
 					<!-- Das verwendete Codesystem dient lediglich der Veranschaulichung und ist nirgends definiert -->
@@ -168,13 +178,9 @@
 			</code>
 		</provision>
 		<provision>
-			<!-- ergibt sich aus der Antwort "BIOMAT_gewinnen_lagern_nutzen=gültig" (Teil 2) -->
-			<type value="permit"/>
-			<!-- Biomaterial lagern: 30 Jahre gültig -->
-			<period>
-				<start value="2020-09-01"/>
-				<end value="2050-08-31"/>
-			</period>
+			<!-- ergibt sich aus der Antwort "BIOMAT_gewinnen_lagern_nutzen=ungültig" (Teil 2) -->
+			<type value="deny"/>
+      <!-- Biomaterial lagern: unbegrenzt ungültig, die Gültigkeitszeit ergibt sich aus Provision Level 1 -->
 			<action>
 				<coding>
 					<!-- Das verwendete Codesystem dient lediglich der Veranschaulichung und ist nirgends definiert -->
@@ -193,13 +199,9 @@
 			</code>
 		</provision>
 		<provision>
-			<!-- ergibt sich aus der Antwort "BIOMAT_gewinnen_lagern_nutzen=gültig" (Teil 3) -->
-			<type value="permit"/>
-			<!-- Biomaterial nutzen: 30 Jahre gültig -->
-			<period>
-				<start value="2020-09-01"/>
-				<end value="2050-08-31"/>
-			</period>
+			<!-- ergibt sich aus der Antwort "BIOMAT_gewinnen_lagern_nutzen=ungültig" (Teil 3) -->
+			<type value="deny"/>
+      <!-- Biomaterial nutzen: unbegrenzt ungültig, die Gültigkeitszeit ergibt sich aus Provision Level 1 -->
 			<action>
 				<coding>
 					<!-- Das verwendete Codesystem dient lediglich der Veranschaulichung und ist nirgends definiert -->

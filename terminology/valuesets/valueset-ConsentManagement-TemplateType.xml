@@ -5,7 +5,7 @@
 	<name value="ConsentManagementTemplateType"/>
 	<status value="active"/>
     <experimental value="false"/>
-    <date value="2023-11-28"/>
+    <date value="2023-12-18"/>
     <publisher value="AG Einwilligungsmanagement des Interoperabilitätsforums"/>
     <contact>
   	  <telecom>
@@ -14,12 +14,6 @@
   	  </telecom>
     </contact>
 	<compose>
-		<include>
-			<system value="http://loinc.org"/>
-			<concept>
-				<code value="59284-0"/>
-			</concept>
-		</include>
 		<include>
 			<system value="http://fhir.de/ConsentManagement/CodeSystem/TemplateType"/>
 		</include>
