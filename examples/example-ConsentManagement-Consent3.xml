@@ -1,0 +1,452 @@
+<Consent xmlns="http://hl7.org/fhir">
+  <id value="a1480fd8-5a07-439e-9635-16e81b71447a"/>
+  <meta>
+    <lastUpdated value="2024-01-15T15:04:08.701+01:00"/>
+    <profile value="https://www.medizininformatik-initiative.de/fhir/modul-consent/StructureDefinition/mii-pr-consent-einwilligung"/>
+  </meta>
+  <extension url="http://fhir.de/ConsentManagement/StructureDefinition/DomainReference">
+    <extension url="domain">
+      <valueReference>
+        <reference value="ResearchStudy/1bf8568b-bfa4-49f4-8a3a-51024974012b"/>
+      </valueReference>
+    </extension>
+    <extension url="status">
+      <valueCoding>
+        <system value="http://hl7.org/fhir/publication-status"/>
+        <code value="active"/>
+      </valueCoding>
+    </extension>
+  </extension>
+  <status value="active"/>
+  <scope>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/consentscope"/>
+      <code value="research"/>
+    </coding>
+  </scope>
+  <category>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="57016-8"/>
+    </coding>
+  </category>
+  <category>
+    <coding>
+      <system value="http://fhir.de/ConsentManagement/CodeSystem/ResultType"/>
+      <code value="consent-status"/>
+    </coding>
+  </category>
+  <category>
+    <coding>
+      <system value="https://www.medizininformatik-initiative.de/fhir/modul-consent/CodeSystem/mii-cs-consent-consent_category"/>
+      <code value="2.16.840.1.113883.3.1937.777.24.2.184"/>
+    </coding>
+  </category>
+  <patient>
+    <reference value="Patient/6ae55815-07e8-4cbf-a900-5bccca739a7a"/>
+    <display value="studyPSN dic_810MT"/>
+  </patient>
+  <dateTime value="2024-01-15T00:00:00+01:00"/>
+  <organization>
+    <display value="MII"/>
+  </organization>
+  //TODO reference auf 3 ausgefüllte QuestionnaireResponses (aber source[x] 0..1)
+  <policy>
+    <uri value="urn:oid:2.16.840.1.113883.3.1937.777.24.2.1790"/>
+    //TODO hier auch auf andere verweisen
+  </policy>
+  <provision>
+    <type value="deny"/>
+    <period>
+      <start value="2024-01-01T00:00:00+01:00"/>
+      <end value="2029-01-01T00:00:00+01:00"/>
+    </period>
+    <provision>
+      <type value="deny"/>
+      <period>
+        <start value="2024-01-15T00:00:00+01:00"/>
+      </period>
+      <code>
+        <coding>
+          <system value="https://ths-greifswald.de/fhir/CodeSystem/gics/Policy"/>
+          <code value="IDAT_erheben"/>
+          <display value="Erfassung neuer identifizierender Daten (IDAT)"/>
+        </coding>
+        <coding>
+          <system value="urn:oid:2.16.840.1.113883.3.1937.777.24.5.3"/>
+          <code value="2.16.840.1.113883.3.1937.777.24.5.3.2"/>
+          <display value="IDAT erheben"/>
+        </coding>
+      </code>
+    </provision>
+    <provision>
+      <type value="deny"/>
+      <period>
+        <start value="2024-01-15T00:00:00+01:00"/>
+      </period>
+      <code>
+        <coding>
+          <system value="https://ths-greifswald.de/fhir/CodeSystem/gics/Policy"/>
+          <code value="MDAT_erheben"/>
+          <display value="Erfassung medizinischer Daten (MDAT)"/>
+        </coding>
+        <coding>
+          <system value="urn:oid:2.16.840.1.113883.3.1937.777.24.5.3"/>
+          <code value="2.16.840.1.113883.3.1937.777.24.5.3.6"/>
+          <display value="MDAT erheben"/>
+        </coding>
+      </code>
+    </provision>
+    <provision>
+      <type value="permit"/>
+      <period>
+        <start value="2024-01-01T00:00:00+01:00"/>
+        <end value="2054-01-01T00:00:00+01:00"/>
+      </period>
+      <code>
+        <coding>
+          <system value="https://ths-greifswald.de/fhir/CodeSystem/gics/Policy/MII"/>
+          <code value="IDAT_bereitstellen_EU_DSGVO_konform"/>
+          <display value="Herausgabe identifizierender Daten (IDAT) an unabhängige Treuhandstelle zur weiteren Verarbeitung"/>
+        </coding>
+        <coding>
+          <system value="urn:oid:2.16.840.1.113883.3.1937.777.24.5.3"/>
+          <code value="2.16.840.1.113883.3.1937.777.24.5.3.5"/>
+          <display value="IDAT bereitstellen EU DSGVO NIVEAU"/>
+        </coding>
+      </code>
+    </provision>
+    <provision>
+      <type value="deny"/>
+      <period>
+        <start value="2024-01-15T00:00:00+01:00"/>
+      </period>
+      <code>
+        <coding>
+          <system value="https://ths-greifswald.de/fhir/CodeSystem/gics/Policy/MII"/>
+          <code value="Rekontaktierung_Ergebnisse_erheblicher_Bedeutung"/>
+          <display value="Rekontaktierung des Betroffenen bei Ergebnissen von erheblicher Bedeutung"/>
+        </coding>
+        <coding>
+          <system value="urn:oid:2.16.840.1.113883.3.1937.777.24.5.3"/>
+          <code value="2.16.840.1.113883.3.1937.777.24.5.3.37"/>
+          <display value="Rekontaktierung Ergebnisse erheblicher Bedeutung"/>
+        </coding>
+      </code>
+    </provision>
+    <provision>
+      <type value="permit"/>
+      <period>
+        <start value="2024-01-01T00:00:00+01:00"/>
+        <end value="2054-01-01T00:00:00+01:00"/>
+      </period>
+      <code>
+        <coding>
+          <system value="https://ths-greifswald.de/fhir/CodeSystem/gics/Policy"/>
+          <code value="MDAT_zusammenfuehren_Dritte"/>
+          <display value="Zusammenführung medizinischer Daten (MDAT) mit Dritten Forschungspartnern, sofern dort eine Einwilligung vorliegt"/>
+        </coding>
+        <coding>
+          <system value="urn:oid:2.16.840.1.113883.3.1937.777.24.5.3"/>
+          <code value="2.16.840.1.113883.3.1937.777.24.5.3.9"/>
+          <display value="MDAT zusammenfuehren Dritte"/>
+        </coding>
+      </code>
+    </provision>
+    <provision>
+      <type value="permit"/>
+      <period>
+        <start value="2024-01-01T00:00:00+01:00"/>
+        <end value="2054-01-01T00:00:00+01:00"/>
+      </period>
+      <code>
+        <coding>
+          <system value="https://ths-greifswald.de/fhir/CodeSystem/gics/Policy"/>
+          <code value="MDAT_speichern_verarbeiten"/>
+          <display value="Speicherung und Verarbeitung von medizinischen codierten Daten zu Zwecken med. Forschung innerhalb der verantwortlichen Stelle (MDAT)"/>
+        </coding>
+        <coding>
+          <system value="urn:oid:2.16.840.1.113883.3.1937.777.24.5.3"/>
+          <code value="2.16.840.1.113883.3.1937.777.24.5.3.7"/>
+          <display value="MDAT speichern, verarbeiten"/>
+        </coding>
+      </code>
+    </provision>
+
+    <provision>
+      <type value="deny"/>
+      <period>
+        <start value="2024-01-15T00:00:00+01:00"/>
+      </period>
+      <code>
+        <coding>
+          <system value="https://ths-greifswald.de/fhir/CodeSystem/gics/Policy/MII"/>
+          <code value="Rekontaktierung_Zusatzbefund"/>
+          <display value="Rekontaktierung bezüglich Zusatzbefund im Rahmen der am Standort dafür entwickelten Prozesse und der im Nutzungsantrag angegebenen Bedingungen"/>
+        </coding>
+        <coding>
+          <system value="urn:oid:2.16.840.1.113883.3.1937.777.24.5.3"/>
+          <code value="2.16.840.1.113883.3.1937.777.24.5.3.31"/>
+          <display value="Rekontaktierung Zusatzbefund"/>
+        </coding>
+      </code>
+    </provision>
+    <provision>
+      <type value="permit"/>
+      <period>
+        <start value="2024-01-01T00:00:00+01:00"/>
+        <end value="2054-01-01T00:00:00+01:00"/>
+      </period>
+      <code>
+        <coding>
+          <system value="https://ths-greifswald.de/fhir/CodeSystem/gics/Policy"/>
+          <code value="IDAT_speichern_verarbeiten"/>
+          <display value="Speicherung und Verarbeitung identifizierender Daten (IDAT) zu Zwecken med. Forschung in der verantwortlichen Stelle"/>
+        </coding>
+        <coding>
+          <system value="urn:oid:2.16.840.1.113883.3.1937.777.24.5.3"/>
+          <code value="2.16.840.1.113883.3.1937.777.24.5.3.3"/>
+          <display value="IDAT speichern, verarbeiten"/>
+        </coding>
+      </code>
+    </provision>
+    <provision>
+      <type value="deny"/>
+      <period>
+        <start value="2024-01-15T00:00:00+01:00"/>
+      </period>
+      <code>
+        <coding>
+          <system value="https://ths-greifswald.de/fhir/CodeSystem/gics/Policy/MII"/>
+          <code value="KKDAT_5J_pro_speichern_verarbeiten"/>
+          <display value="Prospektive Krankenkassendaten (KKDAT) aus fünf Jahren ab Einwilligung speichern und codiert verarbeiten zu Zwecken der med. Forschung in der verantwortlichen Stelle"/>
+        </coding>
+        <coding>
+          <system value="urn:oid:2.16.840.1.113883.3.1937.777.24.5.3"/>
+          <code value="2.16.840.1.113883.3.1937.777.24.5.3.16"/>
+          <display value="KKDAT 5J prospektiv speichern verarbeiten"/>
+        </coding>
+      </code>
+    </provision>
+
+    <provision>
+      <type value="deny"/>
+      <period>
+        <start value="2024-01-15T00:00:00+01:00"/>
+      </period>
+      <code>
+        <coding>
+          <system value="https://ths-greifswald.de/fhir/CodeSystem/gics/Policy"/>
+          <code value="Rekontaktierung_Verknuepfung_Datenbanken"/>
+          <display value="Rekontaktierung zur Verknüpfung von Patientendaten mit Daten anderer Datenbanken"/>
+        </coding>
+        <coding>
+          <system value="urn:oid:2.16.840.1.113883.3.1937.777.24.5.3"/>
+          <code value="2.16.840.1.113883.3.1937.777.24.5.3.27"/>
+          <display value="Rekontaktierung Verknüpfung Datenbanken"/>
+        </coding>
+      </code>
+    </provision>
+
+    <provision>
+      <type value="deny"/>
+      <period>
+        <start value="2024-01-15T00:00:00+01:00"/>
+      </period>
+      <code>
+        <coding>
+          <system value="https://ths-greifswald.de/fhir/CodeSystem/gics/Policy/MII"/>
+          <code value="KKDAT_KVNR_5J_pro_uebertragen"/>
+          <display value="Erlaubnis zur prospektiven Übermittlung der KVNr., MII-Pseudonym und Zeitraum Datenübermittlung (von: Datum Unterschrift; bis: max. 5 Kalenderjahre nach Unterschrift) an zuständige Stelle"/>
+        </coding>
+        <coding>
+          <system value="urn:oid:2.16.840.1.113883.3.1937.777.24.5.3"/>
+          <code value="2.16.840.1.113883.3.1937.777.24.5.3.39"/>
+          <display value="KKDAT 5J prospektiv uebertragen KVNR"/>
+        </coding>
+      </code>
+    </provision>
+    <provision>
+      <type value="deny"/>
+      <period>
+        <start value="2024-01-15T00:00:00+01:00"/>
+      </period>
+      <code>
+        <coding>
+          <system value="https://ths-greifswald.de/fhir/CodeSystem/gics/Policy/MII"/>
+          <code value="KKDAT_KVNR_5J_retro_uebertragen"/>
+          <display value="Erlaubnis zur retrospektiven Übermittlung der KVNr., MII-Pseudonym und Zeitraum Datenübermittlung (von:5 Jahre vor Datum Unterschrift; bis: Datum Unterschrift) an zuständige Stelle"/>
+        </coding>
+        <coding>
+          <system value="urn:oid:2.16.840.1.113883.3.1937.777.24.5.3"/>
+          <code value="2.16.840.1.113883.3.1937.777.24.5.3.38"/>
+          <display value="KKDAT 5J retrospektiv uebertragen KVNR"/>
+        </coding>
+      </code>
+    </provision>
+    <provision>
+      <type value="permit"/>
+      <period>
+        <start value="2024-01-01T00:00:00+01:00"/>
+        <end value="2054-01-01T00:00:00+01:00"/>
+      </period>
+      <code>
+        <coding>
+          <system value="https://ths-greifswald.de/fhir/CodeSystem/gics/Policy/MII"/>
+          <code value="MDAT_wissenschaftlich_nutzen_EU_DSGVO_konform"/>
+          <display value="Bereitstellung umcodierter medizinischer Daten (MDAT) für wissenschaftliche Nutzung zu Zwecken med. Forschung an externe Forscher"/>
+        </coding>
+        <coding>
+          <system value="urn:oid:2.16.840.1.113883.3.1937.777.24.5.3"/>
+          <code value="2.16.840.1.113883.3.1937.777.24.5.3.8"/>
+          <display value="MDAT wissenschaftlich nutzen EU DSGVO NIVEAU"/>
+        </coding>
+      </code>
+    </provision>
+    <provision>
+      <type value="deny"/>
+      <period>
+        <start value="2024-01-15T00:00:00+01:00"/>
+      </period>
+      <code>
+        <coding>
+          <system value="https://ths-greifswald.de/fhir/CodeSystem/gics/Policy/MII"/>
+          <code value="KKDAT_5J_pro_uebertragen"/>
+          <display value="Prospektive Krankenkassendaten (KKDAT) für fünf Kalenderjahre nach Datum Unterschrift übertragen"/>
+        </coding>
+        <coding>
+          <system value="urn:oid:2.16.840.1.113883.3.1937.777.24.5.3"/>
+          <code value="2.16.840.1.113883.3.1937.777.24.5.3.15"/>
+          <display value="KKDAT 5J prospektiv uebertragen"/>
+        </coding>
+      </code>
+    </provision>
+    <provision>
+      <type value="deny"/>
+      <period>
+        <start value="2024-01-15T00:00:00+01:00"/>
+      </period>
+      <code>
+        <coding>
+          <system value="https://ths-greifswald.de/fhir/CodeSystem/gics/Policy"/>
+          <code value="Rekontaktierung_weitere_Erhebung"/>
+          <display value="Rekontaktierung bezüglich Erhebung zusätzlicher Daten"/>
+        </coding>
+        <coding>
+          <system value="urn:oid:2.16.840.1.113883.3.1937.777.24.5.3"/>
+          <code value="2.16.840.1.113883.3.1937.777.24.5.3.28"/>
+          <display value="Rekontaktierung weitere Erhebung"/>
+        </coding>
+      </code>
+    </provision>
+    <provision>
+      <type value="permit"/>
+      <period>
+        <start value="2024-01-01T00:00:00+01:00"/>
+        <end value="2054-01-01T00:00:00+01:00"/>
+      </period>
+      <code>
+        <coding>
+          <system value="https://ths-greifswald.de/fhir/CodeSystem/gics/Policy"/>
+          <code value="IDAT_zusammenfuehren_Dritte"/>
+          <display value="Zusammenführung identifizierender Daten (IDAT) über die unabhängige Treuhandstelle mit Dritten Forschungspartnern, sofern dort eine Einwilligung vorliegt"/>
+        </coding>
+        <coding>
+          <system value="urn:oid:2.16.840.1.113883.3.1937.777.24.5.3"/>
+          <code value="2.16.840.1.113883.3.1937.777.24.5.3.4"/>
+          <display value="IDAT zusammenfuehren Dritte"/>
+        </coding>
+      </code>
+    </provision>
+    <provision>
+      <type value="deny"/>
+      <period>
+        <start value="2024-01-15T00:00:00+01:00"/>
+      </period>
+      <code>
+        <coding>
+          <system value="https://ths-greifswald.de/fhir/CodeSystem/gics/Policy/MII"/>
+          <code value="KKDAT_5J_retro_uebertragen"/>
+          <display value="Krankenkassendaten (KKDAT) der letzten fünf Kalenderjahre vor Datum Unterschrift übertragen"/>
+        </coding>
+        <coding>
+          <system value="urn:oid:2.16.840.1.113883.3.1937.777.24.5.3"/>
+          <code value="2.16.840.1.113883.3.1937.777.24.5.3.11"/>
+          <display value="KKDAT 5J retrospektiv uebertragen"/>
+        </coding>
+      </code>
+    </provision>
+    <provision>
+      <type value="deny"/>
+      <period>
+        <start value="2024-01-15T00:00:00+01:00"/>
+      </period>
+      <code>
+        <coding>
+          <system value="https://ths-greifswald.de/fhir/CodeSystem/gics/Policy/MII"/>
+          <code value="KKDAT_5J_retro_speichern_verarbeiten"/>
+          <display value="Retrospektive Krankenkassendaten (KKDAT) aus fünf Jahren vor Einwilligung speichern und codiert verarbeiten zu Zwecken med. Forschung in der verantwortlichen Stelle"/>
+        </coding>
+        <coding>
+          <system value="urn:oid:2.16.840.1.113883.3.1937.777.24.5.3"/>
+          <code value="2.16.840.1.113883.3.1937.777.24.5.3.12"/>
+          <display value="KKDAT 5J retrospektiv speichern verarbeiten"/>
+        </coding>
+      </code>
+    </provision>
+    <provision>
+      <type value="deny"/>
+      <period>
+        <start value="2024-01-15T00:00:00+01:00"/>
+      </period>
+      <code>
+        <coding>
+          <system value="https://ths-greifswald.de/fhir/CodeSystem/gics/Policy/MII"/>
+          <code value="KKDAT_5J_pro_wissenschaftlich_nutzen"/>
+          <display value="Bereitstellung umcodierter prospektiver Krankenkassendaten (KKDAT) aus fünf Jahren ab Einwilligung zu Zwecken med. Forschung an ext. Forscher"/>
+        </coding>
+        <coding>
+          <system value="urn:oid:2.16.840.1.113883.3.1937.777.24.5.3"/>
+          <code value="2.16.840.1.113883.3.1937.777.24.5.3.17"/>
+          <display value="KKDAT 5J prospektiv wissenschaftlich nutzen"/>
+        </coding>
+      </code>
+    </provision>
+    <provision>
+      <type value="deny"/>
+      <period>
+        <start value="2024-01-15T00:00:00+01:00"/>
+      </period>
+      <code>
+        <coding>
+          <system value="https://ths-greifswald.de/fhir/CodeSystem/gics/Policy/MII"/>
+          <code value="KKDAT_5J_retro_wissenschaftlich_nutzen"/>
+          <display value="Bereitstellung umcodierter retrospektiver Krankenkassendaten (KKDAT) für wissenschaftliche Nutzung zu Zwecken med. Forschung an externe Forscher"/>
+        </coding>
+        <coding>
+          <system value="urn:oid:2.16.840.1.113883.3.1937.777.24.5.3"/>
+          <code value="2.16.840.1.113883.3.1937.777.24.5.3.13"/>
+          <display value="KKDAT 5J retrospektiv wissenschaftlich nutzen"/>
+        </coding>
+      </code>
+    </provision>
+    <provision>
+      <type value="deny"/>
+      <period>
+        <start value="2024-01-15T00:00:00+01:00"/>
+      </period>
+      <code>
+        <coding>
+          <system value="https://ths-greifswald.de/fhir/CodeSystem/gics/Policy"/>
+          <code value="Rekontaktierung_weitere_Studien"/>
+          <display value="Rekontaktierung bezüglich Information zu neuen Forschungsvorhaben oder Studien"/>
+        </coding>
+        <coding>
+          <system value="urn:oid:2.16.840.1.113883.3.1937.777.24.5.3"/>
+          <code value="2.16.840.1.113883.3.1937.777.24.5.3.29"/>
+          <display value="Rekontaktierung weitere Studien"/>
+        </coding>
+      </code>
+    </provision>
+  </provision>
+</Consent>
