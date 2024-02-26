@@ -27,6 +27,12 @@
 			<valueUri value="http://ths-greifswald.de/fhir/gics/identifiers/Studien-ID"/>
 		</extension>
 	</extension>
+  <extension url="http://fhir.de/ConsentManagement/StructureDefinition/ConsentMode">
+    <valueCoding>
+			<system value="http://hl7.org/fhir/ValueSet/consent-provision-type"/>
+			<code value="deny"/>
+		</valueCoding>
+  </extension>
 	<identifier>
 		<system value="https://ths-greifswald.de/gics"/>
 		<value value="MII_Greifswald"/>

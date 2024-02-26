@@ -1,0 +1,32 @@
+<ResearchStudy xmlns="http://hl7.org/fhir">
+	<id value="2e634a72-ea64-4991-92c1-842ae14e31a8"/>
+	<meta>
+		<lastUpdated value="2024-02-26T11:22:33+01:00"/>
+		<profile value="http://fhir.de/ConsentManagement/StructureDefinition/Domain/ResearchStudy"/>
+	</meta>
+	<extension url="http://fhir.de/ConsentManagement/StructureDefinition/VersionFormat">
+		<extension url="formatString">
+			<valueString value="major.minor.char"/>
+		</extension>
+	</extension>
+	<extension url="http://fhir.de/ConsentManagement/StructureDefinition/ContextIdentifier">
+		<extension url="resourceType">
+      <valueCoding>
+				<system value="http://hl7.org/fhir/resource-types"/>
+				<code value="Patient"/>
+			</valueCoding>
+		</extension>
+		<extension url="system">
+			<valueUri value="http://ths-greifswald.de/fhir/gics/identifiers/Studien-ID"/>
+		</extension>
+	</extension>
+  <extension url="http://fhir.de/ConsentManagement/StructureDefinition/ConsentMode">
+    <valueCoding>
+			<system value="http://hl7.org/fhir/ValueSet/consent-provision-type"/>
+			<code value="permit"/>
+		</valueCoding>
+  </extension>
+	<title value="ePA"/>
+	<status value="active"/>
+	<description value="Beispiel Domäne für die Konfiguration von Einwilligungen/Widersprüchen in einem Opt-Out-Kontext"/>
+</ResearchStudy>
