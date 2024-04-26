@@ -128,6 +128,32 @@
       <path value="Provenance.signature" />
       <mustSupport value="true" />
     </element>
+    <element id="Provenance.signature.extension">
+      <path value="Provenance.signature.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Provenance.signature.extension:where">
+      <path value="Provenance.signature.extension" />
+      <sliceName value="where" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://fhir.de/ConsentManagement/StructureDefinition/SignatureLocation" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="Provenance.signature.extension:where.value[x]">
+      <path value="Provenance.signature.extension.value[x]" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
     <element id="Provenance.signature.type">
       <path value="Provenance.signature.type" />
       <mustSupport value="true" />
