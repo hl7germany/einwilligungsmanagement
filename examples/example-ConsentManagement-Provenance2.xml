@@ -1,0 +1,40 @@
+<Provenance xmlns="http://hl7.org/fhir">
+	<id value="30973b1c-3b82-4f9e-86f6-aae416b72506"/>
+	<meta>
+		<lastUpdated value="2024-05-13T10:10:00+00:00"/>
+		<profile value="http://fhir.de/ConsentManagement/StructureDefinition/Provenance"/>
+	</meta>
+	<!--
+		Diese Provenance stellt den Zusammenhang zwischen einem Consent (target)
+    und seinen 1..n Quell-Informationen (QuestionnaireResponses) dar.
+	-->
+	<target>
+		<reference value="Consent/a1480fd8-5a07-439e-9635-16e81b71447a"/>
+	</target>
+	<!-- recorded entspricht hier dem Zeitpunkt der Ermittlung des Einwilligungsstandes -->
+	<recorded value="2024-01-15T15:04:00+00:00"/>
+	<agent>
+		<who>
+			<display value="Snakeoil Soft Consent Manager 2021"/>
+		</who>
+	</agent>
+	<!-- Verweis auf die originalen Informationsquellen -->
+	<entity>
+		<role value="source"/>
+		<what>
+			<reference value="QuestionnaireResponses/883b9536-a68a-442e-ab9c-133773cc7d3c"/>
+		</what>
+	</entity>
+  <entity>
+		<role value="source"/>
+		<what>
+			<reference value="QuestionnaireResponses/3957f2cb-c9a3-427c-8b37-aad040487669"/>
+		</what>
+	</entity>
+  <entity>
+		<role value="source"/>
+		<what>
+			<reference value="QuestionnaireResponses/208b825f-64ba-4857-bab2-a7597c7baffd"/>
+		</what>
+	</entity>
+</Provenance>
