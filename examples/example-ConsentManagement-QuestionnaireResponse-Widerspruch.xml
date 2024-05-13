@@ -1,0 +1,42 @@
+<QuestionnaireResponse xmlns="http://hl7.org/fhir">
+  <!-- Beispiel für Vorlagentyp "Widerspruch", hier als Teilwiderspruch -->
+	<id value="19022494-961c-4794-a17d-bf4d3ff23f27"/>
+	<meta>
+		<lastUpdated value="2024-05-13T10:00:03+00:00"/>
+		<profile value="http://fhir.de/ConsentManagement/StructureDefinition/QuestionnaireResponse"/>
+	</meta>
+	<language value="de"/>
+	<questionnaire value="https://beispiel.de/fhir/QuestionnaireComposedObjection"/>
+	<status value="completed"/>
+	<subject>
+		<reference value="Patient/9b4a702d-162c-428a-8c5d-8b98af21b693"/>
+		<display value="Studienpatient Nr. A38"/>
+	</subject>
+	<authored value="2024-05-13"/>
+	<author>
+		<reference value="RelatedPerson/5645464"/>
+	</author>
+	<source>
+		<reference value="Patient/9b4a702d-162c-428a-8c5d-8b98af21b693"/>
+	</source>
+	<item>
+		<linkId value="1"/>
+		<answer>
+			<valueCoding>
+				<system value="urn:oid:2.16.840.1.113883.3.1937.777.24.5.2"/>
+				<code value="2.16.840.1.113883.3.1937.777.24.5.2.2"/>
+				<display value="nicht gültig"/>
+			</valueCoding>
+		</answer>
+	</item>
+  <item>
+		<linkId value="98"/>
+		<answer>
+			<valueCoding>
+				<system value="urn:oid:2.16.840.1.113883.3.1937.777.24.5.2"/>
+				<code value="2.16.840.1.113883.3.1937.777.24.5.2.1"/>
+				<display value="gültig"/>
+			</valueCoding>
+		</answer>
+	</item>
+</QuestionnaireResponse>
