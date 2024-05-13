@@ -1,43 +1,35 @@
 <QuestionnaireResponse xmlns="http://hl7.org/fhir">
-  <!-- Beispiel für Vorlagentyp "Einwilligung (Typ: Opt-In)" -->
-	<id value="02eac854-6a2e-48f9-88d7-edd04faff81c"/>
+  <!-- Beispiel für Vorlagentyp "Widerruf" -->
+	<id value="add43c05-d583-4507-b842-81190f5d56dd"/>
 	<meta>
-		<lastUpdated value="2020-12-11T09:39:07+00:00"/>
+		<lastUpdated value="2024-05-13T10:00:01+00:00"/>
 		<profile value="http://fhir.de/ConsentManagement/StructureDefinition/QuestionnaireResponse"/>
 	</meta>
 	<language value="de"/>
-	<!-- canonical URL des zugrunde liegenden Questionnaires (Profil QuestionnaireComposed) -->
-	<questionnaire value="https://beispiel.de/fhir/QuestionnaireComposedBeispiel1"/>
-	<!-- Finalisierungsstatus -->
+	<questionnaire value="https://beispiel.de/fhir/QuestionnaireComposedWithdrawal"/>
 	<status value="completed"/>
-	<!-- Patient, für den die Einwilligungserklärung gilt -->
 	<subject>
 		<reference value="Patient/9b4a702d-162c-428a-8c5d-8b98af21b693"/>
 		<display value="Studienpatient Nr. A38"/>
 	</subject>
-	<!-- Ausfülldatum -->
-	<authored value="2020-09-08"/>
-	<!-- ausfüllende Person -->
+	<authored value="2024-05-13"/>
 	<author>
 		<reference value="RelatedPerson/5645464"/>
 	</author>
-	<!-- Person, von der die Einwilligungsangaben stammen -->
 	<source>
 		<reference value="Patient/9b4a702d-162c-428a-8c5d-8b98af21b693"/>
 	</source>
-
-	<!-- Antworten -->
 	<item>
 		<linkId value="1"/>
 		<answer>
 			<valueCoding>
 				<system value="urn:oid:2.16.840.1.113883.3.1937.777.24.5.2"/>
-				<code value="2.16.840.1.113883.3.1937.777.24.5.2.1"/>
-				<display value="gültig"/>
+				<code value="2.16.840.1.113883.3.1937.777.24.5.2.2"/>
+				<display value="nicht gültig"/>
 			</valueCoding>
 		</answer>
 	</item>
-	<item>
+  <item>
 		<linkId value="98"/>
 		<answer>
 			<valueCoding>
@@ -47,10 +39,14 @@
 			</valueCoding>
 		</answer>
 	</item>
-	<item>
-		<linkId value="555"/>
+  <item>
+		<linkId value="102"/>
 		<answer>
-			<valueString value="Dem habe ich nichts hinzuzufügen."/>
+			<valueCoding>
+				<system value="urn:oid:2.16.840.1.113883.3.1937.777.24.5.2"/>
+				<code value="2.16.840.1.113883.3.1937.777.24.5.2.3"/>
+				<display value="unbekannt"/>
+			</valueCoding>
 		</answer>
 	</item>
 </QuestionnaireResponse>
