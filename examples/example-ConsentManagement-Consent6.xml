@@ -1,0 +1,113 @@
+<Consent xmlns="http://hl7.org/fhir">
+	<id value="9790aa00-2059-43dd-adfb-b30908c92b48"/>
+	<meta>
+		<lastUpdated value="2024-05-13T10:01:00+00:00"/>
+		<profile value="http://fhir.de/ConsentManagement/StructureDefinition/Consent"/>
+	</meta>
+	<extension url="http://fhir.de/ConsentManagement/StructureDefinition/DomainReference">
+		<extension url="domain">
+			<valueReference>
+				<reference value="ResearchStudy/d7a65ce8-2810-401a-b0db-70782a7b19a6"/>
+			</valueReference>
+		</extension>
+		<extension url="status">
+			<valueCoding>
+				<system value="http://hl7.org/fhir/publication-status"/>
+				<code value="active"/>
+			</valueCoding>
+		</extension>
+	</extension>
+	<status value="active"/>
+	<scope>
+		<coding>
+			<system value="http://terminology.hl7.org/CodeSystem/consentscope"/>
+			<code value="research"/>
+		</coding>
+	</scope>
+	<category>
+		<coding>
+			<system value="http://loinc.org"/>
+			<code value="59284-0"/>
+		</coding>
+	</category>
+  <!-- Consent-Kategorie resultType, hier: Modul -->
+	<category>
+		<coding>
+			<system value="http://fhir.de/ConsentManagement/CodeSystem/ResultType"/>
+			<code value="module"/>
+		</coding>
+	</category>
+	<category>
+		<coding>
+			<system value="http://fhir.de/ConsentManagement/CodeSystem/TemplateType"/>
+			   <code value="CONSENT-OPT-IN"/>
+		</coding>
+	</category>
+	<patient>
+		<reference value="Patient/9b4a702d-162c-428a-8c5d-8b98af21b693"/>
+	</patient>
+	<dateTime value="2020-09-01"/>
+	<organization>
+		<display value="Klinikum Musterstadt"/>
+	</organization>
+	<sourceReference>
+		<reference value="QuestionnaireResponse/02eac854-6a2e-48f9-88d7-edd04faff81c"/>
+	</sourceReference>
+	<policy>
+		<uri value="https://www.medizininformatik-initiative.de/sites/default/files/2020-04/MII_AG-Consent_Einheitlicher-Mustertext_v1.6d.pdf"/>
+	</policy>
+	<provision>
+		<type value="deny"/>
+		<period>
+			<start value="2020-09-01"/>
+			<end value="2050-08-31"/>
+		</period>
+		<provision>
+			<type value="permit"/>
+			<period>
+				<start value="2020-09-01"/>
+				<end value="2025-08-31"/>
+			</period>
+			<code>
+				<coding>
+					<system value="urn:oid:2.16.840.1.113883.3.1937.777.24.5.3"/>
+					<code value="2.16.840.1.113883.3.1937.777.24.5.3.6"/>
+					<display value="MDAT_erheben"/>
+				</coding>
+			</code>
+		</provision>
+		<provision>
+			<type value="permit"/>
+			<period>
+				<start value="2020-09-01"/>
+				<end value="2050-08-31"/>
+			</period>
+			<code>
+				<coding>
+					<system value="urn:oid:2.16.840.1.113883.3.1937.777.24.5.3"/>
+					<code value="2.16.840.1.113883.3.1937.777.24.5.3.7"/>
+					<display value="MDAT_speichern_verarbeiten"/>
+				</coding>
+			</code>
+		</provision>
+		<provision>
+			<type value="permit"/>
+			<period>
+				<start value="2020-09-01"/>
+				<end value="2050-08-31"/>
+			</period>
+			<code>
+				<coding>
+					<system value="urn:oid:2.16.840.1.113883.3.1937.777.24.5.3"/>
+					<code value="2.16.840.1.113883.3.1937.777.24.5.3.8"/>
+					<display value="MDAT_wissenschaftlich_nutzen_EU_DSGVO_NIVEAU"/>
+				</coding>
+			</code>
+		</provision>
+    <!--
+      Dies ist ein Beispiel zur Veranschaulichung; der komplette Baum der
+      hier als Beispiel genutzten MII-Policies umfasst weitere
+      Provisions auf Level 2
+    -->
+	</provision>
+</Consent>
