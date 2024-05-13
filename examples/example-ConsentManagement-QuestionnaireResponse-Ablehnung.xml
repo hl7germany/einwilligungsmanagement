@@ -1,0 +1,32 @@
+<QuestionnaireResponse xmlns="http://hl7.org/fhir">
+  <!-- Beispiel für Vorlagentyp "Ablehnung" -->
+	<id value="a81a2f14-e796-4c9e-9509-b862e6d3c181"/>
+	<meta>
+		<lastUpdated value="2024-05-13T10:00:02+00:00"/>
+		<profile value="http://fhir.de/ConsentManagement/StructureDefinition/QuestionnaireResponse"/>
+	</meta>
+	<language value="de"/>
+	<questionnaire value="https://beispiel.de/fhir/QuestionnaireComposedRefusal"/>
+	<status value="completed"/>
+	<subject>
+		<reference value="Patient/9b4a702d-162c-428a-8c5d-8b98af21b693"/>
+		<display value="Studienpatient Nr. A38"/>
+	</subject>
+	<authored value="2024-05-13"/>
+	<author>
+		<reference value="RelatedPerson/5645464"/>
+	</author>
+	<source>
+		<reference value="Patient/9b4a702d-162c-428a-8c5d-8b98af21b693"/>
+	</source>
+	<item>
+		<linkId value="1"/>
+		<answer>
+			<valueCoding>
+				<system value="urn:oid:2.16.840.1.113883.3.1937.777.24.5.2"/>
+				<code value="2.16.840.1.113883.3.1937.777.24.5.2.1"/>
+				<display value="gültig"/>
+			</valueCoding>
+		</answer>
+	</item>
+</QuestionnaireResponse>
