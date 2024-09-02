@@ -1,0 +1,24 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+	<id value="valueset-consent-management-consent-mode"/>
+	<url value="http://fhir.de/ConsentManagement/ValueSet/ConsentMode"/>
+	<version value="1.0.3"/>
+	<name value="ConsentManagementConsentMode"/>
+	<status value="active"/>
+    <experimental value="false"/>
+    <date value="2024-09-02"/>
+    <publisher value="AG Einwilligungsmanagement des Interoperabilitätsforums"/>
+    <contact>
+  	  <telecom>
+  		  <system value="url"/>
+  		  <value value="https://wiki.hl7.de/index.php?title=Einwilligungsmanagement_(Projekt)"/>
+  	  </telecom>
+    </contact>
+	<compose>
+    <include>
+			<valueSet value="http://hl7.org/fhir/ValueSet/consent-provision-type"/>
+		</include>
+		<include>
+			<system value="http://fhir.de/ConsentManagement/CodeSystem/ConsentMode"/>
+		</include>
+	</compose>
+</ValueSet>

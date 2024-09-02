@@ -1,0 +1,23 @@
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="codesystem-consent-management-consent-mode"/>
+  <url value="http://fhir.de/ConsentManagement/CodeSystem/ConsentMode" />
+  <version value="1.0.3" />
+  <name value="ConsentMode" />
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2024-09-02"/>
+  <publisher value="AG Einwilligungsmanagement des Interoperabilitätsforums"/>
+  <contact>
+	  <telecom>
+		  <system value="url"/>
+		  <value value="https://wiki.hl7.de/index.php?title=Einwilligungsmanagement_(Projekt)"/>
+	  </telecom>
+  </contact>
+  <description value="Arten des Standardverfahrens für Einwilligungen, soweit nicht reines Opt-In bzw. Opt-Out." />
+  <caseSensitive value="true" />
+  <content value="complete" />
+  <concept>
+    <code value="mixed" />
+    <display value="teilweise Opt-In, teilweise Opt-Out" />
+  </concept>
+</CodeSystem>
