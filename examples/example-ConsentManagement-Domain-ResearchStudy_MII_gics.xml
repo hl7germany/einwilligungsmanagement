@@ -29,7 +29,7 @@
 	</extension>
   <extension url="http://fhir.de/ConsentManagement/StructureDefinition/ConsentMode">
     <valueCoding>
-			<system value="http://hl7.org/fhir/ValueSet/consent-provision-type"/>
+			<system value="http://hl7.org/fhir/CodeSystem/consent-provision-type"/>
 			<code value="deny"/>
 		</valueCoding>
   </extension>
