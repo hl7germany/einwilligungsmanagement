@@ -2,12 +2,12 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="extension-consent-management-xacml"/>
   <url value="http://fhir.de/ConsentManagement/StructureDefinition/Xacml" />
-  <version value="1.0.1"/>
+  <version value="2.0.0" />
   <name value="ConsentManagementXacml" />
   <title value="Consent Management Xacml" />
-  <status value="active"/>
-  <experimental value="false"/>
-  <date value="2022-07-20"/>
+  <status value="active" />
+  <experimental value="false" />
+  <date value="2025-03-26" />
   <publisher value="AG Einwilligungsmanagement des Interoperabilitätsforums"/>
   <contact>
 	  <telecom>

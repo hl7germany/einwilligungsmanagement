@@ -2,11 +2,12 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="SignatureLocation" />
   <url value="http://fhir.de/ConsentManagement/StructureDefinition/SignatureLocation" />
+  <version value="2.0.0" />
   <name value="SignatureLocation" />
   <title value="SignatureLocation" />
-  <status value="draft" />
+  <status value="active" />
   <experimental value="false" />
-  <date value="2024-04-26" />
+  <date value="2025-03-26" />
   <contact>
     <telecom>
       <system value="url" />
