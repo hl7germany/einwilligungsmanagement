@@ -33,6 +33,9 @@
 	</entity>
 	<!-- Unterschrift des Patienten -->
 	<signature>
+		<extension url="http://fhir.de/ConsentManagement/StructureDefinition/SignatureLocation">
+    		<valueString value="Untertal" />
+		</extension>
 		<type>
 			<system value="urn:iso-astm:E1762-95:2013"/>
 			<code value="1.2.840.10065.1.12.1.7"/>
@@ -46,6 +49,9 @@
 	</signature>
 	<!-- Unterschrift des aufklärenden Arztes -->
 	<signature>
+		<extension url="http://fhir.de/ConsentManagement/StructureDefinition/SignatureLocation">
+    		<valueString value="Musterstadt" />
+		</extension>
 		<type>
 			<system value="urn:iso-astm:E1762-95:2013"/>
 			<code value="1.2.840.10065.1.12.1.5"/>
