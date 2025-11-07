@@ -2,12 +2,12 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="profile-consent-management-domain-research-study" />
   <url value="http://fhir.de/ConsentManagement/StructureDefinition/Domain/ResearchStudy" />
-  <version value="2.0.0" />
+  <version value="2.0.2" />
   <name value="ConsentManagementDomainResearchStudy" />
   <title value="Consent Management Domain Research Study" />
   <status value="active" />
   <experimental value="false" />
-  <date value="2025-04-14" />
+  <date value="2025-11-07" />
   <publisher value="AG Einwilligungsmanagement des Interoperabilitätsforums" />
   <contact>
     <telecom>
