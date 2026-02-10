@@ -29,7 +29,7 @@
   <differential>
     <element id="Extension.extension">
       <path value="Extension.extension" />
-	  <min value="1" />
+      <min value="1" />
       <slicing>
         <discriminator>
           <type value="value" />
@@ -137,4 +137,5 @@
     </element>
   </differential>
 </StructureDefinition>
+
 
