@@ -70,6 +70,7 @@
         </discriminator>
         <rules value="open" />
       </slicing>
+      <min value="1" />
     </element>
     <element id="Consent.extension:domainReference.extension:domain">
       <path value="Consent.extension.extension" />
@@ -275,4 +276,6 @@
       <mustSupport value="true" />
     </element>
   </differential>
+
 </StructureDefinition>
+

@@ -36,6 +36,7 @@
         </discriminator>
         <rules value="open" />
       </slicing>
+      <min value="1" />
     </element>
     <element id="Extension.extension:domain">
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
@@ -136,3 +137,6 @@
     </element>
   </differential>
 </StructureDefinition>
+
+
+
