@@ -2,12 +2,12 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="profile-consent-management-questionnaireresponse" />
   <url value="http://fhir.de/ConsentManagement/StructureDefinition/QuestionnaireResponse" />
-  <version value="2.0.2" />
+  <version value="2.0.3" />
   <name value="ConsentManagementQuestionnaireResponse" />
   <title value="Consent Management QuestionnaireResponse" />
   <status value="active" />
   <experimental value="false" />
-  <date value="2025-11-07" />
+  <date value="2026-03-02" />
   <publisher value="AG Einwilligungsmanagement des Interoperabilitätsforums" />
   <contact>
     <telecom>
