@@ -1,0 +1,43 @@
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="codesystem-consent-management-legal-basis-data-processing"/>
+  <url value="http://fhir.de/ConsentManagement/CodeSystem/LegalBasisForDataProcessing" />
+  <version value="2.0.4" />
+  <name value="LegalBasisForDataProcessing" />
+  <status value="draft" />
+  <experimental value="true" />
+  <date value="2026-03-25" />
+  <publisher value="AG Einwilligungsmanagement des Interoperabilitätsforums"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="https://wiki.hl7.de/index.php?title=Einwilligungsmanagement_(Projekt)"/>
+    </telecom>
+  </contact>
+  <description value="Rechtsgrundlage der Datenverarbeitung" />
+  <caseSensitive value="true" />
+  <content value="complete" />
+  <concept>
+    <code value="https://eur-lex.europa.eu/legal-content/DE/TXT/PDF/?uri=OJ:L_202500327" />
+    <display value="EHDS" />
+  </concept>
+  <concept>
+    <code value="https://www.gesetze-im-internet.de/sgb_5/__341.html" />
+    <display value="ePA nach § 341 SGB V" />
+  </concept>
+  <concept>
+    <code value="https://www.gesetze-im-internet.de/gdng/__6.html" />
+    <display value="GDNG Art 6" />
+  </concept>
+  <concept>
+    <code value="https://www.landesrecht-mv.de/bsmv/document/jlr-LKHGMV2025pP50" />
+    <display value="LKHG MV §50" />
+  </concept>
+  <concept>
+    <code value="https://www.gesetze-rechtsprechung.sh.juris.de/perma?d=jlr-KHGSHV2P38" />
+    <display value="LKHG SH §38" />
+  </concept>
+  <concept>
+    <code value="https://www.recht.bund.de/bgbl/1/2024/230/VO.html" />
+    <display value="MV genomDE nach §64e SGB V" />
+  </concept>
+</CodeSystem>
