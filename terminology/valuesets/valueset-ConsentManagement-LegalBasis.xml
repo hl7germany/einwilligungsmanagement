@@ -1,0 +1,21 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+	<id value="valueset-consent-management-legal-basis-data-processing"/>
+	<url value="http://fhir.de/ConsentManagement/ValueSet/LegalBasisDataProcessing"/>
+    <version value="2.0.4" />
+	<name value="ConsentManagementLegalBasisDataProcessing"/>
+	<status value="draft" />
+	<experimental value="true" />
+	<date value="2026-03-25" />
+    <publisher value="AG Einwilligungsmanagement des Interoperabilitätsforums"/>
+    <contact>
+  	  <telecom>
+  		  <system value="url"/>
+  		  <value value="https://wiki.hl7.de/index.php?title=Einwilligungsmanagement_(Projekt)"/>
+  	  </telecom>
+    </contact>
+	<compose>
+		<include>
+			<system value="http://fhir.de/ConsentManagement/CodeSystem/LegalBasisDataProcessing"/>
+		</include>
+	</compose>
+</ValueSet>
