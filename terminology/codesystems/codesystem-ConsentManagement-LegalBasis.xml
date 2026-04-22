@@ -52,7 +52,7 @@
     <display value="GDNG"/>
     <property>
       <code value="see-also"/>
-      <valueString value="https://www.gesetze-im-internet.de/gdng/__6.html, https://w3c.github.io/dpv/2.3/legal/de/gdng/index-de.html#P6-3-PublicJointResearch"/>
+      <valueString value="https://www.gesetze-im-internet.de/gdng/__6.html"/>
     </property>
     <property>
       <code value="iri-url"/>
@@ -96,7 +96,7 @@
     <display value="Genom DE"/>
     <property>
       <code value="see-also"/>
-      <valueString value="https://www.gesetze-im-internet.de/sgb_5/__64e.html"/>
+      <valueString value="https://www.recht.bund.de/bgbl/1/2024/230/VO.html"/>
     </property>
   </concept>
   <concept>
