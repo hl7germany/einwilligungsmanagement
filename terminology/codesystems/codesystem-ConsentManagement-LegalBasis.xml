@@ -1,11 +1,11 @@
 <CodeSystem xmlns="http://hl7.org/fhir">
   <id value="codesystem-consent-management-legal-basis-data-processing"/>
-  <url value="http://fhir.de/ConsentManagement/CodeSystem/LegalBasisDataProcessing" />
-  <version value="2.0.4" />
-  <name value="LegalBasisDataProcessing" />
-  <status value="draft" />
-  <experimental value="true" />
-  <date value="2026-03-25" />
+  <url value="http://fhir.de/ConsentManagement/CodeSystem/LegalBasisDataProcessing"/>
+  <version value="2.0.4"/>
+  <name value="LegalBasisDataProcessing"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2026-04-22" />
   <publisher value="AG Einwilligungsmanagement des Interoperabilitätsforums"/>
   <contact>
     <telecom>
@@ -13,31 +13,98 @@
       <value value="https://wiki.hl7.de/index.php?title=Einwilligungsmanagement_(Projekt)"/>
     </telecom>
   </contact>
-  <description value="Rechtsgrundlage der Datenverarbeitung" />
-  <caseSensitive value="true" />
-  <content value="complete" />
+  <description value="Rechtsgrundlage der Datenverarbeitung"/>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <property>
+    <code value="see-also"/>
+    <description value="additional information"/>
+    <type value="string"/>
+  </property>
+  <property>
+    <code value="iri-url"/>
+    <description value="if available iri or url"/>
+    <type value="string"/>
+  </property>
+  <property>
+    <code value="publish-date"/>
+    <description value="date of original publication"/>
+    <type value="dateTime"/>
+  </property>
   <concept>
-    <code value="https://eur-lex.europa.eu/legal-content/DE/TXT/PDF/?uri=OJ:L_202500327" />
-    <display value="EHDS" />
+    <code value="ehds"/>
+    <display value="EHDS"/>
+    <property>
+      <code value="see-also"/>
+      <valueString value="https://eur-lex.europa.eu/legal-content/DE/TXT/PDF/?uri=OJ:L_202500327"/>
+    </property>
+    <property>
+      <code value="iri-url"/>
+      <valueString value="https://eur-lex.europa.eu/eli/reg/2025/327/oj"/>
+    </property>
+    <property>
+      <code value="publish-date"/>
+      <valueDateTime value="2025-02-11"/>
+    </property>
   </concept>
   <concept>
-    <code value="https://www.gesetze-im-internet.de/sgb_5/__341.html" />
-    <display value="ePA nach § 341 SGB V" />
+    <code value="gdng"/>
+    <display value="GDNG"/>
+    <property>
+      <code value="see-also"/>
+      <valueString value="https://www.gesetze-im-internet.de/gdng/__6.html, https://w3c.github.io/dpv/2.3/legal/de/gdng/index-de.html#P6-3-PublicJointResearch"/>
+    </property>
+    <property>
+      <code value="iri-url"/>
+      <valueString value="https://w3id.org/dpv/legal/de/gdng#P6-3-PublicJointResearch"/>
+    </property>
   </concept>
   <concept>
-    <code value="https://www.gesetze-im-internet.de/gdng/__6.html" />
-    <display value="GDNG Art 6" />
+    <code value="lkhg-mv"/>
+    <display value="LKHG MV"/>
+    <property>
+      <code value="see-also"/>
+      <valueString value="https://www.landesrecht-mv.de/bsmv/document/jlr-LKHGMV2025pP50"/>
+    </property>
+    <property>
+      <code value="publish-date"/>
+      <valueDateTime value="2025-10-08"/>
+    </property>
   </concept>
   <concept>
-    <code value="https://www.landesrecht-mv.de/bsmv/document/jlr-LKHGMV2025pP50" />
-    <display value="LKHG MV §50" />
+    <code value="lkhg-sh"/>
+    <display value="LKHG SH"/>
+    <property>
+      <code value="iri-url"/>
+      <valueString value="https://www.gesetze-rechtsprechung.sh.juris.de/perma?d=jlr-KHGSHV2P38"/>
+    </property>
   </concept>
   <concept>
-    <code value="https://www.gesetze-rechtsprechung.sh.juris.de/perma?d=jlr-KHGSHV2P38" />
-    <display value="LKHG SH §38" />
+    <code value="lkhg-bw"/>
+    <display value="LKHG BW"/>
+    <property>
+      <code value="see-also"/>
+      <valueString value="https://www.baden-wuerttemberg.de/de/service/gesetze-und-verordnungen/gesetzblatt/detail/2024-68"/>
+    </property>
+    <property>
+      <code value="publish-date"/>
+      <valueDateTime value="2024-07-25"/>
+    </property>
   </concept>
   <concept>
-    <code value="https://www.recht.bund.de/bgbl/1/2024/230/VO.html" />
-    <display value="MV genomDE nach §64e SGB V" />
+    <code value="genom-de"/>
+    <display value="Genom DE"/>
+    <property>
+      <code value="see-also"/>
+      <valueString value="https://www.gesetze-im-internet.de/sgb_5/__64e.html"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="epa"/>
+    <display value="Elektronische Patientenakte"/>
+    <property>
+      <code value="see-also"/>
+      <valueString value="https://www.gesetze-im-internet.de/sgb_5/__341.html"/>
+    </property>
   </concept>
 </CodeSystem>
