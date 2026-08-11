@@ -93,7 +93,6 @@
     </element>
     <element id="Consent.category">
       <path value="Consent.category" />
-      <min value="0" />
       <mustSupport value="true" />
     </element>
     <element id="Consent.patient">
