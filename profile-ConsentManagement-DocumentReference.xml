@@ -93,6 +93,25 @@
       <path value="DocumentReference.content.attachment" />
       <mustSupport value="true" />
     </element>
+    <element id="DocumentReference.content.attachment.extension">
+      <path value="DocumentReference.content.attachment.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="DocumentReference.content.attachment.extension:physicalDocumentLocation">
+      <path value="DocumentReference.content.attachment.extension" />
+      <sliceName value="physicalDocumentLocation" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://fhir.de/ConsentManagement/StructureDefinition/PhysicalDocumentLocation" />
+      </type>
+      <mustSupport value="true" />
+    </element>
     <element id="DocumentReference.content.attachment.contentType">
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
         <valueCode value="normative" />

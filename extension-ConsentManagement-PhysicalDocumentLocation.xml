@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="PhysicalDocumentLocation" />
+  <url value="http://fhir.de/ConsentManagement/StructureDefinition/PhysicalDocumentLocation" />
+  <version value="2.0.4" />
+  <name value="PhysicalDocumentLocation" />
+  <title value="PhysicalDocumentLocation" />
+  <status value="active" />
+  <experimental value="false" />
+  <date value="2026-09-07" />
+  <contact>
+    <telecom>
+      <system value="url" />
+      <value value="https://wiki.hl7.de/index.php?title=Einwilligungsmanagement_(Projekt)" />
+    </telecom>
+  </contact>
+  <description value="Where the physical document is located on which this digital representation is based on. Typically a string value. For more complex use cases a Location resource may be used and referenced." />
+  <fhirVersion value="4.0.1" />
+  <mapping>
+    <identity value="rim" />
+    <uri value="http://hl7.org/v3" />
+    <name value="RIM Mapping" />
+  </mapping>
+  <kind value="complex-type" />
+  <abstract value="false" />
+  <context>
+    <type value="element" />
+    <expression value="DocumentReference.content.attachment" />
+  </context>
+  <type value="Extension" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Extension.url">
+      <path value="Extension.url" />
+      <fixedUri value="http://fhir.de/ConsentManagement/StructureDefinition/PhysicalDocumentLocation" />
+    </element>
+    <element id="Extension.value[x]">
+      <path value="Extension.value[x]" />
+      <type>
+        <code value="string" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Location" />
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>
