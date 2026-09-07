@@ -166,6 +166,10 @@
       <path value="Consent.policy.uri" />
       <min value="1" />
       <mustSupport value="true" />
+      <binding>
+        <strength value="extensible" />
+        <valueSet value="http://fhir.de/ConsentManagement/ValueSet/LegalBasisDataProcessing" />
+      </binding>
     </element>
     <element id="Consent.policyRule">
       <path value="Consent.policyRule" />
