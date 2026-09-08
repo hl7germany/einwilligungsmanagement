@@ -80,4 +80,9 @@
     <code value="https://www.gesetze-im-internet.de/sgb_5/__341.html" />
     <display value="Elektronische Patientenakte" />
   </concept>
+  <concept>
+    <code
+      value="https://eur-lex.europa.eu/eli/reg/2016/679/art_6/par_1/sub_1" />
+    <display value="DSGVO (GDPR) Art. 6(1)a" />
+  </concept>
 </CodeSystem>
